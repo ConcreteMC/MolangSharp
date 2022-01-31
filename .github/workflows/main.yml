@@ -49,9 +49,9 @@ jobs:
       run: dotnet restore src/Alex.MoLang/Alex.MoLang.csproj
         
     - name: Build
-      run: dotnet build --configuration Release --no-restore /p:Version="$(date +%Y.%m.%d.%H%M%S)" src/Alex.MoLang/Alex.MoLang.csproj
+      run: dotnet build --configuration Release --no-restore src/Alex.MoLang/Alex.MoLang.csproj
 
     - name: Publish
       run: |
-        dotnet pack -c Release /p:PackageVersion="$(date +%Y.%m.%d.%H%M%S)" /p:Version="$(date +%Y.%m.%d.%H%M%S)" src/Alex.MoLang/Alex.MoLang.csproj -o .
+        dotnet pack -c Release /p:PackageVersion=$(date +%Y.%m.%d.%H%M%S) src/Alex.MoLang/Alex.MoLang.csproj -o .
         dotnet nuget push *.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.NUGET_PUBLISH_KEY}} --skip-duplicate
