@@ -1,0 +1,49 @@
+name: Publish
+
+on:
+  push:
+    branches: main
+
+jobs:
+  test:
+    name: Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: 'recursive'
+          
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1.8.0
+        with:
+          dotnet-version: 6.0.x
+      
+      - run: cd src/Alex.MoLang.Tests
+      
+      - name: Install dependencies
+        run: dotnet restore
+        
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+        
+      - name: Test
+        run: dotnet test --no-restore --verbosity normal
+    
+  nuget:
+    name: Publish to NuGET
+    runs-on: ubuntu-latest
+    needs: [test]
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
+        
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1.8.0
+      with:
+        dotnet-version: 6.0.x
+
+    - name: Publish
+      run: |
+        dotnet pack -c Release /p:Version="1.0.${{github.run_id}}" src/Alex.MoLang/Alex.MoLang.csproj -o .
+        dotnet nuget push *.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.NUGET_PUBLISH_KEY}} --skip-duplicate
