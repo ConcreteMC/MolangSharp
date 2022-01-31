@@ -18,16 +18,17 @@ jobs:
         with:
           dotnet-version: 6.0.x
       
-      - run: cd src/Alex.MoLang.Tests
-      
       - name: Install dependencies
         run: dotnet restore
+        working-directory: src/Alex.MoLang.Tests
         
       - name: Build
         run: dotnet build --configuration Release --no-restore
+        working-directory: src/Alex.MoLang.Tests
         
       - name: Test
         run: dotnet test --no-restore --verbosity normal
+        working-directory: src/Alex.MoLang.Tests
     
   nuget:
     name: Publish to NuGET
