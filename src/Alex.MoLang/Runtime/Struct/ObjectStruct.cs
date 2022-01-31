@@ -1,28 +1,22 @@
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Text;
+using System.Diagnostics;
 using Alex.MoLang.Runtime.Exceptions;
 using Alex.MoLang.Runtime.Value;
 using Alex.MoLang.Utils;
-using NLog;
 
 namespace Alex.MoLang.Runtime.Struct
 {
 	public class ObjectStruct : IMoStruct
 	{
-		private static readonly Logger Log = LogManager.GetCurrentClassLogger(typeof(ObjectStruct));
 		private object _instance;
-		private readonly Dictionary<string, ValueAccessor> _properties; // = new(StringComparer.OrdinalIgnoreCase);
-
+		private readonly Dictionary<string, ValueAccessor> _properties;
 		private readonly Dictionary<string, Func<object, MoParams, IMoValue>>
-			_functions; // = new(StringComparer.OrdinalIgnoreCase);
+			_functions;
 
 		private static readonly ConcurrentDictionary<Type, PropertyCache> PropertyCaches =
 			new ConcurrentDictionary<Type, PropertyCache>();
-
-		public bool UseNLog = true;
-		public bool EnableDebugOutput = false;
 
 		public ObjectStruct(object instance)
 		{
@@ -33,27 +27,6 @@ namespace Alex.MoLang.Runtime.Struct
 			var propCache = PropertyCaches.GetOrAdd(type, t => new PropertyCache(t));
 			_properties = propCache.Properties;
 			_functions = propCache.Functions;
-
-			_functions.TryAdd(
-				"debug_output", (o, mo) =>
-				{
-					if (EnableDebugOutput)
-					{
-						StringBuilder sb = new StringBuilder();
-
-						foreach (var param in mo.GetParams())
-						{
-							sb.Append($"{param.AsString()} ");
-						}
-
-						if (UseNLog)
-							Log.Debug(sb.ToString());
-						else
-							Console.WriteLine(sb.ToString());
-					}
-
-					return DoubleValue.Zero;
-				});
 		}
 
 		/// <inheritdoc />
@@ -147,7 +120,7 @@ namespace Alex.MoLang.Runtime.Struct
 			if (_functions.TryGetValue(key.ToString(), out var f))
 				return f.Invoke(_instance, parameters);
 
-			Log.Debug($"({_instance.ToString()}) Unknown query: {key}");
+			Debug.WriteLine($"({_instance.ToString()}) Unknown query: {key}");
 
 			return DoubleValue.Zero;
 		}

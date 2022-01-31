@@ -1,19 +1,14 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq.Expressions;
 using Alex.MoLang.Parser;
-using Alex.MoLang.Parser.Visitors;
 using Alex.MoLang.Runtime.Exceptions;
 using Alex.MoLang.Runtime.Struct;
 using Alex.MoLang.Runtime.Value;
-using NLog;
 
 namespace Alex.MoLang.Runtime
 {
 	public class MoLangRuntime
 	{
-		private static readonly Logger Log = LogManager.GetCurrentClassLogger(typeof(MoLangRuntime));
 		public MoLangEnvironment Environment { get; }
 
 		public MoLangRuntime() : this(new MoLangEnvironment()) { }
@@ -22,14 +17,7 @@ namespace Alex.MoLang.Runtime
 		{
 			Environment = environment;
 		}
-
-		/*public IMoValue Execute(IExpression expression) {
-			return Execute(new List<IExpression>()
-			{
-				expression
-			});
-		}*/
-
+		
 		public IMoValue Execute(params IExpression[] expressions)
 		{
 			return Execute(expressions, null);

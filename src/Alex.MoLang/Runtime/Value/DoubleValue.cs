@@ -10,32 +10,34 @@ namespace Alex.MoLang.Runtime.Value
 		/// <inheritdoc />
 		public bool Equals(IMoValue b)
 		{
-			if (Value == b.AsDouble())
+			if (_value == b.AsDouble())
 				return true;
 
 			return false;
 		}
 
+		private readonly double _value;
+
 		/// <inheritdoc />
-		public double Value { get; set; }
+		public double Value => _value;
 
 		public DoubleValue(object value)
 		{
 			if (value is bool boolean)
 			{
-				Value = boolean ? 1.0 : 0.0;
+				_value = boolean ? 1.0 : 0.0;
 			}
 			else if (value is double dbl)
 			{
-				Value = dbl;
+				_value = dbl;
 			}
 			else if (value is float flt)
 			{
-				Value = flt;
+				_value = flt;
 			}
 			else if (value is int integer)
 			{
-				Value = integer;
+				_value = integer;
 			}
 			else
 			{
@@ -45,12 +47,12 @@ namespace Alex.MoLang.Runtime.Value
 
 		public DoubleValue(bool value)
 		{
-			Value = value ? 1d : 0d;
+			_value = value ? 1d : 0d;
 		}
 
 		public DoubleValue(double value)
 		{
-			Value = value;
+			_value = value;
 		}
 
 		public override bool Equals(object obj)
@@ -59,8 +61,19 @@ namespace Alex.MoLang.Runtime.Value
 			if (ReferenceEquals(this, obj)) return true;
 			if (obj.GetType() != this.GetType()) return false;
 
-			return (obj is DoubleValue dv && dv.Value == Value);
+			return (obj is DoubleValue dv && dv._value == _value);
 			// ...the rest of the equality implementation
+		}
+
+		protected bool Equals(DoubleValue other)
+		{
+			return _value.Equals(other._value);
+		}
+
+		/// <inheritdoc />
+		public override int GetHashCode()
+		{
+			return _value.GetHashCode();
 		}
 
 		/// <inheritdoc />

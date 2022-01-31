@@ -1,18 +1,14 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
+using System.Diagnostics;
 using System.Reflection;
 using Alex.MoLang.Attributes;
 using Alex.MoLang.Runtime.Value;
-using NLog;
 
 namespace Alex.MoLang.Runtime.Struct
 {
 	public class PropertyCache
 	{
-		private static readonly Logger Log = LogManager.GetCurrentClassLogger(typeof(PropertyCache));
-
 		public readonly Dictionary<string, ValueAccessor> Properties = new Dictionary<string, ValueAccessor>(StringComparer.OrdinalIgnoreCase);
 
 		public readonly Dictionary<string, Func<object, MoParams, IMoValue>> Functions = new Dictionary<string, Func<object, MoParams, IMoValue>>(
@@ -40,7 +36,7 @@ namespace Alex.MoLang.Runtime.Struct
 				{
 					if (functions.ContainsKey(name))
 					{
-						Log.Warn($"Duplicate function \'{name}\' in {type.ToString()}");
+						Debug.WriteLine($"Duplicate function \'{name}\' in {type.ToString()}");
 
 						continue;
 					}

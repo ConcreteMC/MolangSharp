@@ -26,7 +26,7 @@ public class InteropTest
 		MoLangRuntime runtime = new MoLangRuntime();
 
 		runtime.Environment.Structs.TryAdd(
-			"query", new ObjectStruct(new TestClass(expected)) {UseNLog = false, EnableDebugOutput = false});
+			"query", new ObjectStruct(new TestClass(expected)));
 
 		var result = runtime.Execute(expression);
 		Assert.AreEqual(expected, result.AsDouble());
@@ -41,7 +41,7 @@ public class InteropTest
 
 		var testStruct = new TestClass(Environment.TickCount);
 		runtime.Environment.Structs.TryAdd(
-			"query", new ObjectStruct(testStruct) {UseNLog = false, EnableDebugOutput = false});
+			"query", new ObjectStruct(testStruct));
 
 		runtime.Execute(expression);
 		Assert.AreEqual(5d, testStruct.Lifetime);

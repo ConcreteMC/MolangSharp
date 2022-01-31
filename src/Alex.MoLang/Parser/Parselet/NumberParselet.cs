@@ -1,9 +1,7 @@
-using System;
 using System.Globalization;
 using Alex.MoLang.Parser.Exceptions;
 using Alex.MoLang.Parser.Expressions;
 using Alex.MoLang.Parser.Tokenizer;
-using csFastFloat;
 
 namespace Alex.MoLang.Parser.Parselet
 {
@@ -15,7 +13,7 @@ namespace Alex.MoLang.Parser.Parselet
 		/// <inheritdoc />
 		public override IExpression Parse(MoLangParser parser, Token token)
 		{
-			if (FastDoubleParser.TryParseDouble(token.Text, out double result))
+			if (double.TryParse(token.Text, out var result))
 			{
 				return new NumberExpression(result);
 			}

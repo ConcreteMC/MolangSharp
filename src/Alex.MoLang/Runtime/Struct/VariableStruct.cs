@@ -1,17 +1,13 @@
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Linq;
 using Alex.MoLang.Runtime.Exceptions;
 using Alex.MoLang.Runtime.Value;
 using Alex.MoLang.Utils;
-using NLog;
 
 namespace Alex.MoLang.Runtime.Struct
 {
 	public class VariableStruct : IMoStruct
 	{
-		private static readonly Logger Log = LogManager.GetCurrentClassLogger(typeof(VariableStruct));
 		public IDictionary<string, IMoValue> Map { get; protected set; }
 
 		/// <inheritdoc />

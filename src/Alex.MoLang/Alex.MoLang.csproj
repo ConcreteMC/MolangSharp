@@ -3,7 +3,7 @@
     <PropertyGroup>
         <Description>A library implementing Minecrafts MoLang language</Description>
         <PackageProjectUrl>https://github.com/ConcreteMC/MolangSharp</PackageProjectUrl>
-        <PackageLicenseUrl>https://github.com/ConcreteMC/MolangSharp/blob/master/LICENSE</PackageLicenseUrl>
+        <PackageLicense>https://github.com/ConcreteMC/MolangSharp/blob/master/LICENSE</PackageLicense>
         <RepositoryUrl>https://github.com/ConcreteMC/MolangSharp</RepositoryUrl>
         <Configurations>Debug;Release</Configurations>
         <Platforms>AnyCPU;x64</Platforms>
@@ -12,10 +12,5 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <TargetFramework>netstandard2.1</TargetFramework>
     </PropertyGroup>
-
-    <ItemGroup>
-        <PackageReference Include="csFastFloat" Version="4.1.0" />
-        <PackageReference Include="NLog" Version="4.7.12" />
-    </ItemGroup>
 
 </Project>

@@ -18,7 +18,6 @@ namespace Alex.MoLang.Runtime.Struct
 			var value = _propertyInfo.GetValue(instance);
 
 			return value is IMoValue moValue ? moValue : MoValue.FromObject(value);
-			return (IMoValue)_propertyInfo.GetValue(instance);
 		}
 
 		/// <inheritdoc />
