@@ -57,18 +57,11 @@ namespace Alex.MoLang.Utils
 			Previous = parent;
 			Value = value;
 		}
-
-		//	public MoPath[] Segments { get; private set; }
-
+		
 		/// <inheritdoc />
 		public override string ToString()
 		{
 			return Value;
 		}
-
-		//public static implicit operator MoPath(string value)
-		//{
-		//	return new MoPath(value);
-		//}
 	}
 }

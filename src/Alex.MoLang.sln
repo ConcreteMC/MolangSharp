@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alex.MoLang", "Alex.MoLang.csproj", "{8A34F8E0-CAB4-4D73-A7B4-8977EF3A7DA3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alex.MoLang", "Alex.MoLang\Alex.MoLang.csproj", "{8A34F8E0-CAB4-4D73-A7B4-8977EF3A7DA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alex.MoLang.Tests", "Alex.MoLang.Tests\Alex.MoLang.Tests.csproj", "{3FF89B16-9D85-4E87-83C7-D937F2ED7F5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +14,9 @@ Global
 		{8A34F8E0-CAB4-4D73-A7B4-8977EF3A7DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A34F8E0-CAB4-4D73-A7B4-8977EF3A7DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A34F8E0-CAB4-4D73-A7B4-8977EF3A7DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FF89B16-9D85-4E87-83C7-D937F2ED7F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FF89B16-9D85-4E87-83C7-D937F2ED7F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FF89B16-9D85-4E87-83C7-D937F2ED7F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FF89B16-9D85-4E87-83C7-D937F2ED7F5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

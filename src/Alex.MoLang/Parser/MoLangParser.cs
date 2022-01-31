@@ -20,11 +20,6 @@ namespace Alex.MoLang.Parser
 		private static readonly Dictionary<TokenType, InfixParselet> InfixParselets =
 			new Dictionary<TokenType, InfixParselet>();
 
-		private readonly TokenIterator _tokenIterator;
-
-		private readonly List<Token> _readTokens = new List<Token>();
-
-		//	private static readonly ExprTraverser ExprTraverser;
 		static MoLangParser()
 		{
 			PrefixParselets.Add(TokenType.Name, new NameParselet());
@@ -62,21 +57,20 @@ namespace Alex.MoLang.Parser
 			InfixParselets.Add(TokenType.Coalesce, new GenericBinaryOpParselet(Precedence.Coalesce));
 			InfixParselets.Add(TokenType.Arrow, new GenericBinaryOpParselet(Precedence.Arrow));
 			InfixParselets.Add(TokenType.Assign, new AssignParselet());
-
-			//ExprTraverser = new ExprTraverser();
-			//ExprTraverser.Visitors.Add(new ExprConnectingVisitor());
 		}
-
+		
+		public ExprTraverser ExprTraverser { get; }
+		
+		private readonly TokenIterator _tokenIterator;
+		private readonly List<Token> _readTokens = new List<Token>();
 		public MoLangParser(TokenIterator iterator)
 		{
 			_tokenIterator = iterator;
+			ExprTraverser = new ExprTraverser();
 		}
 
 		public IExpression[] Parse()
 		{
-			//	var traverser = new ExprTraverser();
-			//	traverser.Visitors.Add(new ExprConnectingVisitor());
-
 			Stopwatch sw = Stopwatch.StartNew();
 
 			try
@@ -97,7 +91,7 @@ namespace Alex.MoLang.Parser
 					}
 				} while (MatchToken(TokenType.Semicolon));
 
-				return exprs.ToArray(); // traverser.Traverse(exprs.ToArray());
+				return ExprTraverser.Traverse(exprs.ToArray());
 			}
 			catch (Exception ex)
 			{
@@ -133,7 +127,7 @@ namespace Alex.MoLang.Parser
 
 			IExpression expr = parselet.Parse(this, token);
 			InitExpr(expr, token);
-
+			
 			return ParseInfixExpression(expr, precedence);
 		}
 
@@ -144,7 +138,16 @@ namespace Alex.MoLang.Parser
 			while (precedence < GetPrecedence())
 			{
 				token = ConsumeToken();
-				left = InfixParselets[token.Type].Parse(this, token, left);
+
+				if (token.Type == TokenType.Eof)
+					return left;
+				
+				if (!InfixParselets.TryGetValue(token.Type, out var infixParselet))
+				{
+					throw new MoLangParserException($"Invalid infix token of type '{token.Type.TypeName}' and text '{token.Text}' at {token.Position.LineNumber}:{token.Position.Index}");
+				}
+				
+				left = infixParselet.Parse(this, token, left);
 				InitExpr(left, token);
 			}
 
@@ -163,8 +166,8 @@ namespace Alex.MoLang.Parser
 
 			if (token != null)
 			{
-				//if (token.Type == TokenType.Eof)
-				//	return Precedence.Product;
+				if (token.Type == TokenType.Eof)
+					return Precedence.Anything;
 				//	InfixParselet parselet = InfixParselets[token.Type];
 
 				if (InfixParselets.TryGetValue(token.Type, out var parselet))

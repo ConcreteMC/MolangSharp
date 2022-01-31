@@ -27,6 +27,29 @@ namespace Alex.MoLang.Runtime.Struct
 			if (!_propertyInfo.CanWrite)
 				return;
 
+			var propType = _propertyInfo.PropertyType;
+
+			if (propType == typeof(double))
+			{
+				_propertyInfo.SetValue(instance, value.AsDouble());
+				return;
+			}
+			else if (propType == typeof(float))
+			{
+				_propertyInfo.SetValue(instance, value.AsFloat());
+				return;
+			}
+			else if (propType == typeof(bool))
+			{
+				_propertyInfo.SetValue(instance, value.AsBool());
+				return;
+			}
+			else if (propType == typeof(string))
+			{
+				_propertyInfo.SetValue(instance, value.AsString());
+				return;
+			}
+			
 			_propertyInfo.SetValue(instance, value);
 		}
 	}
