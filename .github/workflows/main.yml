@@ -38,19 +38,30 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: 'recursive'
+        fetch-depth: 0
+      
+    - uses: paulhatch/semantic-version@v4.0.2
+      name: Generate version number
+      id: version
+      with:
+        change_path: "src"
         
     - name: Setup .NET
       uses: actions/setup-dotnet@v1.8.0
+      if: ${{ success() && steps.version.outputs.changed }}
       with:
         dotnet-version: 6.0.x
         
     - name: Install dependencies
+      if: ${{ success() && steps.version.outputs.changed }}
       run: dotnet restore src/Alex.MoLang/Alex.MoLang.csproj
         
     - name: Build
-      run: dotnet build --configuration Release --no-restore /p:Version="1.0.${{github.run_id}}" src/Alex.MoLang/Alex.MoLang.csproj
+      if: ${{ success() && steps.version.outputs.changed }}
+      run: dotnet build --configuration Release --no-restore /p:Version="${{steps.version.outputs.version}}" src/Alex.MoLang/Alex.MoLang.csproj
 
     - name: Publish
+      if: ${{ success() && steps.version.outputs.changed }}
       run: |
-        dotnet pack -c Release /p:PackageVersion="1.0.${{github.run_id}}" /p:Version="1.0.${{github.run_id}}" src/Alex.MoLang/Alex.MoLang.csproj -o .
+        dotnet pack -c Release /p:PackageVersion="${{steps.version.outputs.version}}" /p:Version="${{steps.version.outputs.version}}" src/Alex.MoLang/Alex.MoLang.csproj -o .
         dotnet nuget push *.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.NUGET_PUBLISH_KEY}} --skip-duplicate
