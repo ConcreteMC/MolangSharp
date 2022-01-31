@@ -44,6 +44,7 @@ jobs:
       name: Generate version number
       id: version
       with:
+        bump_each_commit: true
         change_path: "src"
         
     - name: Setup .NET
