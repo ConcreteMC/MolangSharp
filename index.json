@@ -594,10 +594,10 @@
     "title": "MoLangSharp API Documentation",
     "keywords": "MoLangSharp API Documentation Written documentation is work in progress, in the meantime there is generated code documentation. See the top menu."
   },
-  "articles/intro.html": {
-    "href": "articles/intro.html",
-    "title": "Coming soon...",
-    "keywords": "Coming soon..."
+  "articles/index.html": {
+    "href": "articles/index.html",
+    "title": "Getting Started",
+    "keywords": "Getting Started Basic example using ConcreteMC.MolangSharp.Parser; using ConcreteMC.MolangSharp.Runtime; //Initialize the runtime MoLangRuntime runtime = new MoLangRuntime(); //Parse our MoLang expression var parsed = MoLangParser.Parse(\"10 * 45.0\"); //Execute the expression var result = runtime.Execute(parsed); Console.WriteLine($\"Result={result.AsDouble()}\"); Output Result=450 More examples Check out the Examples folder in the Github repository: https://github.com/ConcreteMC/MolangSharp/tree/main/src/examples"
   },
   "index.html": {
     "href": "index.html",
