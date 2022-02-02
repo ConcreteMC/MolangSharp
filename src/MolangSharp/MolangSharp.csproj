@@ -25,7 +25,7 @@
         <Title>ConcreteMC.MolangSharp</Title>
         <RepositoryType>git</RepositoryType>
         <Product>ConcreteMC.MolangSharp</Product>
-        <PackageId>ConcreteMC.MolangSharp</PackageId>
+        <PackageId>Alex.MoLang</PackageId>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
