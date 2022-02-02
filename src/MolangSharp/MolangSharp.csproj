@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Configurations>Debug;Release</Configurations>
+        <Platforms>AnyCPU;x64</Platforms>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>1.0.0</Version>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <PackageProjectUrl>https://github.com/ConcreteMC/MolangSharp</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/ConcreteMC/MolangSharp.git</RepositoryUrl>
+        <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
+        <Description>A library implementing the MoLang expression language</Description>
+        <Authors>Kenny van Vulpen</Authors>
+        <Company>Kenny van Vulpen</Company>
+        <Copyright>Copyright Kenny van Vulpen 2019-2022</Copyright>
+        <PackageTags>Minecraft Molang MCPE MoLang bedrock mojang alex</PackageTags>
+        <PackageReleaseNotes>- Added a maths optimization step
+- Added documentation for a bunch of classes
+        </PackageReleaseNotes>
+        <PackageIconUrl><![CDATA[https://avatars.githubusercontent.com/u/97732568?s=96&v=4]]></PackageIconUrl>
+        <AssemblyName>ConcreteMC.MolangSharp</AssemblyName>
+        <RootNamespace>ConcreteMC.MolangSharp</RootNamespace>
+        <PackageVersion>1.0.1</PackageVersion>
+        <Title>ConcreteMC.MolangSharp</Title>
+        <RepositoryType>git</RepositoryType>
+        <Product>ConcreteMC.MolangSharp</Product>
+        <PackageId>ConcreteMC.MolangSharp</PackageId>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DocumentationFile>bin\x64\Debug\netstandard2.1\Alex.MoLang.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DocumentationFile>bin\x64\Release\netstandard2.1\Alex.MoLang.xml</DocumentationFile>
+    </PropertyGroup>
+
+</Project>

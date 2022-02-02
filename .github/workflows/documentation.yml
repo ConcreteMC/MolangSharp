@@ -1,0 +1,40 @@
+name: Documentation
+
+on:
+  push:
+    branches:
+      - main
+    branches-ignore:
+      - gh-pages
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: 'recursive'
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1.8.0
+        with:
+          dotnet-version: 6.0.x
+          
+      - name: Restore Packages
+        run: |
+          dotnet restore src/MolangSharp/MolangSharp.csproj
+          
+      - name: Build
+        run: |
+          dotnet build --configuration Release --no-restore src/MolangSharp/MolangSharp.csproj
+          
+      - name: Build Documentation
+        uses: nikeee/docfx-action@master
+        with:
+          args: docs/docfx.json
+
+      - name: Publish Documentation on GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/_site

@@ -20,15 +20,15 @@ jobs:
       
       - name: Install dependencies
         run: dotnet restore
-        working-directory: src/Alex.MoLang.Tests
+        working-directory: src/MolangSharp.Tests
         
       - name: Build
         run: dotnet build --configuration Release --no-restore
-        working-directory: src/Alex.MoLang.Tests
+        working-directory: src/MolangSharp.Tests
         
       - name: Test
         run: dotnet test --no-restore --verbosity normal
-        working-directory: src/Alex.MoLang.Tests
+        working-directory: src/MolangSharp.Tests
     
   nuget:
     name: Publish to NuGET
@@ -46,12 +46,12 @@ jobs:
         dotnet-version: 6.0.x
         
     - name: Install dependencies
-      run: dotnet restore src/Alex.MoLang/Alex.MoLang.csproj
+      run: dotnet restore src/MolangSharp/MolangSharp.csproj
         
     - name: Build
-      run: dotnet build --configuration Release --no-restore src/Alex.MoLang/Alex.MoLang.csproj
+      run: dotnet build --configuration Release --no-restore src/MolangSharp/MolangSharp.csproj
 
     - name: Publish
       run: |
-        dotnet pack -c Release /p:PackageVersion=$(date +%Y.%m.%d.%H%M%S) src/Alex.MoLang/Alex.MoLang.csproj -o .
+        dotnet pack -c Release /p:PackageVersion=$(date +%Y.%m.%d.%H%M%S) src/MolangSharp/MolangSharp.csproj -o .
         dotnet nuget push *.nupkg -s https://api.nuget.org/v3/index.json -k ${{secrets.NUGET_PUBLISH_KEY}} --skip-duplicate

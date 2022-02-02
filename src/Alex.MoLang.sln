@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alex.MoLang", "Alex.MoLang\Alex.MoLang.csproj", "{8A34F8E0-CAB4-4D73-A7B4-8977EF3A7DA3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MolangSharp", "MolangSharp\MolangSharp.csproj", "{8A34F8E0-CAB4-4D73-A7B4-8977EF3A7DA3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alex.MoLang.Tests", "Alex.MoLang.Tests\Alex.MoLang.Tests.csproj", "{3FF89B16-9D85-4E87-83C7-D937F2ED7F5B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MolangSharp.Tests", "MolangSharp.Tests\MolangSharp.Tests.csproj", "{3FF89B16-9D85-4E87-83C7-D937F2ED7F5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
