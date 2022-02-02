@@ -1,0 +1,1553 @@
+{
+  "homepages": [],
+  "source_base_path": "/github/workspace/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Attributes.MoFunctionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Attributes.MoFunctionAttribute.html",
+          "hash": "wJLQ0mmsjP1tYFlnTp7NVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Attributes.MoObservableAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Attributes.MoObservableAttribute.html",
+          "hash": "sUbLoJncYeXQLC5BA91okA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Attributes.MoPropertyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Attributes.MoPropertyAttribute.html",
+          "hash": "pDfQMaAvRbKrVaRQUcGcIQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Attributes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Attributes.html",
+          "hash": "gF3E24qMtdMDoHgU50EdgA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Exceptions.MoLangParserException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Exceptions.MoLangParserException.html",
+          "hash": "2Fc2sW6OccjEYcASkWNj/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Exceptions.html",
+          "hash": "3GFgFs3bBYDEZbTaTBJQRQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.html",
+          "hash": "R50xxn8IcwcWJsxTfACmxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.ExprTraverser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.ExprTraverser.html",
+          "hash": "M9GGn5NFrl6UqCIa2waGhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.ExprVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.ExprVisitor.html",
+          "hash": "ME0zlO6FDVUZbxOS+DrpmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expression-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expression-1.html",
+          "hash": "FZdHlSexj3W2t2AdWwY88g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expression.html",
+          "hash": "Svu8j3ye6OXRpXXVBveCow=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.ExpressionMeta.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.ExpressionMeta.html",
+          "hash": "ikL2AE9uHB8DyppL/Vt5ig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.ArrayAccessExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.ArrayAccessExpression.html",
+          "hash": "Td2rA0eWcPlwMAVMDJeFkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.AssignExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.AssignExpression.html",
+          "hash": "/A9YvJCKA+A4ddBHkje56Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.ArrowExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.ArrowExpression.html",
+          "hash": "s1aKHsPGU6fAVAW6lGcTZw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanAndExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanAndExpression.html",
+          "hash": "5dir5Fv96Ua5IfFjaUPHfg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanOrExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanOrExpression.html",
+          "hash": "9Mx0RkKA936mRm+UoeuwgA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.CoalesceExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.CoalesceExpression.html",
+          "hash": "NUp77o916QRxFbaZAV0f1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.DivideExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.DivideExpression.html",
+          "hash": "UXw+kO/W9XY7HCvxmBirAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.EqualExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.EqualExpression.html",
+          "hash": "vfl2iMVK+CO1kJyTkphdtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterExpression.html",
+          "hash": "HXwowaksUbnl4K+e1nBFQg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterOrEqualExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterOrEqualExpression.html",
+          "hash": "2pbBycZ2fSYg+jpxMiIVqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.MinusExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.MinusExpression.html",
+          "hash": "8RnC2CymW93W9Fus5KTGgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.NotEqualExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.NotEqualExpression.html",
+          "hash": "42z7Bm+nSk3SFiJc6PLl8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PlusExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PlusExpression.html",
+          "hash": "nbsS7RX38XygenUfdXqrkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PowExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PowExpression.html",
+          "hash": "jrFpKgnXjqsi+ZVnFYfMmw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerExpression.html",
+          "hash": "ULohJcWv9W8Oe0bRbODs7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerOrEqualExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerOrEqualExpression.html",
+          "hash": "yoWNQDj0zPXfZFrp6AaAWw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.html",
+          "hash": "1gUL9ID8otG/xm4TEHki6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOpExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOpExpression.html",
+          "hash": "03pbSUxsQ85Az2AAdW2VnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BooleanExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BooleanExpression.html",
+          "hash": "diRerTLq0u3OaUaqEbDF/w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BooleanNotExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BooleanNotExpression.html",
+          "hash": "H4OjIcMRfuIHvgflbNR1Rg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BreakExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.BreakExpression.html",
+          "hash": "GjBgThyvB0cNGjQPegb2sA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.ContinueExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.ContinueExpression.html",
+          "hash": "Tg1Gy2o6EMwRe2Qp6vPahA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.ForEachExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.ForEachExpression.html",
+          "hash": "di/w6bY3nCyt7U7Bg6kOvg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.FuncCallExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.FuncCallExpression.html",
+          "hash": "zQcJ7v1bXHKFn4SkTHBB3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.LoopExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.LoopExpression.html",
+          "hash": "vFexEUj1NcEIKwUNSrbLhw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.NameExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.NameExpression.html",
+          "hash": "bK0RdbDrGO5u2cwKN59i/Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.NumberExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.NumberExpression.html",
+          "hash": "zYAd61JMgXfEzMVRdwKNTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.ReturnExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.ReturnExpression.html",
+          "hash": "zQucKBD28FyB//IFbgUp+Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.ScriptExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.ScriptExpression.html",
+          "hash": "4Nhm/aXHU9AGGakla7+LLg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.StatementExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.StatementExpression.html",
+          "hash": "lkopzjlU142aKhj75rUVbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.StringExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.StringExpression.html",
+          "hash": "OjP3FWdZZ4z8M5oxfEW91w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.TernaryExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.TernaryExpression.html",
+          "hash": "cvqK/3exX+P/9UqLL/VHKw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.ThisExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.ThisExpression.html",
+          "hash": "Rw349RgcO9ywViB1k1LVtw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.UnaryMinusExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.UnaryMinusExpression.html",
+          "hash": "ZStU85Fl2jvzGAaE92Bosw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.UnaryPlusExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.UnaryPlusExpression.html",
+          "hash": "0qArtXtdHdq9XhJqx3uYPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Expressions.html",
+          "hash": "A3SZpKEwYuESp6z71AnbBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.IExprVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.IExprVisitor.html",
+          "hash": "AdJSMhmVYCaNr3zwc4hPgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.IExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.IExpression.html",
+          "hash": "nC6q97UpFT0WGZVevxcX7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.InfixParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.InfixParselet.html",
+          "hash": "fGRV8UHWbvmGwjUG19MIaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.MoLangParser.ParserFactory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.MoLangParser.ParserFactory.html",
+          "hash": "4+hbqXWCJ043klgftDkq0w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.MoLangParser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.MoLangParser.html",
+          "hash": "joc2wDC5YiODTf7X+at5mQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.ArrayAccessParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.ArrayAccessParselet.html",
+          "hash": "YAi+5a6KBr+YvgmbrsgAJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.AssignParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.AssignParselet.html",
+          "hash": "y5ylZHhP7tlF579w5K9yJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.BooleanNotParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.BooleanNotParselet.html",
+          "hash": "8pKi0qBvx5uYpFf5WHdv3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.BooleanParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.BooleanParselet.html",
+          "hash": "xEOeneKcd/DXAnHhZL3QWg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.BracketScopeParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.BracketScopeParselet.html",
+          "hash": "7l6Gjc5t1dpypp9BC5E1Tw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.BreakParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.BreakParselet.html",
+          "hash": "TsglLJsI+LeD1Rw+nf7fcA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.ContinueParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.ContinueParselet.html",
+          "hash": "S8yU0ohSahHyEf3akGE8Kw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.FloatParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.FloatParselet.html",
+          "hash": "Fdr4wV0gmhVt87fMJlYM+g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.ForEachParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.ForEachParselet.html",
+          "hash": "ueyVKkPLWNf5JwXzI2df7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.GenericBinaryOpParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.GenericBinaryOpParselet.html",
+          "hash": "HnSoLw5uhB+6Je7zsg12Zw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.GroupParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.GroupParselet.html",
+          "hash": "y0AtVew7D/2FWkdPVfbvjg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.LoopParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.LoopParselet.html",
+          "hash": "vAWO9hWR1ZbV43GJg1SHiQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.NameParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.NameParselet.html",
+          "hash": "sxzzpHVC7Mf2u0WhfTRwxA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.NumberParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.NumberParselet.html",
+          "hash": "dNLpbCECLnbhlj6aaEJ2Tw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.ReturnParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.ReturnParselet.html",
+          "hash": "SXZlZ2kS/M9+Z6IiXa58Cw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.StringParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.StringParselet.html",
+          "hash": "kB1rxomRZNk+X4MGzLQRkw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.TernaryParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.TernaryParselet.html",
+          "hash": "29qYE/BsaOsjmErhfnOv3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.ThisParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.ThisParselet.html",
+          "hash": "O7xYhgLv0l/SahAYuASoCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.UnaryMinusParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.UnaryMinusParselet.html",
+          "hash": "T7H4QuV0qwiiKVaLDftf2g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.UnaryPlusParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.UnaryPlusParselet.html",
+          "hash": "mgfuT+H5mSTVURFPkVUBsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Parselet.html",
+          "hash": "k4zJ9o8Xxg4jNwkq/Jj/vA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Precedence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Precedence.html",
+          "hash": "c8pAxuA4exCdqDR6inH2mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.PrefixParselet.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.PrefixParselet.html",
+          "hash": "Kvkk4DkT4H/LmNst1gcBrw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Tokenizer.ITokenIterator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Tokenizer.ITokenIterator.html",
+          "hash": "LrW5/vqdxBDtoRycUu3HEQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Tokenizer.Token.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Tokenizer.Token.html",
+          "hash": "0JXSwRIv58U6KSst/kF+TQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Tokenizer.TokenIterator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Tokenizer.TokenIterator.html",
+          "hash": "O/dZlaZy8nXK15y4WCEPZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.html",
+          "hash": "vBtCiMGzEYjcO9zfzc0Gig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Tokenizer.TokenType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Tokenizer.TokenType.html",
+          "hash": "a4SAcQjZLJ4a129IieGlFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Tokenizer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Tokenizer.html",
+          "hash": "9I7EdyUUan52rrqAHtI01A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.html",
+          "hash": "MD5VuaaQfXGU2oDBqiZZbg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.FindingVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.FindingVisitor.html",
+          "hash": "oS0e+r/GmFFlyqKXJq7bqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.FirstFindingVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.FirstFindingVisitor.html",
+          "hash": "wLcFrdYJU5wlS9zS2+qeVQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor.html",
+          "hash": "S9oZED+k1i+Zk9b1z2qnqw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.html",
+          "hash": "YmyoX555sTa3oxtZe97RMw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.html",
+          "hash": "+xB5Jq0gLI+wfqej0wYzuw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException.html",
+          "hash": "71SEKatbVd6DHWBtbby57A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Exceptions.MoLangRuntimeException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Exceptions.MoLangRuntimeException.html",
+          "hash": "gS42YfP3gORIdZXRGppAVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Exceptions.html",
+          "hash": "eyBVrMH0Z1gznoZ2VuSbgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.html",
+          "hash": "cUNGf0O2cCzqiVH4KvrhQQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.MoLangMath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html",
+          "hash": "6hMCc/lCm2s8txCUjwoCEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.MoLangRuntime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.MoLangRuntime.html",
+          "hash": "NMRDzMxvzIBFp5j9jQU80w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.MoParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.MoParams.html",
+          "hash": "l+7V4zeghgvVtvIwENGb3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.MoScope.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.MoScope.html",
+          "hash": "wjst+SQwX8rGg1ZXcmOLBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.ArrayStruct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.ArrayStruct.html",
+          "hash": "FLSUJVk5GxmARuOWA9KSLQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.ContextStruct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.ContextStruct.html",
+          "hash": "F7/+NsxjBbPYExwSW4IspA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.html",
+          "hash": "arbQN/8GpUxpaezFiW4x5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.Interop.FieldAccessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.Interop.FieldAccessor.html",
+          "hash": "wB3ZIo4MQv8xbZpcC2d9Mw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.Interop.PropertyAccessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.Interop.PropertyAccessor.html",
+          "hash": "lFRrdkudqgoSZCLr/ysfuQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.Interop.PropertyCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.Interop.PropertyCache.html",
+          "hash": "Xl8hltlRyilyMViWn8WVwg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.Interop.ValueAccessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.Interop.ValueAccessor.html",
+          "hash": "p3bpa4PnxQsGQWDDQBjiRA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.Interop.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.Interop.html",
+          "hash": "T/x0U4XuhscEyeDowPnglA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.InteropStruct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.InteropStruct.html",
+          "hash": "JcQJMOOTt2ANTP1QiTrUng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.QueryStruct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.QueryStruct.html",
+          "hash": "YdFMPhosIZqrXg2vP2xHOw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.VariableArrayStruct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.VariableArrayStruct.html",
+          "hash": "X6XkEQwtbWtaPU7mmasgCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.html",
+          "hash": "TnBgj/UbBRbHBERzv+gYaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Struct.html",
+          "hash": "i9D4qESkXhRdhXnU+Hzu5g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Value.DoubleValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Value.DoubleValue.html",
+          "hash": "DKLwqBJbIYilr64KQqGNxg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Value.IMoValue-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Value.IMoValue-1.html",
+          "hash": "6C4yBkNv4q9pknF1jGAI5w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Value.IMoValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Value.IMoValue.html",
+          "hash": "PAnmceNB0MfqQUianZaXNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Value.MoValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Value.MoValue.html",
+          "hash": "EchbiumYLuGijHpmS9lhww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Value.StringValue.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Value.StringValue.html",
+          "hash": "KHZcpTQb3dViYwfHrDwCHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.Value.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.Value.html",
+          "hash": "UTkmHllYxBu9Nar6NIj0rQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Runtime.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Runtime.html",
+          "hash": "IJhNzzyGopB3PVINHHZbug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Utils.MoPath.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Utils.MoPath.html",
+          "hash": "2hBpqimuhq2GEhlCgGSXlg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Utils.html",
+          "hash": "2CraIoMycuYerC4h3KGW4w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "MRXVzvQIIGm+RZJBRH/8qg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "EC+dxyYbdygimQHk4S7fSw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "sJIwbhZy/eqwdUxdKmb7Yw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "JLF3yHkn25jfRSUBdhD6Xg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "+rHUkRZHZRi5gd1aTU6lJA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 118,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
