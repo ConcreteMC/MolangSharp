@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MolangSharp", "MolangSharp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MolangSharp.Tests", "MolangSharp.Tests\MolangSharp.Tests.csproj", "{3FF89B16-9D85-4E87-83C7-D937F2ED7F5B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{D73569B7-CCA2-458B-98CE-CC7531D414FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MolangSharp.Examples.Basic", "Examples\MolangSharp.Examples.Basic\MolangSharp.Examples.Basic.csproj", "{30FD4BFD-0792-495D-A6F6-600713011C77}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,12 @@ Global
 		{3FF89B16-9D85-4E87-83C7-D937F2ED7F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FF89B16-9D85-4E87-83C7-D937F2ED7F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FF89B16-9D85-4E87-83C7-D937F2ED7F5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30FD4BFD-0792-495D-A6F6-600713011C77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30FD4BFD-0792-495D-A6F6-600713011C77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30FD4BFD-0792-495D-A6F6-600713011C77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30FD4BFD-0792-495D-A6F6-600713011C77}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{30FD4BFD-0792-495D-A6F6-600713011C77} = {D73569B7-CCA2-458B-98CE-CC7531D414FA}
 	EndGlobalSection
 EndGlobal

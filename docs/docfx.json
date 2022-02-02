@@ -52,10 +52,7 @@
     "dest": "_site",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
-    "template": [
-      "default",
-      "templates/material"
-    ],
+    "template": ["default", "templates/discordfx"],
     "globalMetadata": {
       "_enableSearch": "true"
     },
