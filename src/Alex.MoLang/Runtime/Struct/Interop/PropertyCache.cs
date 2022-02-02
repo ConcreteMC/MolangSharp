@@ -5,19 +5,25 @@ using System.Reflection;
 using Alex.MoLang.Attributes;
 using Alex.MoLang.Runtime.Value;
 
-namespace Alex.MoLang.Runtime.Struct
+namespace Alex.MoLang.Runtime.Struct.Interop
 {
 	public class PropertyCache
 	{
-		public readonly Dictionary<string, ValueAccessor> Properties = new Dictionary<string, ValueAccessor>(StringComparer.OrdinalIgnoreCase);
+		public readonly IReadOnlyDictionary<string, ValueAccessor> Properties;
 
-		public readonly Dictionary<string, Func<object, MoParams, IMoValue>> Functions = new Dictionary<string, Func<object, MoParams, IMoValue>>(
-			StringComparer.OrdinalIgnoreCase);
+		public readonly IReadOnlyDictionary<string, Func<object, MoParams, IMoValue>> Functions;
 
 		public PropertyCache(Type arg)
 		{
-			ProcessMethods(arg, Functions);
-			ProcessProperties(arg, Properties);
+			var properties = new Dictionary<string, ValueAccessor>(StringComparer.OrdinalIgnoreCase);
+			var functions = new Dictionary<string, Func<object, MoParams, IMoValue>>(
+				StringComparer.OrdinalIgnoreCase);
+			
+			ProcessMethods(arg, functions);
+			ProcessProperties(arg, properties);
+
+			Functions = functions;
+			Properties = properties;
 		}
 
 		private static void ProcessMethods(IReflect type,
@@ -135,7 +141,11 @@ namespace Alex.MoLang.Runtime.Struct
 					if (valueAccessors.ContainsKey(functionAttribute.Name))
 						continue;
 
-					valueAccessors.Add(functionAttribute.Name, new PropertyAccessor(prop));
+					var accessor = new PropertyAccessor(prop);
+					if (prop.GetCustomAttribute<MoObservableAttribute>() != null)
+						accessor.Observable = true;
+
+					valueAccessors.Add(functionAttribute.Name, accessor);
 				}
 			}
 
@@ -147,8 +157,12 @@ namespace Alex.MoLang.Runtime.Struct
 				{
 					if (valueAccessors.ContainsKey(functionAttribute.Name))
 						continue;
+					
+					var accessor = new FieldAccessor(prop);
+					if (prop.GetCustomAttribute<MoObservableAttribute>() != null)
+						accessor.Observable = true;
 
-					valueAccessors.Add(functionAttribute.Name, new FieldAccessor(prop));
+					valueAccessors.Add(functionAttribute.Name, accessor);
 				}
 			}
 		}

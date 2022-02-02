@@ -6,6 +6,9 @@ using Alex.MoLang.Utils;
 
 namespace Alex.MoLang.Runtime.Struct
 {
+	/// <summary>
+	///		Represents a dynamic variable
+	/// </summary>
 	public class VariableStruct : IMoStruct
 	{
 		public IDictionary<string, IMoValue> Map { get; protected set; }
@@ -24,6 +27,11 @@ namespace Alex.MoLang.Runtime.Struct
 			{
 				Map = new Dictionary<string, IMoValue>(values, StringComparer.OrdinalIgnoreCase);
 			}
+		}
+
+		protected virtual IMoStruct CreateNew()
+		{
+			return new VariableStruct();
 		}
 
 		/// <inheritdoc />
@@ -52,7 +60,7 @@ namespace Alex.MoLang.Runtime.Struct
 						throw new MoLangRuntimeException($"Variable was not a struct: {key}", null);
 					}
 
-					Map.TryAdd(main, container = new VariableStruct());
+					Map.TryAdd(main, container = CreateNew());
 				}
 
 				if (container is IMoStruct moStruct)

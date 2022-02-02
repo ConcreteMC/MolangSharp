@@ -7,15 +7,13 @@ namespace Alex.MoLang.Parser.Expressions
 {
 	public class ForEachExpression : Expression
 	{
-		public IExpression Variable { get; set; }
-		public IExpression Array { get; set; }
-		public IExpression Body { get; set; }
+		public IExpression Variable => Parameters[0];
+		public IExpression Array => Parameters[1];
+		public IExpression Body => Parameters[2];
 
-		public ForEachExpression(IExpression variable, IExpression array, IExpression body)
+		public ForEachExpression(IExpression variable, IExpression array, IExpression body) : base(variable, array, body)
 		{
-			Variable = variable;
-			Array = array;
-			Body = body;
+			
 		}
 
 		/// <inheritdoc />
@@ -25,7 +23,7 @@ namespace Alex.MoLang.Parser.Expressions
 
 			if (array is VariableStruct vs)
 			{
-				MoScope subScope = new MoScope();
+				MoScope subScope = new MoScope(scope.Runtime);
 
 				foreach (IMoValue value in vs.Map.Values)
 				{

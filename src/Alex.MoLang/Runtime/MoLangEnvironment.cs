@@ -13,6 +13,10 @@ namespace Alex.MoLang.Runtime
 		public object Value => Structs;
 
 		public Dictionary<string, IMoStruct> Structs { get; } = new Dictionary<string, IMoStruct>(StringComparer.OrdinalIgnoreCase);
+		
+		/// <summary>
+		///		The value that should be returned when an expression tries to access "this"
+		/// </summary>
 		public IMoValue ThisVariable { get; set; } = DoubleValue.Zero;
 
 		public MoLangEnvironment()
@@ -20,7 +24,7 @@ namespace Alex.MoLang.Runtime
 			Structs.TryAdd("math", MoLangMath.Library);
 			Structs.TryAdd("temp", new VariableStruct());
 			Structs.TryAdd("variable", new VariableStruct());
-			Structs.TryAdd("array", new ArrayStruct());
+			Structs.TryAdd("array", new VariableArrayStruct());
 
 			Structs.TryAdd("context", new ContextStruct());
 		}
@@ -34,14 +38,6 @@ namespace Alex.MoLang.Runtime
 		{
 			try
 			{
-				//		var index = name.IndexOf('.');
-				//string[] segments = name.;
-				//	string main = name.Substring(0, index); //.Dequeue();
-
-				//if (!Structs.ContainsKey(main))
-				//{
-				//	throw new MoLangRuntimeException($"Cannot retrieve struct: {name}", null);
-				//}
 				return Structs[name.Value].Get(name.Next, param);
 			}
 			catch (Exception ex)
@@ -52,16 +48,14 @@ namespace Alex.MoLang.Runtime
 
 		public void SetValue(MoPath name, IMoValue value)
 		{
+			if (!Structs.TryGetValue(name.Value, out var v))
+			{
+				throw new MoLangRuntimeException($"Invalid path: {name.Path}", null);
+			}
+			
 			try
 			{
-				//var index = name.IndexOf('.');
-				//string main = name.Substring(0, index);
-
-				//if (!Structs.ContainsKey(main)) {
-				//	throw new MoLangRuntimeException($"Cannot set value on struct: {name}", null);
-				//}
-
-				Structs[name.Value].Set(name.Next, value);
+				v.Set(name.Next, value);
 			}
 			catch (Exception ex)
 			{

@@ -11,7 +11,7 @@ namespace Alex.MoLang.Parser.Visitors
 		private IExpression _last = null;
 
 		/// <inheritdoc />
-		public override void BeforeTraverse(IEnumerable<IExpression> expressions)
+		public override void BeforeTraverse(IExpression[] expressions)
 		{
 			_last = null;
 			//	_previousStack = Stack;
@@ -19,7 +19,7 @@ namespace Alex.MoLang.Parser.Visitors
 		}
 
 		/// <inheritdoc />
-		public override void OnVisit(ExprTraverser traverser, IExpression expression)
+		public override IExpression OnVisit(ExprTraverser traverser, IExpression expression)
 		{
 			var previous = _last;
 			expression.Meta.Previous = previous;
@@ -30,6 +30,8 @@ namespace Alex.MoLang.Parser.Visitors
 			}
 
 			//Stack.AddLast(expression);
+
+			return expression;
 		}
 
 		/// <inheritdoc />
@@ -40,7 +42,7 @@ namespace Alex.MoLang.Parser.Visitors
 		}
 
 		/// <inheritdoc />
-		public override void AfterTraverse(IEnumerable<IExpression> expressions)
+		public override void AfterTraverse(IExpression[] expressions)
 		{
 			base.AfterTraverse(expressions);
 			//Stack = _previousStack;

@@ -7,28 +7,23 @@ namespace Alex.MoLang.Utils
 	public class MoPath
 	{
 		public MoPath Root { get; }
-		public MoPath Previous { get; }
 		public MoPath Next { get; private set; }
 
-		private readonly MoPath _last = null;
-		public MoPath Last => _last ?? Root._last;
-
 		public string Path { get; }
-		public string Value { get; }
+		public string Value { get; private set; }
 
 		public bool HasChildren => Next != null;
 
 		public MoPath(string path)
 		{
-			Previous = null;
 			Next = null;
 			Root = this;
 			Path = path;
-			_last = this;
 
 			var segments = path.Split('.');
 			Value = segments[0];
 
+			MoPath current = this;
 			if (segments.Length > 1)
 			{
 				string currentPath = $"{Value}";
@@ -42,19 +37,22 @@ namespace Alex.MoLang.Utils
 
 					currentPath += $".{value}";
 
-					var moPath = new MoPath(Root, _last, currentPath, value);
-					_last.Next = moPath;
-
-					_last = moPath;
+					var moPath = new MoPath(Root, currentPath, value);
+					current.Next = moPath;
+					current = moPath;
 				}
 			}
 		}
 
-		private MoPath(MoPath root, MoPath parent, string path, string value)
+		internal MoPath(MoPath root,string path, string value)
 		{
 			Root = root;
 			Path = path;
-			Previous = parent;
+			Value = value;
+		}
+
+		internal void SetValue(string value)
+		{
 			Value = value;
 		}
 		

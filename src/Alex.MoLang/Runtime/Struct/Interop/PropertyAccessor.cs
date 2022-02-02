@@ -1,17 +1,20 @@
 using System.Reflection;
 using Alex.MoLang.Runtime.Value;
 
-namespace Alex.MoLang.Runtime.Struct
+namespace Alex.MoLang.Runtime.Struct.Interop
 {
 	public class PropertyAccessor : ValueAccessor
 	{
-		private PropertyInfo _propertyInfo;
+		private readonly PropertyInfo _propertyInfo;
 
 		public PropertyAccessor(PropertyInfo propertyInfo)
 		{
 			_propertyInfo = propertyInfo;
 		}
 
+		public override bool CanRead => _propertyInfo.CanRead;
+		public override bool CanWrite => _propertyInfo.CanWrite;
+		
 		/// <inheritdoc />
 		public override IMoValue Get(object instance)
 		{
@@ -23,9 +26,6 @@ namespace Alex.MoLang.Runtime.Struct
 		/// <inheritdoc />
 		public override void Set(object instance, IMoValue value)
 		{
-			if (!_propertyInfo.CanWrite)
-				return;
-
 			var propType = _propertyInfo.PropertyType;
 
 			if (propType == typeof(double))
@@ -50,6 +50,7 @@ namespace Alex.MoLang.Runtime.Struct
 			}
 			
 			_propertyInfo.SetValue(instance, value);
+			InvokeChanged();
 		}
 	}
 }

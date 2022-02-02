@@ -14,7 +14,8 @@ public class InteropTest
 	[TestInitialize]
 	public void Init()
 	{
-		
+		//Init static 
+		var a = MoLangMath.Library;
 	}
 
 	[TestMethod]
@@ -26,7 +27,7 @@ public class InteropTest
 		MoLangRuntime runtime = new MoLangRuntime();
 
 		runtime.Environment.Structs.TryAdd(
-			"query", new ObjectStruct(new TestClass(expected)));
+			"query", new InteropStruct(new TestClass(expected)));
 
 		var result = runtime.Execute(expression);
 		Assert.AreEqual(expected, result.AsDouble());
@@ -41,7 +42,7 @@ public class InteropTest
 
 		var testStruct = new TestClass(Environment.TickCount);
 		runtime.Environment.Structs.TryAdd(
-			"query", new ObjectStruct(testStruct));
+			"query", new InteropStruct(testStruct));
 
 		runtime.Execute(expression);
 		Assert.AreEqual(5d, testStruct.Lifetime);

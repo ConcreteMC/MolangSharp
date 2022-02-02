@@ -5,15 +5,13 @@ namespace Alex.MoLang.Parser.Expressions
 {
 	public class TernaryExpression : Expression
 	{
-		public IExpression Condition { get; set; }
-		public IExpression ThenExpr { get; set; }
-		public IExpression ElseExpr { get; set; }
+		public IExpression Condition => Parameters[0];
+		public IExpression ThenExpr => Parameters[1];
+		public IExpression ElseExpr => Parameters[2];
 
-		public TernaryExpression(IExpression condition, IExpression thenExpr, IExpression elseExpr)
+		public TernaryExpression(IExpression condition, IExpression thenExpr, IExpression elseExpr) : base(condition, thenExpr, elseExpr)
 		{
-			Condition = condition;
-			ThenExpr = thenExpr;
-			ElseExpr = elseExpr;
+			
 		}
 
 		/// <inheritdoc />

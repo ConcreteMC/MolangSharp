@@ -5,6 +5,9 @@ using Alex.MoLang.Utils;
 
 namespace Alex.MoLang.Runtime.Struct
 {
+	/// <summary>
+	///		Represents a readonly query structure
+	/// </summary>
 	public class QueryStruct : IMoStruct
 	{
 		protected readonly IDictionary<string, Func<MoParams, object>> Functions =

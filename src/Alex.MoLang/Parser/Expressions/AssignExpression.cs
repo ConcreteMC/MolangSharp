@@ -6,13 +6,12 @@ namespace Alex.MoLang.Parser.Expressions
 {
 	public class AssignExpression : Expression
 	{
-		public IExpression Variable { get; set; }
-		public IExpression Expression { get; set; }
+		public IExpression Variable => Parameters[0];
+		public IExpression Expression => Parameters[1];
 
-		public AssignExpression(IExpression variable, IExpression expr)
+		public AssignExpression(IExpression variable, IExpression expr) : base(variable, expr)
 		{
-			Variable = variable;
-			Expression = expr;
+			
 		}
 
 		/// <inheritdoc />

@@ -8,7 +8,7 @@ namespace Alex.MoLang.Parser.Parselet
 		public override IExpression Parse(MoLangParser parser, Token token)
 		{
 			IExpression expr = parser.ParseExpression();
-			parser.ConsumeToken(TokenType.BracketRight);
+			var result = parser.ConsumeToken(TokenType.BracketRight);
 
 			return expr;
 		}

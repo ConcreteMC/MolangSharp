@@ -14,7 +14,8 @@ public class MathTest
 	[TestInitialize]
 	public void Init()
 	{
-		
+		//Init static 
+		var a = MoLangMath.Library;
 	}
 
 	private MoLangRuntime Setup(double a, double b)
@@ -90,10 +91,11 @@ public class MathTest
 	[TestMethod]
 	public void OrderOfOperations()
 	{
-		var runtime = new MoLangRuntime();
+		var runtime =  Setup(10, 20);
 
-		var result = runtime.Execute(MoLangParser.Parse("7 + 2 * (6 + 3) / 3 - 7"));
-		Assert.AreEqual(6, result.AsDouble());
+		var expr = MoLangParser.Parse("v.b + (7 + 2 * (6 + 3) / 3 - 7) + v.a");
+		var result = runtime.Execute(expr);
+		Assert.AreEqual(36, result.AsDouble());
 		
 		result = runtime.Execute(MoLangParser.Parse("10 * 2 - (7 + 9)"));
 		Assert.AreEqual(4, result.AsDouble());

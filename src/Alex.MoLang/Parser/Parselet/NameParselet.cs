@@ -1,6 +1,7 @@
 using System;
 using Alex.MoLang.Parser.Expressions;
 using Alex.MoLang.Parser.Tokenizer;
+using Alex.MoLang.Utils;
 
 namespace Alex.MoLang.Parser.Parselet
 {
@@ -9,17 +10,12 @@ namespace Alex.MoLang.Parser.Parselet
 		/// <inheritdoc />
 		public override IExpression Parse(MoLangParser parser, Token token)
 		{
-			var args = parser.ParseArgs();
-			string name = parser.FixNameShortcut(token.Text);
+			var path = parser.FixNameShortcut(new MoPath(token.Text));
 
-			IExpression nameExpr = new NameExpression(name);
+			if (parser.TryParseArgs(out var expressions))
+				return new FuncCallExpression(path, expressions);
 
-			if (args.Count > 0)
-			{
-				return new FuncCallExpression(nameExpr, args.ToArray());
-			}
-
-			return nameExpr;
+			return new NameExpression(path);
 		}
 	}
 }

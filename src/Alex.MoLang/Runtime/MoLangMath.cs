@@ -4,10 +4,16 @@ using Alex.MoLang.Runtime.Struct;
 
 namespace Alex.MoLang.Runtime
 {
-	public class MoLangMath
+	/// <summary>
+	///		The default Math implementations for the MoLang runtime
+	/// </summary>
+	public static class MoLangMath
 	{
+		/// <summary>
+		///		The Math library
+		/// </summary>
 		public static readonly QueryStruct Library = new QueryStruct(
-			new Dictionary<string, Func<MoParams, object>>()
+			new Dictionary<string, Func<MoParams, object>>(StringComparer.OrdinalIgnoreCase)
 			{
 				{ "abs", param => Math.Abs(param.GetDouble(0)) },
 				{ "acos", param => Math.Acos(param.GetDouble(0)) },
@@ -89,9 +95,7 @@ namespace Alex.MoLang.Runtime
 
 			if (start > end)
 			{
-				double tmp = start;
-				start = end;
-				end = tmp;
+				(start, end) = (end, start);
 			}
 
 			if (end - start > 180)

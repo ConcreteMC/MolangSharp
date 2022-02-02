@@ -7,30 +7,56 @@ using Alex.MoLang.Runtime.Value;
 
 namespace Alex.MoLang.Runtime
 {
-	public class MoLangRuntime
+	/// <summary>
+	///		The runtime used to execute an array of <see cref="IExpression"/>
+	/// </summary>
+	public sealed class MoLangRuntime
 	{
+		/// <summary>
+		///		The environment associated with this runtime instance
+		/// </summary>
 		public MoLangEnvironment Environment { get; }
-
+		
+		/// <summary>
+		///		Create a new instance of MoLangRuntime with a new <see cref="MoLangEnvironment"/>
+		/// </summary>
 		public MoLangRuntime() : this(new MoLangEnvironment()) { }
 
+		/// <summary>
+		///		Create a new instance of MoLangRuntime
+		/// </summary>
+		/// <param name="environment">
+		///		The environment used by this runtime instance
+		/// </param>
 		public MoLangRuntime(MoLangEnvironment environment)
 		{
 			Environment = environment;
 		}
 		
-		public IMoValue Execute(params IExpression[] expressions)
+		/// <summary>
+		///		Evaluates the expressions provided and returns the resulting value (if any) or <see cref="DoubleValue.Zero"/>
+		/// </summary>
+		/// <param name="expressions">The expressions to evaluate</param>
+		/// <returns>
+		///		The value returned by the expression (if any) or <see cref="DoubleValue.Zero"/>
+		/// </returns>
+		public IMoValue Execute(IExpression expressions)
 		{
 			return Execute(expressions, null);
 		}
 
-		public IMoValue Execute(IExpression[] expressions, IDictionary<string, IMoValue> context)
+		///  <summary>
+		/// 		Evaluates the expressions provided and returns the resulting value (if any) or <see cref="DoubleValue.Zero"/>
+		///  </summary>
+		///  <param name="expression">The expression to evaluate</param>
+		///  <param name="context">The context to use</param>
+		///  <returns>
+		/// 		The value returned by the expression (if any) or <see cref="DoubleValue.Zero"/>
+		///  </returns>
+		public IMoValue Execute(IExpression expression, IDictionary<string, IMoValue> context)
 		{
-			if (expressions == null)
+			if (expression == null)
 				return DoubleValue.Zero;
-			//try
-			//{
-
-			//expressions = _exprTraverser.Traverse(expressions);
 
 			if (Environment.Structs.TryGetValue("context", out IMoStruct cont) && cont is ContextStruct contextStruct)
 			{
@@ -38,33 +64,11 @@ namespace Alex.MoLang.Runtime
 			}
 
 			IMoValue result = null;
-			MoScope scope = new MoScope();
+			MoScope scope = new MoScope(this);
 
-			foreach (IExpression expression in expressions)
-			{
-				if (expression == null)
-					continue;
-
-				try
-				{
-					result = expression.Evaluate(scope, Environment);
-
-					if (scope.ReturnValue != null)
-					{
-						result = scope.ReturnValue;
-
-						break;
-					}
-				}
-				catch (Exception ex)
-				{
-					throw new MoLangRuntimeException(
-						expression, "An error occured while evaluating the expression", ex);
-				}
-			}
+			result = expression.Evaluate(scope, Environment);
 
 			Environment.Structs["temp"].Clear();
-			//Environment.Structs.Remove("context", out _);
 
 			return result ?? DoubleValue.Zero;
 		}

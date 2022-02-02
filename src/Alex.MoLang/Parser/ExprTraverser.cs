@@ -3,36 +3,10 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using Alex.MoLang.Parser.Visitors;
 using Alex.MoLang.Runtime.Exceptions;
 
 namespace Alex.MoLang.Parser
 {
-	public static class ExprFinder
-	{
-		public static List<IExpression> Find(Predicate<IExpression> predicate, params IExpression[] expressions)
-		{
-			ExprTraverser traverser = new ExprTraverser();
-			FindingVisitor visitor = new FindingVisitor(predicate);
-
-			traverser.Visitors.Add(visitor);
-			traverser.Traverse(expressions);
-
-			return visitor.FoundExpressions;
-		}
-
-		public static IExpression FindFirst(Predicate<IExpression> predicate, params IExpression[] expressions)
-		{
-			ExprTraverser traverser = new ExprTraverser();
-			FirstFindingVisitor visitor = new FirstFindingVisitor(predicate);
-
-			traverser.Visitors.Add(visitor);
-			traverser.Traverse(expressions);
-
-			return visitor.Found;
-		}
-	}
-
 	public class ExprTraverser
 	{
 		public readonly List<IExprVisitor> Visitors = new List<IExprVisitor>();
@@ -76,61 +50,35 @@ namespace Alex.MoLang.Parser
 
 		private IExpression TraverseExpr(IExpression expression, IExpression parent)
 		{
-			Visit(expression);
+			expression = Visit(expression);
 			expression.Meta.Parent = parent;
 
-			foreach (var field in GetAllProperties(expression.GetType()))
+			var parameters = expression.Parameters;
+			for (var index = 0; index < parameters.Length; index++)
 			{
-				if (!typeof(IEnumerable<Expression>).IsAssignableFrom(field.PropertyType)
-				    && !typeof(IExpression).IsAssignableFrom(field.PropertyType))
-				{
-					continue;
-				}
-
-				//field.setAccessible(true);
-				var fieldValue = GetFieldValue(field, expression);
-
-				if (fieldValue == null)
-					continue;
-
-				if (fieldValue is IExpression original)
-				{
-					fieldValue = TraverseExpr(original, expression);
-				}
-				else if (fieldValue is IEnumerable<IExpression> expressions)
-				{
-					var exprs = expressions.ToArray();
-
-					foreach (var ex in exprs)
-					{
-						if (ex != null)
-							ex.Meta.Parent = expression;
-					}
-
-					TraverseArray(exprs);
-
-					fieldValue = exprs;
-				}
-
-				SetFieldValue(field, expression, fieldValue);
-
+				parameters[index] = TraverseExpr(parameters[index], expression);
+				
 				if (_stop)
 				{
 					break;
 				}
 			}
 
+			expression.Parameters = parameters;
+
 			OnLeave(expression);
 
 			return expression;
 		}
 
-		private void Visit(IExpression expression)
+		internal IExpression Visit(IExpression expression)
 		{
 			foreach (var visitor in Visitors)
 			{
-				visitor.OnVisit(this, expression);
+				expression = visitor.OnVisit(this, expression);
 			}
+
+			return expression;
 		}
 
 		private void OnLeave(IExpression expression)

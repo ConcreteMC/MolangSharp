@@ -5,21 +5,18 @@ namespace Alex.MoLang.Parser.Expressions
 {
 	public class ReturnExpression : Expression
 	{
-		private readonly IExpression _value;
-
 		/// <inheritdoc />
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{
-			IMoValue eval = _value.Evaluate(scope, environment);
+			IMoValue eval = Parameters[0].Evaluate(scope, environment);
 			scope.ReturnValue = eval;
 
 			return eval;
 		}
 
 		/// <inheritdoc />
-		public ReturnExpression(IExpression value) : base()
+		public ReturnExpression(IExpression value) : base(value)
 		{
-			_value = value;
 		}
 	}
 }

@@ -3,14 +3,19 @@ using Alex.MoLang.Runtime.Value;
 
 namespace Alex.MoLang.Parser.Expressions
 {
-	public class BooleanExpression : Expression<DoubleValue>
+	public class BooleanExpression : Expression
 	{
-		public BooleanExpression(bool value) : base(value ? DoubleValue.One : DoubleValue.Zero) { }
+		private readonly IMoValue _value;
+
+		public BooleanExpression(bool value) : base()
+		{
+			_value = value ? DoubleValue.One : DoubleValue.Zero;
+		}
 
 		/// <inheritdoc />
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{
-			return Value;
+			return _value;
 		}
 	}
 }

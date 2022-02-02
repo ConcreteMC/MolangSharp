@@ -3,7 +3,7 @@ using Alex.MoLang.Parser.Exceptions;
 
 namespace Alex.MoLang.Parser.Tokenizer
 {
-	public class TokenIterator
+	public class TokenIterator : ITokenIterator
 	{
 		private readonly string _code;
 

@@ -1,17 +1,27 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using Alex.MoLang.Parser.Exceptions;
+using Alex.MoLang.Parser.Expressions;
 using Alex.MoLang.Parser.Parselet;
 using Alex.MoLang.Parser.Tokenizer;
 using Alex.MoLang.Parser.Visitors;
-using Alex.MoLang.Runtime.Value;
+using Alex.MoLang.Utils;
 
 namespace Alex.MoLang.Parser
 {
+	/// <summary>
+	///		The parser used to parse MoLang expressions
+	/// </summary>
 	public class MoLangParser
 	{
+		public delegate MoLangParser ParserFactory(ITokenIterator iterator);
+		
+		/// <summary>
+		///		The factory method used to provide instances of the <see cref="MoLangParser"/>
+		/// </summary>
+		public static ParserFactory Factory { get; set; } = DefaultFactory;
+
 		public static TimeSpan TotalTimeSpent { get; private set; } = TimeSpan.Zero;
 
 		private static readonly Dictionary<TokenType, PrefixParselet> PrefixParselets =
@@ -59,17 +69,25 @@ namespace Alex.MoLang.Parser
 			InfixParselets.Add(TokenType.Assign, new AssignParselet());
 		}
 		
+		/// <summary>
+		///		The expression traverser executed after the parsing of the expressions
+		/// </summary>
 		public ExprTraverser ExprTraverser { get; }
 		
-		private readonly TokenIterator _tokenIterator;
+		private readonly ITokenIterator _tokenIterator;
 		private readonly List<Token> _readTokens = new List<Token>();
-		public MoLangParser(TokenIterator iterator)
+		public MoLangParser(ITokenIterator iterator)
 		{
 			_tokenIterator = iterator;
 			ExprTraverser = new ExprTraverser();
 		}
 
-		public IExpression[] Parse()
+		/// <summary>
+		///		Parses the tokens as provided by the <see cref="TokenIterator"/>
+		/// </summary>
+		/// <returns>An expression that can be executed by an instance of <see cref="Alex.MoLang.Runtime.MoLangRuntime"/></returns>
+		/// <exception cref="MoLangParserException"></exception>
+		public IExpression Parse()
 		{
 			Stopwatch sw = Stopwatch.StartNew();
 
@@ -91,7 +109,17 @@ namespace Alex.MoLang.Parser
 					}
 				} while (MatchToken(TokenType.Semicolon));
 
-				return ExprTraverser.Traverse(exprs.ToArray());
+				var result = ExprTraverser.Traverse(exprs.ToArray());
+				if (result.Length > 1)
+				{
+					return new ScriptExpression(result);
+				}
+				else if (result.Length == 1)
+				{
+					return result[0];
+				}
+
+				return null;
 			}
 			catch (Exception ex)
 			{
@@ -104,12 +132,12 @@ namespace Alex.MoLang.Parser
 			}
 		}
 
-		public IExpression ParseExpression()
+		internal IExpression ParseExpression()
 		{
 			return ParseExpression(Precedence.Anything);
 		}
 
-		public IExpression ParseExpression(Precedence precedence)
+		internal IExpression ParseExpression(Precedence precedence)
 		{
 			Token token = ConsumeToken();
 
@@ -141,12 +169,13 @@ namespace Alex.MoLang.Parser
 
 				if (token.Type == TokenType.Eof)
 					return left;
-				
+
 				if (!InfixParselets.TryGetValue(token.Type, out var infixParselet))
 				{
-					throw new MoLangParserException($"Invalid infix token of type '{token.Type.TypeName}' and text '{token.Text}' at {token.Position.LineNumber}:{token.Position.Index}");
+					throw new MoLangParserException(
+						$"Invalid infix token of type '{token.Type.TypeName}' and text '{token.Text}' at {token.Position.LineNumber}:{token.Position.Index}");
 				}
-				
+
 				left = infixParselet.Parse(this, token, left);
 				InitExpr(left, token);
 			}
@@ -157,7 +186,6 @@ namespace Alex.MoLang.Parser
 		private void InitExpr(IExpression expression, Token token)
 		{
 			expression.Meta.Token = token;
-			//expression.Attributes["position"] = token.Position; //.put("position", token.getPosition());
 		}
 
 		private Precedence GetPrecedence()
@@ -183,38 +211,33 @@ namespace Alex.MoLang.Parser
 			return Precedence.Anything;
 		}
 
-		public List<IExpression> ParseArgs()
+		internal bool TryParseArgs(out IExpression[] expressions)
 		{
-			List<IExpression> args = new List<IExpression>();
+			expressions = null;
+		
 
-			if (MatchToken(TokenType.BracketLeft))
+			if (!MatchToken(TokenType.BracketLeft)) return false;
+			if (MatchToken(TokenType.BracketRight))
 			{
-				if (!MatchToken(TokenType.BracketRight))
-				{
-					// check for empty groups
-					do
-					{
-						args.Add(ParseExpression());
-					} while (MatchToken(TokenType.Comma));
-
-					ConsumeToken(TokenType.BracketRight);
-				}
+				expressions = Array.Empty<IExpression>();
+				return true;
 			}
+			
+			List<IExpression> args = new List<IExpression>();
+			do
+			{
+				args.Add(ParseExpression());
+			} while (MatchToken(TokenType.Comma));
 
-			return args;
+			ConsumeToken(TokenType.BracketRight);
+
+			expressions = args.ToArray();
+			return true;
 		}
 
-		public string FixNameShortcut(string name)
+		internal MoPath FixNameShortcut(MoPath name)
 		{
-			//String[] splits = name.Split(".");
-			var index = name.IndexOf('.');
-
-			if (index == -1) //Not found.
-			{
-				return name;
-			}
-
-			var first = name.Substring(0, index);
+			var first = name.Value;
 
 			switch (first)
 			{
@@ -239,31 +262,22 @@ namespace Alex.MoLang.Parser
 					break;
 			}
 
-			return name.Remove(0, index).Insert(0, first); // String.Join(".", splits);
+			name.SetValue(first);
+			return name; // String.Join(".", splits);
 		}
 
-		public static string GetNameHead(string name)
-		{
-			return name.Substring(0, name.IndexOf('.')); // name.Split(".")[0];
-		}
-
-		public Token ConsumeToken()
+		private Token ConsumeToken()
 		{
 			return ConsumeToken(null);
 		}
 
-		public Token ConsumeToken(TokenType expectedType)
+		internal Token ConsumeToken(TokenType expectedType)
 		{
 			_tokenIterator.Step();
-			Token token = ReadToken();
-
-			if (expectedType != null)
+			if (!TryReadToken(expectedType, out var token))
 			{
-				if (!token.Type.Equals(expectedType))
-				{
-					throw new MoLangParserException(
-						$"Expected token of type '{expectedType.TypeName}' but found '{token.Type.TypeName}' at line {token.Position.LineNumber}:{token.Position.Index}");
-				}
+				throw new MoLangParserException(
+					$"Expected token of type '{expectedType.TypeName}' but found '{token.Type.TypeName}' at line {token.Position.LineNumber}:{token.Position.Index}");
 			}
 
 			if (_readTokens.Count > 0)
@@ -276,30 +290,33 @@ namespace Alex.MoLang.Parser
 			return null;
 		}
 
-		public bool MatchToken(TokenType expectedType)
+		internal bool MatchToken(TokenType expectedType)
 		{
 			return MatchToken(expectedType, true);
 		}
 
-		public bool MatchToken(TokenType expectedType, bool consume)
+		internal bool MatchToken(TokenType expectedType, bool consume)
 		{
-			Token token = ReadToken();
+			if (!TryReadToken(expectedType, out _))
+				return false;
+			
+			if (consume)
+				ConsumeToken();
 
-			if (token == null || !token.Type.Equals(expectedType))
+			return true;
+		}
+
+		private bool TryReadToken(TokenType expectedType, out Token result)
+		{
+			result = ReadToken();
+			if (result == null || (expectedType != null && !result.Type.Equals(expectedType)))
 			{
 				return false;
 			}
-			else
-			{
-				if (consume)
-				{
-					ConsumeToken();
-				}
 
-				return true;
-			}
+			return true;
 		}
-
+		
 		private Token ReadToken()
 		{
 			return ReadToken(0);
@@ -315,9 +332,22 @@ namespace Alex.MoLang.Parser
 			return _readTokens[distance];
 		}
 
-		public static IExpression[] Parse(string input)
+		/// <summary>
+		///		Parses a MoLang Expression using the parser provided by the <see cref="Factory"/>
+		/// </summary>
+		/// <param name="input">The MoLang expression to parse</param>
+		/// <returns>An array of expressions to be executed by <see cref="Alex.MoLang.Runtime.MoLangRuntime"/></returns>
+		public static IExpression Parse(string input)
 		{
-			return new MoLangParser(new TokenIterator(input)).Parse();
+			return Factory(new TokenIterator(input)).Parse();
+		}
+		
+		private static MoLangParser DefaultFactory(ITokenIterator iterator)
+		{
+			var parser = new MoLangParser(iterator);
+			parser.ExprTraverser.Visitors.Add(new MathOptimizationVisitor());
+			
+			return parser;
 		}
 	}
 }

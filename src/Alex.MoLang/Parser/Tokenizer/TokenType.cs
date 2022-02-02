@@ -3,7 +3,7 @@ using System.Threading;
 
 namespace Alex.MoLang.Parser.Tokenizer
 {
-	public class TokenType
+	public sealed class TokenType
 	{
 		public static readonly TokenType EqualsEquals = new TokenType("==", "EqualsEquals");
 		public static readonly TokenType NotEquals = new TokenType("!=", "Not Equals");

@@ -5,18 +5,16 @@ namespace Alex.MoLang.Parser.Expressions
 {
 	public class UnaryMinusExpression : Expression
 	{
-		private readonly IExpression _value;
-
 		/// <inheritdoc />
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{
-			return new DoubleValue(-(_value.Evaluate(scope, environment).AsDouble()));
+			return new DoubleValue(-(Parameters[0].Evaluate(scope, environment).AsDouble()));
 		}
 
 		/// <inheritdoc />
-		public UnaryMinusExpression(IExpression value)
+		public UnaryMinusExpression(IExpression value) : base(value)
 		{
-			_value = value;
+			
 		}
 	}
 }

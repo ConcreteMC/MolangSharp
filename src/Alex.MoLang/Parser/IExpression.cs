@@ -10,25 +10,20 @@ namespace Alex.MoLang.Parser
 {
 	public interface IExpression
 	{
-		//Dictionary<string, object> Attributes { get; }
 		ExpressionMeta Meta { get; }
 
 		IMoValue Evaluate(MoScope scope, MoLangEnvironment environment);
 
 		void Assign(MoScope scope, MoLangEnvironment environment, IMoValue value);
+
+		IExpression[] Parameters { get; set; }
 	}
 
 	public class ExpressionMeta
 	{
 		public Token Token { get; set; }
-
-		/// <inheritdoc />
 		public IExpression Parent { get; set; }
-
-		/// <inheritdoc />
 		public IExpression Previous { get; set; }
-
-		/// <inheritdoc />
 		public IExpression Next { get; set; }
 
 		public override string ToString()
@@ -75,11 +70,16 @@ namespace Alex.MoLang.Parser
 
 	public abstract class Expression : IExpression
 	{
-		/// <inheritdoc />
-		//public Dictionary<string, object> Attributes { get; } = new Dictionary<string, object>();
+		public IExpression[] Parameters { get; set; }
+
 		/// <inheritdoc />
 		public ExpressionMeta Meta { get; } = new ExpressionMeta();
 
+		public Expression(params IExpression[] parameters)
+		{
+			Parameters = parameters;
+		}
+		
 		/// <inheritdoc />
 		public abstract IMoValue Evaluate(MoScope scope, MoLangEnvironment environment);
 
@@ -92,7 +92,7 @@ namespace Alex.MoLang.Parser
 
 	public abstract class Expression<T> : Expression
 	{
-		protected Expression(T value)
+		protected Expression(T value) : base()
 		{
 			Value = value;
 		}

@@ -5,12 +5,10 @@ namespace Alex.MoLang.Parser.Expressions
 {
 	public class StatementExpression : Expression
 	{
-		private readonly IExpression[] _value;
-
 		/// <inheritdoc />
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{
-			foreach (IExpression expression in _value)
+			foreach (IExpression expression in Parameters)
 			{
 				expression.Evaluate(scope, environment);
 
@@ -28,9 +26,8 @@ namespace Alex.MoLang.Parser.Expressions
 		}
 
 		/// <inheritdoc />
-		public StatementExpression(IExpression[] value) : base()
+		public StatementExpression(IExpression[] value) : base(value)
 		{
-			_value = value;
 		}
 	}
 }

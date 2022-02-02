@@ -15,7 +15,10 @@
         <Company>Kenny van Vulpen</Company>
         <Copyright>Copyright Kenny van Vulpen 2019-2022</Copyright>
         <PackageTags>Minecraft Molang MCPE MoLang bedrock mojang alex</PackageTags>
-        <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+        <PackageReleaseNotes>
+            - Added a maths optimization step
+            - Added documentation for a bunch of classes
+        </PackageReleaseNotes>
         <PackageIconUrl><![CDATA[https://avatars.githubusercontent.com/u/97732568?s=96&v=4]]></PackageIconUrl>
     </PropertyGroup>
 

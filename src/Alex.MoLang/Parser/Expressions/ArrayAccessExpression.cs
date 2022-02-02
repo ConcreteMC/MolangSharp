@@ -1,4 +1,5 @@
 using Alex.MoLang.Runtime;
+using Alex.MoLang.Runtime.Struct;
 using Alex.MoLang.Runtime.Value;
 using Alex.MoLang.Utils;
 
@@ -6,35 +7,58 @@ namespace Alex.MoLang.Parser.Expressions
 {
 	public class ArrayAccessExpression : Expression
 	{
-		public IExpression Array { get; set; }
-		public IExpression Index { get; set; }
+		public IExpression Array => Parameters[0];
+		public IExpression Index => Parameters[1];
 
-		public ArrayAccessExpression(IExpression array, IExpression index)
+		public ArrayAccessExpression(IExpression array, IExpression index) : base(array, index)
 		{
-			Array = array;
-			Index = index;
 		}
 
 		/// <inheritdoc />
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{
-			var name = Array is NameExpression expression ? expression.Name.Path.ToString() :
-				Array.Evaluate(scope, environment).AsString();
+			var index = (int) Index.Evaluate(scope, environment).AsDouble();
+			MoPath path;
+			if (Array is NameExpression nameExpression)
+			{
+				var p = nameExpression.Name;
+				path = p;
+			}
+			else
+			{
+				var eval = Array.Evaluate(scope, environment);
+				path = new MoPath($"{eval.AsString()}");
+			}
 
-			var path = new MoPath($"{name}.{(int)Index.Evaluate(scope, environment).AsDouble()}");
-
+			var array = environment.GetValue(path);
+			if (array is ArrayStruct asArray)
+				return asArray[index];
+			
 			return environment.GetValue(path);
 		}
 
 		/// <inheritdoc />
 		public override void Assign(MoScope scope, MoLangEnvironment environment, IMoValue value)
 		{
-			var name = Array is NameExpression expression ? expression.Name.Path.ToString() :
-				Array.Evaluate(scope, environment).AsString();
-
-			var path = new MoPath($"{name}.{(int)Index.Evaluate(scope, environment).AsDouble()}");
-
-			environment.SetValue(path, value);
+			var index = (int) Index.Evaluate(scope, environment).AsDouble();
+			
+			MoPath path;
+			if (Array is NameExpression nameExpression)
+			{
+				var p = nameExpression.Name;
+				path = p;
+			}
+			else
+			{
+				var eval = Array.Evaluate(scope, environment);
+				path = new MoPath($"{eval.AsString()}");
+			}
+			
+			var array = environment.GetValue(path);
+			if (array is ArrayStruct asArray)
+			{
+				asArray[index] = value;
+			}
 		}
 	}
 }
