@@ -97,7 +97,8 @@
   
   <h1 id="ConcreteMC_MolangSharp_Parser_Expression" data-uid="ConcreteMC.MolangSharp.Parser.Expression" class="text-break">Class Expression
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>An abstract base class for all Expressions</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -142,15 +143,16 @@
     <a href="https://github.com/ConcreteMC/MolangSharp/new/main/apiSpec/new?filename=ConcreteMC_MolangSharp_Parser_Expression__ctor_ConcreteMC_MolangSharp_Parser_IExpression___.md&amp;value=---%0Auid%3A%20ConcreteMC.MolangSharp.Parser.Expression.%23ctor(ConcreteMC.MolangSharp.Parser.IExpression%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/IExpression.cs/#L76">View Source</a>
+    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/Expression.cs/#L26">View Source</a>
   </span>
   <a id="ConcreteMC_MolangSharp_Parser_Expression__ctor_" data-uid="ConcreteMC.MolangSharp.Parser.Expression.#ctor*"></a>
   <h4 id="ConcreteMC_MolangSharp_Parser_Expression__ctor_ConcreteMC_MolangSharp_Parser_IExpression___" data-uid="ConcreteMC.MolangSharp.Parser.Expression.#ctor(ConcreteMC.MolangSharp.Parser.IExpression[])">Expression(IExpression[])</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Create a new instance of the class</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Expression(params IExpression[] parameters)</code></pre>
+    <pre><code class="lang-csharp hljs">protected Expression(params IExpression[] parameters)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -165,7 +167,8 @@
       <tr>
         <td><a class="xref" href="ConcreteMC.MolangSharp.Parser.IExpression.html">IExpression</a>[]</td>
         <td><span class="parametername">parameters</span></td>
-        <td></td>
+        <td><p>The parameters used by this expression</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -176,11 +179,12 @@
     <a href="https://github.com/ConcreteMC/MolangSharp/new/main/apiSpec/new?filename=ConcreteMC_MolangSharp_Parser_Expression_Meta.md&amp;value=---%0Auid%3A%20ConcreteMC.MolangSharp.Parser.Expression.Meta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/IExpression.cs/#L74">View Source</a>
+    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/Expression.cs/#L18">View Source</a>
   </span>
   <a id="ConcreteMC_MolangSharp_Parser_Expression_Meta_" data-uid="ConcreteMC.MolangSharp.Parser.Expression.Meta*"></a>
   <h4 id="ConcreteMC_MolangSharp_Parser_Expression_Meta" data-uid="ConcreteMC.MolangSharp.Parser.Expression.Meta">Meta</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Contains metadata about this expression</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -206,11 +210,12 @@
     <a href="https://github.com/ConcreteMC/MolangSharp/new/main/apiSpec/new?filename=ConcreteMC_MolangSharp_Parser_Expression_Parameters.md&amp;value=---%0Auid%3A%20ConcreteMC.MolangSharp.Parser.Expression.Parameters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/IExpression.cs/#L71">View Source</a>
+    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/Expression.cs/#L15">View Source</a>
   </span>
   <a id="ConcreteMC_MolangSharp_Parser_Expression_Parameters_" data-uid="ConcreteMC.MolangSharp.Parser.Expression.Parameters*"></a>
   <h4 id="ConcreteMC_MolangSharp_Parser_Expression_Parameters" data-uid="ConcreteMC.MolangSharp.Parser.Expression.Parameters">Parameters</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The parameters used by this expression</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -238,11 +243,12 @@
     <a href="https://github.com/ConcreteMC/MolangSharp/new/main/apiSpec/new?filename=ConcreteMC_MolangSharp_Parser_Expression_Assign_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_ConcreteMC_MolangSharp_Runtime_Value_IMoValue_.md&amp;value=---%0Auid%3A%20ConcreteMC.MolangSharp.Parser.Expression.Assign(ConcreteMC.MolangSharp.Runtime.MoScope%2CConcreteMC.MolangSharp.Runtime.MoLangEnvironment%2CConcreteMC.MolangSharp.Runtime.Value.IMoValue)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/IExpression.cs/#L85">View Source</a>
+    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/Expression.cs/#L35">View Source</a>
   </span>
   <a id="ConcreteMC_MolangSharp_Parser_Expression_Assign_" data-uid="ConcreteMC.MolangSharp.Parser.Expression.Assign*"></a>
   <h4 id="ConcreteMC_MolangSharp_Parser_Expression_Assign_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_ConcreteMC_MolangSharp_Runtime_Value_IMoValue_" data-uid="ConcreteMC.MolangSharp.Parser.Expression.Assign(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment,ConcreteMC.MolangSharp.Runtime.Value.IMoValue)">Assign(MoScope, MoLangEnvironment, IMoValue)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Invoked when trying to assign a value to a property/field</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -261,17 +267,20 @@
       <tr>
         <td><a class="xref" href="ConcreteMC.MolangSharp.Runtime.MoScope.html">MoScope</a></td>
         <td><span class="parametername">scope</span></td>
-        <td></td>
+        <td><p>The current scope</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.html">MoLangEnvironment</a></td>
         <td><span class="parametername">environment</span></td>
-        <td></td>
+        <td><p>The environment provided by the <a class="xref" href="ConcreteMC.MolangSharp.Runtime.MoLangRuntime.html">MoLangRuntime</a></p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="ConcreteMC.MolangSharp.Runtime.Value.IMoValue.html">IMoValue</a></td>
         <td><span class="parametername">value</span></td>
-        <td></td>
+        <td><p>The value to assign</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -280,11 +289,12 @@
     <a href="https://github.com/ConcreteMC/MolangSharp/new/main/apiSpec/new?filename=ConcreteMC_MolangSharp_Parser_Expression_Evaluate_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_.md&amp;value=---%0Auid%3A%20ConcreteMC.MolangSharp.Parser.Expression.Evaluate(ConcreteMC.MolangSharp.Runtime.MoScope%2CConcreteMC.MolangSharp.Runtime.MoLangEnvironment)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/IExpression.cs/#L82">View Source</a>
+    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/Expression.cs/#L32">View Source</a>
   </span>
   <a id="ConcreteMC_MolangSharp_Parser_Expression_Evaluate_" data-uid="ConcreteMC.MolangSharp.Parser.Expression.Evaluate*"></a>
   <h4 id="ConcreteMC_MolangSharp_Parser_Expression_Evaluate_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_" data-uid="ConcreteMC.MolangSharp.Parser.Expression.Evaluate(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)">Evaluate(MoScope, MoLangEnvironment)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Evaluate the expression</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -303,12 +313,14 @@
       <tr>
         <td><a class="xref" href="ConcreteMC.MolangSharp.Runtime.MoScope.html">MoScope</a></td>
         <td><span class="parametername">scope</span></td>
-        <td></td>
+        <td><p>The current scope</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.html">MoLangEnvironment</a></td>
         <td><span class="parametername">environment</span></td>
-        <td></td>
+        <td><p>The environment provided by the <a class="xref" href="ConcreteMC.MolangSharp.Runtime.MoLangRuntime.html">MoLangRuntime</a></p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -323,7 +335,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="ConcreteMC.MolangSharp.Runtime.Value.IMoValue.html">IMoValue</a></td>
-        <td></td>
+        <td><p>The value returned by the expression</p>
+</td>
       </tr>
     </tbody>
   </table>

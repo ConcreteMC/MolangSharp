@@ -1816,153 +1816,153 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.UnaryPlusExpression.Evaluate
   nameWithType: UnaryPlusExpression.Evaluate
-- uid: ConcreteMC.MolangSharp.Parser.ExprTraverser
-  name: ExprTraverser
-  href: api/ConcreteMC.MolangSharp.Parser.ExprTraverser.html
-  commentId: T:ConcreteMC.MolangSharp.Parser.ExprTraverser
-  fullName: ConcreteMC.MolangSharp.Parser.ExprTraverser
-  nameWithType: ExprTraverser
-- uid: ConcreteMC.MolangSharp.Parser.ExprTraverser.Stop
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionTraverser
+  name: ExpressionTraverser
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionTraverser.html
+  commentId: T:ConcreteMC.MolangSharp.Parser.ExpressionTraverser
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionTraverser
+  nameWithType: ExpressionTraverser
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.Stop
   name: Stop()
-  href: api/ConcreteMC.MolangSharp.Parser.ExprTraverser.html#ConcreteMC_MolangSharp_Parser_ExprTraverser_Stop
-  commentId: M:ConcreteMC.MolangSharp.Parser.ExprTraverser.Stop
-  fullName: ConcreteMC.MolangSharp.Parser.ExprTraverser.Stop()
-  nameWithType: ExprTraverser.Stop()
-- uid: ConcreteMC.MolangSharp.Parser.ExprTraverser.Stop*
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionTraverser.html#ConcreteMC_MolangSharp_Parser_ExpressionTraverser_Stop
+  commentId: M:ConcreteMC.MolangSharp.Parser.ExpressionTraverser.Stop
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.Stop()
+  nameWithType: ExpressionTraverser.Stop()
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.Stop*
   name: Stop
-  href: api/ConcreteMC.MolangSharp.Parser.ExprTraverser.html#ConcreteMC_MolangSharp_Parser_ExprTraverser_Stop_
-  commentId: Overload:ConcreteMC.MolangSharp.Parser.ExprTraverser.Stop
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionTraverser.html#ConcreteMC_MolangSharp_Parser_ExpressionTraverser_Stop_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.ExpressionTraverser.Stop
   isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Parser.ExprTraverser.Stop
-  nameWithType: ExprTraverser.Stop
-- uid: ConcreteMC.MolangSharp.Parser.ExprTraverser.Traverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.Stop
+  nameWithType: ExpressionTraverser.Stop
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.Traverse(ConcreteMC.MolangSharp.Parser.IExpression[])
   name: Traverse(IExpression[])
-  href: api/ConcreteMC.MolangSharp.Parser.ExprTraverser.html#ConcreteMC_MolangSharp_Parser_ExprTraverser_Traverse_ConcreteMC_MolangSharp_Parser_IExpression___
-  commentId: M:ConcreteMC.MolangSharp.Parser.ExprTraverser.Traverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionTraverser.html#ConcreteMC_MolangSharp_Parser_ExpressionTraverser_Traverse_ConcreteMC_MolangSharp_Parser_IExpression___
+  commentId: M:ConcreteMC.MolangSharp.Parser.ExpressionTraverser.Traverse(ConcreteMC.MolangSharp.Parser.IExpression[])
   name.vb: Traverse(IExpression())
-  fullName: ConcreteMC.MolangSharp.Parser.ExprTraverser.Traverse(ConcreteMC.MolangSharp.Parser.IExpression[])
-  fullName.vb: ConcreteMC.MolangSharp.Parser.ExprTraverser.Traverse(ConcreteMC.MolangSharp.Parser.IExpression())
-  nameWithType: ExprTraverser.Traverse(IExpression[])
-  nameWithType.vb: ExprTraverser.Traverse(IExpression())
-- uid: ConcreteMC.MolangSharp.Parser.ExprTraverser.Traverse*
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.Traverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  fullName.vb: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.Traverse(ConcreteMC.MolangSharp.Parser.IExpression())
+  nameWithType: ExpressionTraverser.Traverse(IExpression[])
+  nameWithType.vb: ExpressionTraverser.Traverse(IExpression())
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.Traverse*
   name: Traverse
-  href: api/ConcreteMC.MolangSharp.Parser.ExprTraverser.html#ConcreteMC_MolangSharp_Parser_ExprTraverser_Traverse_
-  commentId: Overload:ConcreteMC.MolangSharp.Parser.ExprTraverser.Traverse
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionTraverser.html#ConcreteMC_MolangSharp_Parser_ExpressionTraverser_Traverse_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.ExpressionTraverser.Traverse
   isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Parser.ExprTraverser.Traverse
-  nameWithType: ExprTraverser.Traverse
-- uid: ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult
-  name: ExprTraverser.VisitationResult
-  href: api/ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.html
-  commentId: T:ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult
-  fullName: ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult
-  nameWithType: ExprTraverser.VisitationResult
-- uid: ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.DontTraverseChildren
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.Traverse
+  nameWithType: ExpressionTraverser.Traverse
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult
+  name: ExpressionTraverser.VisitationResult
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.html
+  commentId: T:ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult
+  nameWithType: ExpressionTraverser.VisitationResult
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.DontTraverseChildren
   name: DontTraverseChildren
-  href: api/ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.html#ConcreteMC_MolangSharp_Parser_ExprTraverser_VisitationResult_DontTraverseChildren
-  commentId: F:ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.DontTraverseChildren
-  fullName: ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.DontTraverseChildren
-  nameWithType: ExprTraverser.VisitationResult.DontTraverseChildren
-- uid: ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.DontTraverseCurrent
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.html#ConcreteMC_MolangSharp_Parser_ExpressionTraverser_VisitationResult_DontTraverseChildren
+  commentId: F:ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.DontTraverseChildren
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.DontTraverseChildren
+  nameWithType: ExpressionTraverser.VisitationResult.DontTraverseChildren
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.DontTraverseCurrent
   name: DontTraverseCurrent
-  href: api/ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.html#ConcreteMC_MolangSharp_Parser_ExprTraverser_VisitationResult_DontTraverseCurrent
-  commentId: F:ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.DontTraverseCurrent
-  fullName: ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.DontTraverseCurrent
-  nameWithType: ExprTraverser.VisitationResult.DontTraverseCurrent
-- uid: ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.DontTraverseCurrentAndChildren
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.html#ConcreteMC_MolangSharp_Parser_ExpressionTraverser_VisitationResult_DontTraverseCurrent
+  commentId: F:ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.DontTraverseCurrent
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.DontTraverseCurrent
+  nameWithType: ExpressionTraverser.VisitationResult.DontTraverseCurrent
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.DontTraverseCurrentAndChildren
   name: DontTraverseCurrentAndChildren
-  href: api/ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.html#ConcreteMC_MolangSharp_Parser_ExprTraverser_VisitationResult_DontTraverseCurrentAndChildren
-  commentId: F:ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.DontTraverseCurrentAndChildren
-  fullName: ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.DontTraverseCurrentAndChildren
-  nameWithType: ExprTraverser.VisitationResult.DontTraverseCurrentAndChildren
-- uid: ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.None
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.html#ConcreteMC_MolangSharp_Parser_ExpressionTraverser_VisitationResult_DontTraverseCurrentAndChildren
+  commentId: F:ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.DontTraverseCurrentAndChildren
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.DontTraverseCurrentAndChildren
+  nameWithType: ExpressionTraverser.VisitationResult.DontTraverseCurrentAndChildren
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.None
   name: None
-  href: api/ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.html#ConcreteMC_MolangSharp_Parser_ExprTraverser_VisitationResult_None
-  commentId: F:ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.None
-  fullName: ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.None
-  nameWithType: ExprTraverser.VisitationResult.None
-- uid: ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.RemoveCurrent
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.html#ConcreteMC_MolangSharp_Parser_ExpressionTraverser_VisitationResult_None
+  commentId: F:ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.None
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.None
+  nameWithType: ExpressionTraverser.VisitationResult.None
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.RemoveCurrent
   name: RemoveCurrent
-  href: api/ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.html#ConcreteMC_MolangSharp_Parser_ExprTraverser_VisitationResult_RemoveCurrent
-  commentId: F:ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.RemoveCurrent
-  fullName: ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.RemoveCurrent
-  nameWithType: ExprTraverser.VisitationResult.RemoveCurrent
-- uid: ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.StopTraversal
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.html#ConcreteMC_MolangSharp_Parser_ExpressionTraverser_VisitationResult_RemoveCurrent
+  commentId: F:ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.RemoveCurrent
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.RemoveCurrent
+  nameWithType: ExpressionTraverser.VisitationResult.RemoveCurrent
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.StopTraversal
   name: StopTraversal
-  href: api/ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.html#ConcreteMC_MolangSharp_Parser_ExprTraverser_VisitationResult_StopTraversal
-  commentId: F:ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.StopTraversal
-  fullName: ConcreteMC.MolangSharp.Parser.ExprTraverser.VisitationResult.StopTraversal
-  nameWithType: ExprTraverser.VisitationResult.StopTraversal
-- uid: ConcreteMC.MolangSharp.Parser.ExprTraverser.Visitors
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.html#ConcreteMC_MolangSharp_Parser_ExpressionTraverser_VisitationResult_StopTraversal
+  commentId: F:ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.StopTraversal
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.VisitationResult.StopTraversal
+  nameWithType: ExpressionTraverser.VisitationResult.StopTraversal
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.Visitors
   name: Visitors
-  href: api/ConcreteMC.MolangSharp.Parser.ExprTraverser.html#ConcreteMC_MolangSharp_Parser_ExprTraverser_Visitors
-  commentId: F:ConcreteMC.MolangSharp.Parser.ExprTraverser.Visitors
-  fullName: ConcreteMC.MolangSharp.Parser.ExprTraverser.Visitors
-  nameWithType: ExprTraverser.Visitors
-- uid: ConcreteMC.MolangSharp.Parser.ExprVisitor
-  name: ExprVisitor
-  href: api/ConcreteMC.MolangSharp.Parser.ExprVisitor.html
-  commentId: T:ConcreteMC.MolangSharp.Parser.ExprVisitor
-  fullName: ConcreteMC.MolangSharp.Parser.ExprVisitor
-  nameWithType: ExprVisitor
-- uid: ConcreteMC.MolangSharp.Parser.ExprVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionTraverser.html#ConcreteMC_MolangSharp_Parser_ExpressionTraverser_Visitors
+  commentId: F:ConcreteMC.MolangSharp.Parser.ExpressionTraverser.Visitors
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionTraverser.Visitors
+  nameWithType: ExpressionTraverser.Visitors
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionVisitor
+  name: ExpressionVisitor
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionVisitor.html
+  commentId: T:ConcreteMC.MolangSharp.Parser.ExpressionVisitor
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionVisitor
+  nameWithType: ExpressionVisitor
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
   name: AfterTraverse(IExpression[])
-  href: api/ConcreteMC.MolangSharp.Parser.ExprVisitor.html#ConcreteMC_MolangSharp_Parser_ExprVisitor_AfterTraverse_ConcreteMC_MolangSharp_Parser_IExpression___
-  commentId: M:ConcreteMC.MolangSharp.Parser.ExprVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionVisitor.html#ConcreteMC_MolangSharp_Parser_ExpressionVisitor_AfterTraverse_ConcreteMC_MolangSharp_Parser_IExpression___
+  commentId: M:ConcreteMC.MolangSharp.Parser.ExpressionVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
   name.vb: AfterTraverse(IExpression())
-  fullName: ConcreteMC.MolangSharp.Parser.ExprVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
-  fullName.vb: ConcreteMC.MolangSharp.Parser.ExprVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression())
-  nameWithType: ExprVisitor.AfterTraverse(IExpression[])
-  nameWithType.vb: ExprVisitor.AfterTraverse(IExpression())
-- uid: ConcreteMC.MolangSharp.Parser.ExprVisitor.AfterTraverse*
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  fullName.vb: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression())
+  nameWithType: ExpressionVisitor.AfterTraverse(IExpression[])
+  nameWithType.vb: ExpressionVisitor.AfterTraverse(IExpression())
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.AfterTraverse*
   name: AfterTraverse
-  href: api/ConcreteMC.MolangSharp.Parser.ExprVisitor.html#ConcreteMC_MolangSharp_Parser_ExprVisitor_AfterTraverse_
-  commentId: Overload:ConcreteMC.MolangSharp.Parser.ExprVisitor.AfterTraverse
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionVisitor.html#ConcreteMC_MolangSharp_Parser_ExpressionVisitor_AfterTraverse_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.ExpressionVisitor.AfterTraverse
   isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Parser.ExprVisitor.AfterTraverse
-  nameWithType: ExprVisitor.AfterTraverse
-- uid: ConcreteMC.MolangSharp.Parser.ExprVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.AfterTraverse
+  nameWithType: ExpressionVisitor.AfterTraverse
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
   name: BeforeTraverse(IExpression[])
-  href: api/ConcreteMC.MolangSharp.Parser.ExprVisitor.html#ConcreteMC_MolangSharp_Parser_ExprVisitor_BeforeTraverse_ConcreteMC_MolangSharp_Parser_IExpression___
-  commentId: M:ConcreteMC.MolangSharp.Parser.ExprVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionVisitor.html#ConcreteMC_MolangSharp_Parser_ExpressionVisitor_BeforeTraverse_ConcreteMC_MolangSharp_Parser_IExpression___
+  commentId: M:ConcreteMC.MolangSharp.Parser.ExpressionVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
   name.vb: BeforeTraverse(IExpression())
-  fullName: ConcreteMC.MolangSharp.Parser.ExprVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
-  fullName.vb: ConcreteMC.MolangSharp.Parser.ExprVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression())
-  nameWithType: ExprVisitor.BeforeTraverse(IExpression[])
-  nameWithType.vb: ExprVisitor.BeforeTraverse(IExpression())
-- uid: ConcreteMC.MolangSharp.Parser.ExprVisitor.BeforeTraverse*
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  fullName.vb: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression())
+  nameWithType: ExpressionVisitor.BeforeTraverse(IExpression[])
+  nameWithType.vb: ExpressionVisitor.BeforeTraverse(IExpression())
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.BeforeTraverse*
   name: BeforeTraverse
-  href: api/ConcreteMC.MolangSharp.Parser.ExprVisitor.html#ConcreteMC_MolangSharp_Parser_ExprVisitor_BeforeTraverse_
-  commentId: Overload:ConcreteMC.MolangSharp.Parser.ExprVisitor.BeforeTraverse
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionVisitor.html#ConcreteMC_MolangSharp_Parser_ExpressionVisitor_BeforeTraverse_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.ExpressionVisitor.BeforeTraverse
   isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Parser.ExprVisitor.BeforeTraverse
-  nameWithType: ExprVisitor.BeforeTraverse
-- uid: ConcreteMC.MolangSharp.Parser.ExprVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.BeforeTraverse
+  nameWithType: ExpressionVisitor.BeforeTraverse
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
   name: OnLeave(IExpression)
-  href: api/ConcreteMC.MolangSharp.Parser.ExprVisitor.html#ConcreteMC_MolangSharp_Parser_ExprVisitor_OnLeave_ConcreteMC_MolangSharp_Parser_IExpression_
-  commentId: M:ConcreteMC.MolangSharp.Parser.ExprVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
-  fullName: ConcreteMC.MolangSharp.Parser.ExprVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
-  nameWithType: ExprVisitor.OnLeave(IExpression)
-- uid: ConcreteMC.MolangSharp.Parser.ExprVisitor.OnLeave*
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionVisitor.html#ConcreteMC_MolangSharp_Parser_ExpressionVisitor_OnLeave_ConcreteMC_MolangSharp_Parser_IExpression_
+  commentId: M:ConcreteMC.MolangSharp.Parser.ExpressionVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
+  nameWithType: ExpressionVisitor.OnLeave(IExpression)
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.OnLeave*
   name: OnLeave
-  href: api/ConcreteMC.MolangSharp.Parser.ExprVisitor.html#ConcreteMC_MolangSharp_Parser_ExprVisitor_OnLeave_
-  commentId: Overload:ConcreteMC.MolangSharp.Parser.ExprVisitor.OnLeave
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionVisitor.html#ConcreteMC_MolangSharp_Parser_ExpressionVisitor_OnLeave_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.ExpressionVisitor.OnLeave
   isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Parser.ExprVisitor.OnLeave
-  nameWithType: ExprVisitor.OnLeave
-- uid: ConcreteMC.MolangSharp.Parser.ExprVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
-  name: OnVisit(ExprTraverser, IExpression)
-  href: api/ConcreteMC.MolangSharp.Parser.ExprVisitor.html#ConcreteMC_MolangSharp_Parser_ExprVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExprTraverser_ConcreteMC_MolangSharp_Parser_IExpression_
-  commentId: M:ConcreteMC.MolangSharp.Parser.ExprVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
-  fullName: ConcreteMC.MolangSharp.Parser.ExprVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser, ConcreteMC.MolangSharp.Parser.IExpression)
-  nameWithType: ExprVisitor.OnVisit(ExprTraverser, IExpression)
-- uid: ConcreteMC.MolangSharp.Parser.ExprVisitor.OnVisit*
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.OnLeave
+  nameWithType: ExpressionVisitor.OnLeave
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
+  name: OnVisit(ExpressionTraverser, IExpression)
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionVisitor.html#ConcreteMC_MolangSharp_Parser_ExpressionVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExpressionTraverser_ConcreteMC_MolangSharp_Parser_IExpression_
+  commentId: M:ConcreteMC.MolangSharp.Parser.ExpressionVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser, ConcreteMC.MolangSharp.Parser.IExpression)
+  nameWithType: ExpressionVisitor.OnVisit(ExpressionTraverser, IExpression)
+- uid: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.OnVisit*
   name: OnVisit
-  href: api/ConcreteMC.MolangSharp.Parser.ExprVisitor.html#ConcreteMC_MolangSharp_Parser_ExprVisitor_OnVisit_
-  commentId: Overload:ConcreteMC.MolangSharp.Parser.ExprVisitor.OnVisit
+  href: api/ConcreteMC.MolangSharp.Parser.ExpressionVisitor.html#ConcreteMC_MolangSharp_Parser_ExpressionVisitor_OnVisit_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.ExpressionVisitor.OnVisit
   isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Parser.ExprVisitor.OnVisit
-  nameWithType: ExprVisitor.OnVisit
+  fullName: ConcreteMC.MolangSharp.Parser.ExpressionVisitor.OnVisit
+  nameWithType: ExpressionVisitor.OnVisit
 - uid: ConcreteMC.MolangSharp.Parser.IExpression
   name: IExpression
   href: api/ConcreteMC.MolangSharp.Parser.IExpression.html
@@ -2021,70 +2021,70 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.IExpression.Parameters
   nameWithType: IExpression.Parameters
-- uid: ConcreteMC.MolangSharp.Parser.IExprVisitor
-  name: IExprVisitor
-  href: api/ConcreteMC.MolangSharp.Parser.IExprVisitor.html
-  commentId: T:ConcreteMC.MolangSharp.Parser.IExprVisitor
-  fullName: ConcreteMC.MolangSharp.Parser.IExprVisitor
-  nameWithType: IExprVisitor
-- uid: ConcreteMC.MolangSharp.Parser.IExprVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+- uid: ConcreteMC.MolangSharp.Parser.IExpressionVisitor
+  name: IExpressionVisitor
+  href: api/ConcreteMC.MolangSharp.Parser.IExpressionVisitor.html
+  commentId: T:ConcreteMC.MolangSharp.Parser.IExpressionVisitor
+  fullName: ConcreteMC.MolangSharp.Parser.IExpressionVisitor
+  nameWithType: IExpressionVisitor
+- uid: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
   name: AfterTraverse(IExpression[])
-  href: api/ConcreteMC.MolangSharp.Parser.IExprVisitor.html#ConcreteMC_MolangSharp_Parser_IExprVisitor_AfterTraverse_ConcreteMC_MolangSharp_Parser_IExpression___
-  commentId: M:ConcreteMC.MolangSharp.Parser.IExprVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  href: api/ConcreteMC.MolangSharp.Parser.IExpressionVisitor.html#ConcreteMC_MolangSharp_Parser_IExpressionVisitor_AfterTraverse_ConcreteMC_MolangSharp_Parser_IExpression___
+  commentId: M:ConcreteMC.MolangSharp.Parser.IExpressionVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
   name.vb: AfterTraverse(IExpression())
-  fullName: ConcreteMC.MolangSharp.Parser.IExprVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
-  fullName.vb: ConcreteMC.MolangSharp.Parser.IExprVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression())
-  nameWithType: IExprVisitor.AfterTraverse(IExpression[])
-  nameWithType.vb: IExprVisitor.AfterTraverse(IExpression())
-- uid: ConcreteMC.MolangSharp.Parser.IExprVisitor.AfterTraverse*
+  fullName: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  fullName.vb: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression())
+  nameWithType: IExpressionVisitor.AfterTraverse(IExpression[])
+  nameWithType.vb: IExpressionVisitor.AfterTraverse(IExpression())
+- uid: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.AfterTraverse*
   name: AfterTraverse
-  href: api/ConcreteMC.MolangSharp.Parser.IExprVisitor.html#ConcreteMC_MolangSharp_Parser_IExprVisitor_AfterTraverse_
-  commentId: Overload:ConcreteMC.MolangSharp.Parser.IExprVisitor.AfterTraverse
+  href: api/ConcreteMC.MolangSharp.Parser.IExpressionVisitor.html#ConcreteMC_MolangSharp_Parser_IExpressionVisitor_AfterTraverse_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.IExpressionVisitor.AfterTraverse
   isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Parser.IExprVisitor.AfterTraverse
-  nameWithType: IExprVisitor.AfterTraverse
-- uid: ConcreteMC.MolangSharp.Parser.IExprVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  fullName: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.AfterTraverse
+  nameWithType: IExpressionVisitor.AfterTraverse
+- uid: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
   name: BeforeTraverse(IExpression[])
-  href: api/ConcreteMC.MolangSharp.Parser.IExprVisitor.html#ConcreteMC_MolangSharp_Parser_IExprVisitor_BeforeTraverse_ConcreteMC_MolangSharp_Parser_IExpression___
-  commentId: M:ConcreteMC.MolangSharp.Parser.IExprVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  href: api/ConcreteMC.MolangSharp.Parser.IExpressionVisitor.html#ConcreteMC_MolangSharp_Parser_IExpressionVisitor_BeforeTraverse_ConcreteMC_MolangSharp_Parser_IExpression___
+  commentId: M:ConcreteMC.MolangSharp.Parser.IExpressionVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
   name.vb: BeforeTraverse(IExpression())
-  fullName: ConcreteMC.MolangSharp.Parser.IExprVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
-  fullName.vb: ConcreteMC.MolangSharp.Parser.IExprVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression())
-  nameWithType: IExprVisitor.BeforeTraverse(IExpression[])
-  nameWithType.vb: IExprVisitor.BeforeTraverse(IExpression())
-- uid: ConcreteMC.MolangSharp.Parser.IExprVisitor.BeforeTraverse*
+  fullName: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  fullName.vb: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression())
+  nameWithType: IExpressionVisitor.BeforeTraverse(IExpression[])
+  nameWithType.vb: IExpressionVisitor.BeforeTraverse(IExpression())
+- uid: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.BeforeTraverse*
   name: BeforeTraverse
-  href: api/ConcreteMC.MolangSharp.Parser.IExprVisitor.html#ConcreteMC_MolangSharp_Parser_IExprVisitor_BeforeTraverse_
-  commentId: Overload:ConcreteMC.MolangSharp.Parser.IExprVisitor.BeforeTraverse
+  href: api/ConcreteMC.MolangSharp.Parser.IExpressionVisitor.html#ConcreteMC_MolangSharp_Parser_IExpressionVisitor_BeforeTraverse_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.IExpressionVisitor.BeforeTraverse
   isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Parser.IExprVisitor.BeforeTraverse
-  nameWithType: IExprVisitor.BeforeTraverse
-- uid: ConcreteMC.MolangSharp.Parser.IExprVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
+  fullName: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.BeforeTraverse
+  nameWithType: IExpressionVisitor.BeforeTraverse
+- uid: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
   name: OnLeave(IExpression)
-  href: api/ConcreteMC.MolangSharp.Parser.IExprVisitor.html#ConcreteMC_MolangSharp_Parser_IExprVisitor_OnLeave_ConcreteMC_MolangSharp_Parser_IExpression_
-  commentId: M:ConcreteMC.MolangSharp.Parser.IExprVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
-  fullName: ConcreteMC.MolangSharp.Parser.IExprVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
-  nameWithType: IExprVisitor.OnLeave(IExpression)
-- uid: ConcreteMC.MolangSharp.Parser.IExprVisitor.OnLeave*
+  href: api/ConcreteMC.MolangSharp.Parser.IExpressionVisitor.html#ConcreteMC_MolangSharp_Parser_IExpressionVisitor_OnLeave_ConcreteMC_MolangSharp_Parser_IExpression_
+  commentId: M:ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
+  fullName: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
+  nameWithType: IExpressionVisitor.OnLeave(IExpression)
+- uid: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnLeave*
   name: OnLeave
-  href: api/ConcreteMC.MolangSharp.Parser.IExprVisitor.html#ConcreteMC_MolangSharp_Parser_IExprVisitor_OnLeave_
-  commentId: Overload:ConcreteMC.MolangSharp.Parser.IExprVisitor.OnLeave
+  href: api/ConcreteMC.MolangSharp.Parser.IExpressionVisitor.html#ConcreteMC_MolangSharp_Parser_IExpressionVisitor_OnLeave_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnLeave
   isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Parser.IExprVisitor.OnLeave
-  nameWithType: IExprVisitor.OnLeave
-- uid: ConcreteMC.MolangSharp.Parser.IExprVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
-  name: OnVisit(ExprTraverser, IExpression)
-  href: api/ConcreteMC.MolangSharp.Parser.IExprVisitor.html#ConcreteMC_MolangSharp_Parser_IExprVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExprTraverser_ConcreteMC_MolangSharp_Parser_IExpression_
-  commentId: M:ConcreteMC.MolangSharp.Parser.IExprVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
-  fullName: ConcreteMC.MolangSharp.Parser.IExprVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser, ConcreteMC.MolangSharp.Parser.IExpression)
-  nameWithType: IExprVisitor.OnVisit(ExprTraverser, IExpression)
-- uid: ConcreteMC.MolangSharp.Parser.IExprVisitor.OnVisit*
+  fullName: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnLeave
+  nameWithType: IExpressionVisitor.OnLeave
+- uid: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
+  name: OnVisit(ExpressionTraverser, IExpression)
+  href: api/ConcreteMC.MolangSharp.Parser.IExpressionVisitor.html#ConcreteMC_MolangSharp_Parser_IExpressionVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExpressionTraverser_ConcreteMC_MolangSharp_Parser_IExpression_
+  commentId: M:ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
+  fullName: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser, ConcreteMC.MolangSharp.Parser.IExpression)
+  nameWithType: IExpressionVisitor.OnVisit(ExpressionTraverser, IExpression)
+- uid: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnVisit*
   name: OnVisit
-  href: api/ConcreteMC.MolangSharp.Parser.IExprVisitor.html#ConcreteMC_MolangSharp_Parser_IExprVisitor_OnVisit_
-  commentId: Overload:ConcreteMC.MolangSharp.Parser.IExprVisitor.OnVisit
+  href: api/ConcreteMC.MolangSharp.Parser.IExpressionVisitor.html#ConcreteMC_MolangSharp_Parser_IExpressionVisitor_OnVisit_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnVisit
   isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Parser.IExprVisitor.OnVisit
-  nameWithType: IExprVisitor.OnVisit
+  fullName: ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnVisit
+  nameWithType: IExpressionVisitor.OnVisit
 - uid: ConcreteMC.MolangSharp.Parser.InfixParselet
   name: InfixParselet
   href: api/ConcreteMC.MolangSharp.Parser.InfixParselet.html
@@ -2149,19 +2149,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.MoLangParser.MoLangParser
   nameWithType: MoLangParser.MoLangParser
-- uid: ConcreteMC.MolangSharp.Parser.MoLangParser.ExprTraverser
-  name: ExprTraverser
-  href: api/ConcreteMC.MolangSharp.Parser.MoLangParser.html#ConcreteMC_MolangSharp_Parser_MoLangParser_ExprTraverser
-  commentId: P:ConcreteMC.MolangSharp.Parser.MoLangParser.ExprTraverser
-  fullName: ConcreteMC.MolangSharp.Parser.MoLangParser.ExprTraverser
-  nameWithType: MoLangParser.ExprTraverser
-- uid: ConcreteMC.MolangSharp.Parser.MoLangParser.ExprTraverser*
-  name: ExprTraverser
-  href: api/ConcreteMC.MolangSharp.Parser.MoLangParser.html#ConcreteMC_MolangSharp_Parser_MoLangParser_ExprTraverser_
-  commentId: Overload:ConcreteMC.MolangSharp.Parser.MoLangParser.ExprTraverser
+- uid: ConcreteMC.MolangSharp.Parser.MoLangParser.ExpressionTraverser
+  name: ExpressionTraverser
+  href: api/ConcreteMC.MolangSharp.Parser.MoLangParser.html#ConcreteMC_MolangSharp_Parser_MoLangParser_ExpressionTraverser
+  commentId: P:ConcreteMC.MolangSharp.Parser.MoLangParser.ExpressionTraverser
+  fullName: ConcreteMC.MolangSharp.Parser.MoLangParser.ExpressionTraverser
+  nameWithType: MoLangParser.ExpressionTraverser
+- uid: ConcreteMC.MolangSharp.Parser.MoLangParser.ExpressionTraverser*
+  name: ExpressionTraverser
+  href: api/ConcreteMC.MolangSharp.Parser.MoLangParser.html#ConcreteMC_MolangSharp_Parser_MoLangParser_ExpressionTraverser_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.MoLangParser.ExpressionTraverser
   isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Parser.MoLangParser.ExprTraverser
-  nameWithType: MoLangParser.ExprTraverser
+  fullName: ConcreteMC.MolangSharp.Parser.MoLangParser.ExpressionTraverser
+  nameWithType: MoLangParser.ExpressionTraverser
 - uid: ConcreteMC.MolangSharp.Parser.MoLangParser.Factory
   name: Factory
   href: api/ConcreteMC.MolangSharp.Parser.MoLangParser.html#ConcreteMC_MolangSharp_Parser_MoLangParser_Factory
@@ -2820,19 +2820,40 @@ references:
 - uid: ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Position
   name: Position
   href: api/ConcreteMC.MolangSharp.Parser.Tokenizer.Token.html#ConcreteMC_MolangSharp_Parser_Tokenizer_Token_Position
-  commentId: F:ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Position
+  commentId: P:ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Position
+  fullName: ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Position
+  nameWithType: Token.Position
+- uid: ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Position*
+  name: Position
+  href: api/ConcreteMC.MolangSharp.Parser.Tokenizer.Token.html#ConcreteMC_MolangSharp_Parser_Tokenizer_Token_Position_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Position
+  isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Position
   nameWithType: Token.Position
 - uid: ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Text
   name: Text
   href: api/ConcreteMC.MolangSharp.Parser.Tokenizer.Token.html#ConcreteMC_MolangSharp_Parser_Tokenizer_Token_Text
-  commentId: F:ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Text
+  commentId: P:ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Text
+  fullName: ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Text
+  nameWithType: Token.Text
+- uid: ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Text*
+  name: Text
+  href: api/ConcreteMC.MolangSharp.Parser.Tokenizer.Token.html#ConcreteMC_MolangSharp_Parser_Tokenizer_Token_Text_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Text
+  isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Text
   nameWithType: Token.Text
 - uid: ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Type
   name: Type
   href: api/ConcreteMC.MolangSharp.Parser.Tokenizer.Token.html#ConcreteMC_MolangSharp_Parser_Tokenizer_Token_Type
-  commentId: F:ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Type
+  commentId: P:ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Type
+  fullName: ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Type
+  nameWithType: Token.Type
+- uid: ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Type*
+  name: Type
+  href: api/ConcreteMC.MolangSharp.Parser.Tokenizer.Token.html#ConcreteMC_MolangSharp_Parser_Tokenizer_Token_Type_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Type
+  isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Tokenizer.Token.Type
   nameWithType: Token.Type
 - uid: ConcreteMC.MolangSharp.Parser.Tokenizer.TokenIterator
@@ -2902,13 +2923,27 @@ references:
 - uid: ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.Index
   name: Index
   href: api/ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.html#ConcreteMC_MolangSharp_Parser_Tokenizer_TokenPosition_Index
-  commentId: F:ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.Index
+  commentId: P:ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.Index
+  fullName: ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.Index
+  nameWithType: TokenPosition.Index
+- uid: ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.Index*
+  name: Index
+  href: api/ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.html#ConcreteMC_MolangSharp_Parser_Tokenizer_TokenPosition_Index_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.Index
+  isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.Index
   nameWithType: TokenPosition.Index
 - uid: ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.LineNumber
   name: LineNumber
   href: api/ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.html#ConcreteMC_MolangSharp_Parser_Tokenizer_TokenPosition_LineNumber
-  commentId: F:ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.LineNumber
+  commentId: P:ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.LineNumber
+  fullName: ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.LineNumber
+  nameWithType: TokenPosition.LineNumber
+- uid: ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.LineNumber*
+  name: LineNumber
+  href: api/ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.html#ConcreteMC_MolangSharp_Parser_Tokenizer_TokenPosition_LineNumber_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.LineNumber
+  isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Tokenizer.TokenPosition.LineNumber
   nameWithType: TokenPosition.LineNumber
 - uid: ConcreteMC.MolangSharp.Parser.Tokenizer.TokenType
@@ -3215,70 +3250,70 @@ references:
   commentId: N:ConcreteMC.MolangSharp.Parser.Visitors
   fullName: ConcreteMC.MolangSharp.Parser.Visitors
   nameWithType: ConcreteMC.MolangSharp.Parser.Visitors
-- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor
-  name: ExprConnectingVisitor
-  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.html
-  commentId: T:ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor
-  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor
-  nameWithType: ExprConnectingVisitor
-- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor
+  name: ExpressionConnectingVisitor
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.html
+  commentId: T:ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor
+  nameWithType: ExpressionConnectingVisitor
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
   name: AfterTraverse(IExpression[])
-  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_ExprConnectingVisitor_AfterTraverse_ConcreteMC_MolangSharp_Parser_IExpression___
-  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_ExpressionConnectingVisitor_AfterTraverse_ConcreteMC_MolangSharp_Parser_IExpression___
+  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
   name.vb: AfterTraverse(IExpression())
-  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
-  fullName.vb: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression())
-  nameWithType: ExprConnectingVisitor.AfterTraverse(IExpression[])
-  nameWithType.vb: ExprConnectingVisitor.AfterTraverse(IExpression())
-- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.AfterTraverse*
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  fullName.vb: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression())
+  nameWithType: ExpressionConnectingVisitor.AfterTraverse(IExpression[])
+  nameWithType.vb: ExpressionConnectingVisitor.AfterTraverse(IExpression())
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.AfterTraverse*
   name: AfterTraverse
-  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_ExprConnectingVisitor_AfterTraverse_
-  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.AfterTraverse
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_ExpressionConnectingVisitor_AfterTraverse_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.AfterTraverse
   isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.AfterTraverse
-  nameWithType: ExprConnectingVisitor.AfterTraverse
-- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.AfterTraverse
+  nameWithType: ExpressionConnectingVisitor.AfterTraverse
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
   name: BeforeTraverse(IExpression[])
-  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_ExprConnectingVisitor_BeforeTraverse_ConcreteMC_MolangSharp_Parser_IExpression___
-  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_ExpressionConnectingVisitor_BeforeTraverse_ConcreteMC_MolangSharp_Parser_IExpression___
+  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
   name.vb: BeforeTraverse(IExpression())
-  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
-  fullName.vb: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression())
-  nameWithType: ExprConnectingVisitor.BeforeTraverse(IExpression[])
-  nameWithType.vb: ExprConnectingVisitor.BeforeTraverse(IExpression())
-- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.BeforeTraverse*
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])
+  fullName.vb: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression())
+  nameWithType: ExpressionConnectingVisitor.BeforeTraverse(IExpression[])
+  nameWithType.vb: ExpressionConnectingVisitor.BeforeTraverse(IExpression())
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.BeforeTraverse*
   name: BeforeTraverse
-  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_ExprConnectingVisitor_BeforeTraverse_
-  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.BeforeTraverse
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_ExpressionConnectingVisitor_BeforeTraverse_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.BeforeTraverse
   isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.BeforeTraverse
-  nameWithType: ExprConnectingVisitor.BeforeTraverse
-- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.BeforeTraverse
+  nameWithType: ExpressionConnectingVisitor.BeforeTraverse
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
   name: OnLeave(IExpression)
-  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_ExprConnectingVisitor_OnLeave_ConcreteMC_MolangSharp_Parser_IExpression_
-  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
-  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
-  nameWithType: ExprConnectingVisitor.OnLeave(IExpression)
-- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.OnLeave*
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_ExpressionConnectingVisitor_OnLeave_ConcreteMC_MolangSharp_Parser_IExpression_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)
+  nameWithType: ExpressionConnectingVisitor.OnLeave(IExpression)
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.OnLeave*
   name: OnLeave
-  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_ExprConnectingVisitor_OnLeave_
-  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.OnLeave
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_ExpressionConnectingVisitor_OnLeave_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.OnLeave
   isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.OnLeave
-  nameWithType: ExprConnectingVisitor.OnLeave
-- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
-  name: OnVisit(ExprTraverser, IExpression)
-  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_ExprConnectingVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExprTraverser_ConcreteMC_MolangSharp_Parser_IExpression_
-  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
-  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser, ConcreteMC.MolangSharp.Parser.IExpression)
-  nameWithType: ExprConnectingVisitor.OnVisit(ExprTraverser, IExpression)
-- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.OnVisit*
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.OnLeave
+  nameWithType: ExpressionConnectingVisitor.OnLeave
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
+  name: OnVisit(ExpressionTraverser, IExpression)
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_ExpressionConnectingVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExpressionTraverser_ConcreteMC_MolangSharp_Parser_IExpression_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser, ConcreteMC.MolangSharp.Parser.IExpression)
+  nameWithType: ExpressionConnectingVisitor.OnVisit(ExpressionTraverser, IExpression)
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.OnVisit*
   name: OnVisit
-  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_ExprConnectingVisitor_OnVisit_
-  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.OnVisit
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_ExpressionConnectingVisitor_OnVisit_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.OnVisit
   isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExprConnectingVisitor.OnVisit
-  nameWithType: ExprConnectingVisitor.OnVisit
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.ExpressionConnectingVisitor.OnVisit
+  nameWithType: ExpressionConnectingVisitor.OnVisit
 - uid: ConcreteMC.MolangSharp.Parser.Visitors.FindingVisitor
   name: FindingVisitor
   href: api/ConcreteMC.MolangSharp.Parser.Visitors.FindingVisitor.html
@@ -3307,12 +3342,12 @@ references:
   commentId: F:ConcreteMC.MolangSharp.Parser.Visitors.FindingVisitor.FoundExpressions
   fullName: ConcreteMC.MolangSharp.Parser.Visitors.FindingVisitor.FoundExpressions
   nameWithType: FindingVisitor.FoundExpressions
-- uid: ConcreteMC.MolangSharp.Parser.Visitors.FindingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
-  name: OnVisit(ExprTraverser, IExpression)
-  href: api/ConcreteMC.MolangSharp.Parser.Visitors.FindingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_FindingVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExprTraverser_ConcreteMC_MolangSharp_Parser_IExpression_
-  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.FindingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
-  fullName: ConcreteMC.MolangSharp.Parser.Visitors.FindingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser, ConcreteMC.MolangSharp.Parser.IExpression)
-  nameWithType: FindingVisitor.OnVisit(ExprTraverser, IExpression)
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.FindingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
+  name: OnVisit(ExpressionTraverser, IExpression)
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.FindingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_FindingVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExpressionTraverser_ConcreteMC_MolangSharp_Parser_IExpression_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.FindingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.FindingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser, ConcreteMC.MolangSharp.Parser.IExpression)
+  nameWithType: FindingVisitor.OnVisit(ExpressionTraverser, IExpression)
 - uid: ConcreteMC.MolangSharp.Parser.Visitors.FindingVisitor.OnVisit*
   name: OnVisit
   href: api/ConcreteMC.MolangSharp.Parser.Visitors.FindingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_FindingVisitor_OnVisit_
@@ -3348,12 +3383,12 @@ references:
   commentId: F:ConcreteMC.MolangSharp.Parser.Visitors.FirstFindingVisitor.Found
   fullName: ConcreteMC.MolangSharp.Parser.Visitors.FirstFindingVisitor.Found
   nameWithType: FirstFindingVisitor.Found
-- uid: ConcreteMC.MolangSharp.Parser.Visitors.FirstFindingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
-  name: OnVisit(ExprTraverser, IExpression)
-  href: api/ConcreteMC.MolangSharp.Parser.Visitors.FirstFindingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_FirstFindingVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExprTraverser_ConcreteMC_MolangSharp_Parser_IExpression_
-  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.FirstFindingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
-  fullName: ConcreteMC.MolangSharp.Parser.Visitors.FirstFindingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser, ConcreteMC.MolangSharp.Parser.IExpression)
-  nameWithType: FirstFindingVisitor.OnVisit(ExprTraverser, IExpression)
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.FirstFindingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
+  name: OnVisit(ExpressionTraverser, IExpression)
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.FirstFindingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_FirstFindingVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExpressionTraverser_ConcreteMC_MolangSharp_Parser_IExpression_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.FirstFindingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.FirstFindingVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser, ConcreteMC.MolangSharp.Parser.IExpression)
+  nameWithType: FirstFindingVisitor.OnVisit(ExpressionTraverser, IExpression)
 - uid: ConcreteMC.MolangSharp.Parser.Visitors.FirstFindingVisitor.OnVisit*
   name: OnVisit
   href: api/ConcreteMC.MolangSharp.Parser.Visitors.FirstFindingVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_FirstFindingVisitor_OnVisit_
@@ -3367,12 +3402,12 @@ references:
   commentId: T:ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor
   fullName: ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor
   nameWithType: MathOptimizationVisitor
-- uid: ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
-  name: OnVisit(ExprTraverser, IExpression)
-  href: api/ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_MathOptimizationVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExprTraverser_ConcreteMC_MolangSharp_Parser_IExpression_
-  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
-  fullName: ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser, ConcreteMC.MolangSharp.Parser.IExpression)
-  nameWithType: MathOptimizationVisitor.OnVisit(ExprTraverser, IExpression)
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
+  name: OnVisit(ExpressionTraverser, IExpression)
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_MathOptimizationVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExpressionTraverser_ConcreteMC_MolangSharp_Parser_IExpression_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser, ConcreteMC.MolangSharp.Parser.IExpression)
+  nameWithType: MathOptimizationVisitor.OnVisit(ExpressionTraverser, IExpression)
 - uid: ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor.OnVisit*
   name: OnVisit
   href: api/ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_MathOptimizationVisitor_OnVisit_
@@ -3392,31 +3427,6 @@ references:
   commentId: N:ConcreteMC.MolangSharp.Runtime.Exceptions
   fullName: ConcreteMC.MolangSharp.Runtime.Exceptions
   nameWithType: ConcreteMC.MolangSharp.Runtime.Exceptions
-- uid: ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException
-  name: MissingQueryMethodException
-  href: api/ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException.html
-  commentId: T:ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException
-  fullName: ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException
-  nameWithType: MissingQueryMethodException
-- uid: ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException.#ctor(ConcreteMC.MolangSharp.Parser.IExpression,System.String,Exception)
-  name: MissingQueryMethodException(IExpression, String, Exception)
-  href: api/ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException.html#ConcreteMC_MolangSharp_Runtime_Exceptions_MissingQueryMethodException__ctor_ConcreteMC_MolangSharp_Parser_IExpression_System_String_Exception_
-  commentId: M:ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException.#ctor(ConcreteMC.MolangSharp.Parser.IExpression,System.String,Exception)
-  fullName: ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException.MissingQueryMethodException(ConcreteMC.MolangSharp.Parser.IExpression, System.String, Exception)
-  nameWithType: MissingQueryMethodException.MissingQueryMethodException(IExpression, String, Exception)
-- uid: ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException.#ctor(System.String,Exception)
-  name: MissingQueryMethodException(String, Exception)
-  href: api/ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException.html#ConcreteMC_MolangSharp_Runtime_Exceptions_MissingQueryMethodException__ctor_System_String_Exception_
-  commentId: M:ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException.#ctor(System.String,Exception)
-  fullName: ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException.MissingQueryMethodException(System.String, Exception)
-  nameWithType: MissingQueryMethodException.MissingQueryMethodException(String, Exception)
-- uid: ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException.#ctor*
-  name: MissingQueryMethodException
-  href: api/ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException.html#ConcreteMC_MolangSharp_Runtime_Exceptions_MissingQueryMethodException__ctor_
-  commentId: Overload:ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException.#ctor
-  isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Runtime.Exceptions.MissingQueryMethodException.MissingQueryMethodException
-  nameWithType: MissingQueryMethodException.MissingQueryMethodException
 - uid: ConcreteMC.MolangSharp.Runtime.Exceptions.MoLangRuntimeException
   name: MoLangRuntimeException
   href: api/ConcreteMC.MolangSharp.Runtime.Exceptions.MoLangRuntimeException.html
@@ -3429,6 +3439,12 @@ references:
   commentId: M:ConcreteMC.MolangSharp.Runtime.Exceptions.MoLangRuntimeException.#ctor(ConcreteMC.MolangSharp.Parser.IExpression,System.String,Exception)
   fullName: ConcreteMC.MolangSharp.Runtime.Exceptions.MoLangRuntimeException.MoLangRuntimeException(ConcreteMC.MolangSharp.Parser.IExpression, System.String, Exception)
   nameWithType: MoLangRuntimeException.MoLangRuntimeException(IExpression, String, Exception)
+- uid: ConcreteMC.MolangSharp.Runtime.Exceptions.MoLangRuntimeException.#ctor(System.String)
+  name: MoLangRuntimeException(String)
+  href: api/ConcreteMC.MolangSharp.Runtime.Exceptions.MoLangRuntimeException.html#ConcreteMC_MolangSharp_Runtime_Exceptions_MoLangRuntimeException__ctor_System_String_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.Exceptions.MoLangRuntimeException.#ctor(System.String)
+  fullName: ConcreteMC.MolangSharp.Runtime.Exceptions.MoLangRuntimeException.MoLangRuntimeException(System.String)
+  nameWithType: MoLangRuntimeException.MoLangRuntimeException(String)
 - uid: ConcreteMC.MolangSharp.Runtime.Exceptions.MoLangRuntimeException.#ctor(System.String,Exception)
   name: MoLangRuntimeException(String, Exception)
   href: api/ConcreteMC.MolangSharp.Runtime.Exceptions.MoLangRuntimeException.html#ConcreteMC_MolangSharp_Runtime_Exceptions_MoLangRuntimeException__ctor_System_String_Exception_
@@ -3674,6 +3690,402 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.RandomInt
   nameWithType: MoLangMath.RandomInt
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl
+  name: MoLangMathImpl
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html
+  commentId: T:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl
+  nameWithType: MoLangMathImpl
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Abs(System.Double)
+  name: Abs(Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Abs_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Abs(System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Abs(System.Double)
+  nameWithType: MoLangMathImpl.Abs(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Abs*
+  name: Abs
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Abs_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Abs
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Abs
+  nameWithType: MoLangMathImpl.Abs
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Acos(System.Double)
+  name: Acos(Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Acos_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Acos(System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Acos(System.Double)
+  nameWithType: MoLangMathImpl.Acos(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Acos*
+  name: Acos
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Acos_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Acos
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Acos
+  nameWithType: MoLangMathImpl.Acos
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Asin(System.Double)
+  name: Asin(Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Asin_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Asin(System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Asin(System.Double)
+  nameWithType: MoLangMathImpl.Asin(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Asin*
+  name: Asin
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Asin_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Asin
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Asin
+  nameWithType: MoLangMathImpl.Asin
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Atan(System.Double)
+  name: Atan(Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Atan_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Atan(System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Atan(System.Double)
+  nameWithType: MoLangMathImpl.Atan(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Atan*
+  name: Atan
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Atan_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Atan
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Atan
+  nameWithType: MoLangMathImpl.Atan
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Atan2(System.Double,System.Double)
+  name: Atan2(Double, Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Atan2_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Atan2(System.Double,System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Atan2(System.Double, System.Double)
+  nameWithType: MoLangMathImpl.Atan2(Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Atan2*
+  name: Atan2
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Atan2_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Atan2
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Atan2
+  nameWithType: MoLangMathImpl.Atan2
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Ceiling(System.Double)
+  name: Ceiling(Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Ceiling_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Ceiling(System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Ceiling(System.Double)
+  nameWithType: MoLangMathImpl.Ceiling(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Ceiling*
+  name: Ceiling
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Ceiling_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Ceiling
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Ceiling
+  nameWithType: MoLangMathImpl.Ceiling
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Clamp(System.Double,System.Double,System.Double)
+  name: Clamp(Double, Double, Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Clamp_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Clamp(System.Double,System.Double,System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Clamp(System.Double, System.Double, System.Double)
+  nameWithType: MoLangMathImpl.Clamp(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Clamp*
+  name: Clamp
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Clamp_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Clamp
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Clamp
+  nameWithType: MoLangMathImpl.Clamp
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Cos(System.Double)
+  name: Cos(Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Cos_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Cos(System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Cos(System.Double)
+  nameWithType: MoLangMathImpl.Cos(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Cos*
+  name: Cos
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Cos_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Cos
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Cos
+  nameWithType: MoLangMathImpl.Cos
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.DieRoll(System.Double,System.Double,System.Double)
+  name: DieRoll(Double, Double, Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_DieRoll_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.DieRoll(System.Double,System.Double,System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.DieRoll(System.Double, System.Double, System.Double)
+  nameWithType: MoLangMathImpl.DieRoll(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.DieRoll*
+  name: DieRoll
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_DieRoll_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.DieRoll
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.DieRoll
+  nameWithType: MoLangMathImpl.DieRoll
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.DieRollInt(System.Int32,System.Int32,System.Int32)
+  name: DieRollInt(Int32, Int32, Int32)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_DieRollInt_System_Int32_System_Int32_System_Int32_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.DieRollInt(System.Int32,System.Int32,System.Int32)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.DieRollInt(System.Int32, System.Int32, System.Int32)
+  nameWithType: MoLangMathImpl.DieRollInt(Int32, Int32, Int32)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.DieRollInt*
+  name: DieRollInt
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_DieRollInt_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.DieRollInt
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.DieRollInt
+  nameWithType: MoLangMathImpl.DieRollInt
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Exp(System.Double)
+  name: Exp(Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Exp_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Exp(System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Exp(System.Double)
+  nameWithType: MoLangMathImpl.Exp(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Exp*
+  name: Exp
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Exp_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Exp
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Exp
+  nameWithType: MoLangMathImpl.Exp
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Floor(System.Double)
+  name: Floor(Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Floor_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Floor(System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Floor(System.Double)
+  nameWithType: MoLangMathImpl.Floor(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Floor*
+  name: Floor
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Floor_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Floor
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Floor
+  nameWithType: MoLangMathImpl.Floor
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.HermiteBlend(System.Int32)
+  name: HermiteBlend(Int32)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_HermiteBlend_System_Int32_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.HermiteBlend(System.Int32)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.HermiteBlend(System.Int32)
+  nameWithType: MoLangMathImpl.HermiteBlend(Int32)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.HermiteBlend*
+  name: HermiteBlend
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_HermiteBlend_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.HermiteBlend
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.HermiteBlend
+  nameWithType: MoLangMathImpl.HermiteBlend
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Lerp(System.Double,System.Double,System.Double)
+  name: Lerp(Double, Double, Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Lerp_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Lerp(System.Double,System.Double,System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Lerp(System.Double, System.Double, System.Double)
+  nameWithType: MoLangMathImpl.Lerp(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Lerp*
+  name: Lerp
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Lerp_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Lerp
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Lerp
+  nameWithType: MoLangMathImpl.Lerp
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.LerpRotate(System.Double,System.Double,System.Double)
+  name: LerpRotate(Double, Double, Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_LerpRotate_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.LerpRotate(System.Double,System.Double,System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.LerpRotate(System.Double, System.Double, System.Double)
+  nameWithType: MoLangMathImpl.LerpRotate(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.LerpRotate*
+  name: LerpRotate
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_LerpRotate_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.LerpRotate
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.LerpRotate
+  nameWithType: MoLangMathImpl.LerpRotate
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Library
+  name: Library
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Library
+  commentId: P:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Library
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Library
+  nameWithType: MoLangMathImpl.Library
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Library*
+  name: Library
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Library_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Library
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Library
+  nameWithType: MoLangMathImpl.Library
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Log(System.Double)
+  name: Log(Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Log_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Log(System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Log(System.Double)
+  nameWithType: MoLangMathImpl.Log(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Log*
+  name: Log
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Log_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Log
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Log
+  nameWithType: MoLangMathImpl.Log
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Max(System.Double,System.Double)
+  name: Max(Double, Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Max_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Max(System.Double,System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Max(System.Double, System.Double)
+  nameWithType: MoLangMathImpl.Max(Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Max*
+  name: Max
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Max_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Max
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Max
+  nameWithType: MoLangMathImpl.Max
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Min(System.Double,System.Double)
+  name: Min(Double, Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Min_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Min(System.Double,System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Min(System.Double, System.Double)
+  nameWithType: MoLangMathImpl.Min(Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Min*
+  name: Min
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Min_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Min
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Min
+  nameWithType: MoLangMathImpl.Min
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Modulus(System.Double,System.Double)
+  name: Modulus(Double, Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Modulus_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Modulus(System.Double,System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Modulus(System.Double, System.Double)
+  nameWithType: MoLangMathImpl.Modulus(Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Modulus*
+  name: Modulus
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Modulus_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Modulus
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Modulus
+  nameWithType: MoLangMathImpl.Modulus
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.PI
+  name: PI
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_PI
+  commentId: P:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.PI
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.PI
+  nameWithType: MoLangMathImpl.PI
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.PI*
+  name: PI
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_PI_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.PI
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.PI
+  nameWithType: MoLangMathImpl.PI
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.PiFunc
+  name: PiFunc()
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_PiFunc
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.PiFunc
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.PiFunc()
+  nameWithType: MoLangMathImpl.PiFunc()
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.PiFunc*
+  name: PiFunc
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_PiFunc_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.PiFunc
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.PiFunc
+  nameWithType: MoLangMathImpl.PiFunc
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Pow(System.Double,System.Double)
+  name: Pow(Double, Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Pow_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Pow(System.Double,System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Pow(System.Double, System.Double)
+  nameWithType: MoLangMathImpl.Pow(Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Pow*
+  name: Pow
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Pow_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Pow
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Pow
+  nameWithType: MoLangMathImpl.Pow
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Radify(System.Double)
+  name: Radify(Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Radify_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Radify(System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Radify(System.Double)
+  nameWithType: MoLangMathImpl.Radify(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Radify*
+  name: Radify
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Radify_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Radify
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Radify
+  nameWithType: MoLangMathImpl.Radify
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Random(System.Double,System.Double)
+  name: Random(Double, Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Random_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Random(System.Double,System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Random(System.Double, System.Double)
+  nameWithType: MoLangMathImpl.Random(Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Random*
+  name: Random
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Random_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Random
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Random
+  nameWithType: MoLangMathImpl.Random
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.RandomInt(System.Int32,System.Int32)
+  name: RandomInt(Int32, Int32)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_RandomInt_System_Int32_System_Int32_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.RandomInt(System.Int32,System.Int32)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.RandomInt(System.Int32, System.Int32)
+  nameWithType: MoLangMathImpl.RandomInt(Int32, Int32)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.RandomInt*
+  name: RandomInt
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_RandomInt_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.RandomInt
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.RandomInt
+  nameWithType: MoLangMathImpl.RandomInt
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Round(System.Double)
+  name: Round(Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Round_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Round(System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Round(System.Double)
+  nameWithType: MoLangMathImpl.Round(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Round*
+  name: Round
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Round_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Round
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Round
+  nameWithType: MoLangMathImpl.Round
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sin(System.Double)
+  name: Sin(Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Sin_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sin(System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sin(System.Double)
+  nameWithType: MoLangMathImpl.Sin(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sin*
+  name: Sin
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Sin_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sin
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sin
+  nameWithType: MoLangMathImpl.Sin
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sqrt(System.Double)
+  name: Sqrt(Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Sqrt_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sqrt(System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sqrt(System.Double)
+  nameWithType: MoLangMathImpl.Sqrt(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sqrt*
+  name: Sqrt
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Sqrt_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sqrt
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sqrt
+  nameWithType: MoLangMathImpl.Sqrt
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Truncate(System.Double)
+  name: Truncate(Double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Truncate_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Truncate(System.Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Truncate(System.Double)
+  nameWithType: MoLangMathImpl.Truncate(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Truncate*
+  name: Truncate
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Truncate_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Truncate
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Truncate
+  nameWithType: MoLangMathImpl.Truncate
 - uid: ConcreteMC.MolangSharp.Runtime.MoLangRuntime
   name: MoLangRuntime
   href: api/ConcreteMC.MolangSharp.Runtime.MoLangRuntime.html
@@ -4121,23 +4533,6 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.Clear
   nameWithType: IMoStruct.Clear
-- uid: ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.ConcreteMC#MolangSharp#Runtime#Value#IMoValue#Equals(ConcreteMC.MolangSharp.Runtime.Value.IMoValue)
-  name: IMoValue.Equals(IMoValue)
-  href: api/ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.html#ConcreteMC_MolangSharp_Runtime_Struct_IMoStruct_ConcreteMC_MolangSharp_Runtime_Value_IMoValue_Equals_ConcreteMC_MolangSharp_Runtime_Value_IMoValue_
-  commentId: M:ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.ConcreteMC#MolangSharp#Runtime#Value#IMoValue#Equals(ConcreteMC.MolangSharp.Runtime.Value.IMoValue)
-  name.vb: ConcreteMC.MolangSharp.Runtime.Value.IMoValue.Equals(IMoValue)
-  fullName: ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.ConcreteMC.MolangSharp.Runtime.Value.IMoValue.Equals(ConcreteMC.MolangSharp.Runtime.Value.IMoValue)
-  nameWithType: IMoStruct.IMoValue.Equals(IMoValue)
-  nameWithType.vb: IMoStruct.ConcreteMC.MolangSharp.Runtime.Value.IMoValue.Equals(IMoValue)
-- uid: ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.ConcreteMC#MolangSharp#Runtime#Value#IMoValue#Equals*
-  name: IMoValue.Equals
-  href: api/ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.html#ConcreteMC_MolangSharp_Runtime_Struct_IMoStruct_ConcreteMC_MolangSharp_Runtime_Value_IMoValue_Equals_
-  commentId: Overload:ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.ConcreteMC#MolangSharp#Runtime#Value#IMoValue#Equals
-  isSpec: "True"
-  name.vb: ConcreteMC.MolangSharp.Runtime.Value.IMoValue.Equals
-  fullName: ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.ConcreteMC.MolangSharp.Runtime.Value.IMoValue.Equals
-  nameWithType: IMoStruct.IMoValue.Equals
-  nameWithType.vb: IMoStruct.ConcreteMC.MolangSharp.Runtime.Value.IMoValue.Equals
 - uid: ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.Get(ConcreteMC.MolangSharp.Utils.MoPath,ConcreteMC.MolangSharp.Runtime.MoParams)
   name: Get(MoPath, MoParams)
   href: api/ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.html#ConcreteMC_MolangSharp_Runtime_Struct_IMoStruct_Get_ConcreteMC_MolangSharp_Utils_MoPath_ConcreteMC_MolangSharp_Runtime_MoParams_
@@ -4930,19 +5325,6 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.Value.IMoValue.AsString
   nameWithType: IMoValue.AsString
-- uid: ConcreteMC.MolangSharp.Runtime.Value.IMoValue.Equals(ConcreteMC.MolangSharp.Runtime.Value.IMoValue)
-  name: Equals(IMoValue)
-  href: api/ConcreteMC.MolangSharp.Runtime.Value.IMoValue.html#ConcreteMC_MolangSharp_Runtime_Value_IMoValue_Equals_ConcreteMC_MolangSharp_Runtime_Value_IMoValue_
-  commentId: M:ConcreteMC.MolangSharp.Runtime.Value.IMoValue.Equals(ConcreteMC.MolangSharp.Runtime.Value.IMoValue)
-  fullName: ConcreteMC.MolangSharp.Runtime.Value.IMoValue.Equals(ConcreteMC.MolangSharp.Runtime.Value.IMoValue)
-  nameWithType: IMoValue.Equals(IMoValue)
-- uid: ConcreteMC.MolangSharp.Runtime.Value.IMoValue.Equals*
-  name: Equals
-  href: api/ConcreteMC.MolangSharp.Runtime.Value.IMoValue.html#ConcreteMC_MolangSharp_Runtime_Value_IMoValue_Equals_
-  commentId: Overload:ConcreteMC.MolangSharp.Runtime.Value.IMoValue.Equals
-  isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Runtime.Value.IMoValue.Equals
-  nameWithType: IMoValue.Equals
 - uid: ConcreteMC.MolangSharp.Runtime.Value.IMoValue.Value
   name: Value
   href: api/ConcreteMC.MolangSharp.Runtime.Value.IMoValue.html#ConcreteMC_MolangSharp_Runtime_Value_IMoValue_Value
@@ -4956,32 +5338,6 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.Value.IMoValue.Value
   nameWithType: IMoValue.Value
-- uid: ConcreteMC.MolangSharp.Runtime.Value.IMoValue`1
-  name: IMoValue<T>
-  href: api/ConcreteMC.MolangSharp.Runtime.Value.IMoValue-1.html
-  commentId: T:ConcreteMC.MolangSharp.Runtime.Value.IMoValue`1
-  name.vb: IMoValue(Of T)
-  fullName: ConcreteMC.MolangSharp.Runtime.Value.IMoValue<T>
-  fullName.vb: ConcreteMC.MolangSharp.Runtime.Value.IMoValue(Of T)
-  nameWithType: IMoValue<T>
-  nameWithType.vb: IMoValue(Of T)
-- uid: ConcreteMC.MolangSharp.Runtime.Value.IMoValue`1.Value
-  name: Value
-  href: api/ConcreteMC.MolangSharp.Runtime.Value.IMoValue-1.html#ConcreteMC_MolangSharp_Runtime_Value_IMoValue_1_Value
-  commentId: P:ConcreteMC.MolangSharp.Runtime.Value.IMoValue`1.Value
-  fullName: ConcreteMC.MolangSharp.Runtime.Value.IMoValue<T>.Value
-  fullName.vb: ConcreteMC.MolangSharp.Runtime.Value.IMoValue(Of T).Value
-  nameWithType: IMoValue<T>.Value
-  nameWithType.vb: IMoValue(Of T).Value
-- uid: ConcreteMC.MolangSharp.Runtime.Value.IMoValue`1.Value*
-  name: Value
-  href: api/ConcreteMC.MolangSharp.Runtime.Value.IMoValue-1.html#ConcreteMC_MolangSharp_Runtime_Value_IMoValue_1_Value_
-  commentId: Overload:ConcreteMC.MolangSharp.Runtime.Value.IMoValue`1.Value
-  isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Runtime.Value.IMoValue<T>.Value
-  fullName.vb: ConcreteMC.MolangSharp.Runtime.Value.IMoValue(Of T).Value
-  nameWithType: IMoValue<T>.Value
-  nameWithType.vb: IMoValue(Of T).Value
 - uid: ConcreteMC.MolangSharp.Runtime.Value.MoValue
   name: MoValue
   href: api/ConcreteMC.MolangSharp.Runtime.Value.MoValue.html

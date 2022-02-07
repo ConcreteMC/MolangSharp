@@ -6,10 +6,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IExprVisitor
+    <title>Interface IExpressionVisitor
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IExprVisitor
+    <meta name="title" content="Interface IExpressionVisitor
    ">
     <meta name="generator" content="docfx 2.56.7.0">
     
@@ -92,31 +92,37 @@
                           </div>
                         </div>
 
-                    <article class="content wrap" id="_content" data-uid="ConcreteMC.MolangSharp.Parser.IExprVisitor">
+                    <article class="content wrap" id="_content" data-uid="ConcreteMC.MolangSharp.Parser.IExpressionVisitor">
   
   
-  <h1 id="ConcreteMC_MolangSharp_Parser_IExprVisitor" data-uid="ConcreteMC.MolangSharp.Parser.IExprVisitor" class="text-break">Interface IExprVisitor
+  <h1 id="ConcreteMC_MolangSharp_Parser_IExpressionVisitor" data-uid="ConcreteMC.MolangSharp.Parser.IExpressionVisitor" class="text-break">Interface IExpressionVisitor
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The base interface for expression visitors.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ConcreteMC.MolangSharp.Parser.html">ConcreteMC.MolangSharp.Parser</a></h6>
   <h6><strong>Assembly</strong>: ConcreteMC.MolangSharp.dll</h6>
-  <h5 id="ConcreteMC_MolangSharp_Parser_IExprVisitor_syntax">Syntax</h5>
+  <h5 id="ConcreteMC_MolangSharp_Parser_IExpressionVisitor_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IExprVisitor</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IExpressionVisitor</code></pre>
   </div>
+  <h5 id="ConcreteMC_MolangSharp_Parser_IExpressionVisitor_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Expression visitors are mainly used to optimize arrays of <a class="xref" href="ConcreteMC.MolangSharp.Parser.IExpression.html">IExpression</a>
+One such example is the <a class="xref" href="ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor.html">MathOptimizationVisitor</a></p>
+</div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ConcreteMC/MolangSharp/new/main/apiSpec/new?filename=ConcreteMC_MolangSharp_Parser_IExprVisitor_AfterTraverse_ConcreteMC_MolangSharp_Parser_IExpression___.md&amp;value=---%0Auid%3A%20ConcreteMC.MolangSharp.Parser.IExprVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ConcreteMC/MolangSharp/new/main/apiSpec/new?filename=ConcreteMC_MolangSharp_Parser_IExpressionVisitor_AfterTraverse_ConcreteMC_MolangSharp_Parser_IExpression___.md&amp;value=---%0Auid%3A%20ConcreteMC.MolangSharp.Parser.IExpressionVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/IExprVisitor.cs/#L11">View Source</a>
+    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/IExpressionVisitor.cs/#L36">View Source</a>
   </span>
-  <a id="ConcreteMC_MolangSharp_Parser_IExprVisitor_AfterTraverse_" data-uid="ConcreteMC.MolangSharp.Parser.IExprVisitor.AfterTraverse*"></a>
-  <h4 id="ConcreteMC_MolangSharp_Parser_IExprVisitor_AfterTraverse_ConcreteMC_MolangSharp_Parser_IExpression___" data-uid="ConcreteMC.MolangSharp.Parser.IExprVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])">AfterTraverse(IExpression[])</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="ConcreteMC_MolangSharp_Parser_IExpressionVisitor_AfterTraverse_" data-uid="ConcreteMC.MolangSharp.Parser.IExpressionVisitor.AfterTraverse*"></a>
+  <h4 id="ConcreteMC_MolangSharp_Parser_IExpressionVisitor_AfterTraverse_ConcreteMC_MolangSharp_Parser_IExpression___" data-uid="ConcreteMC.MolangSharp.Parser.IExpressionVisitor.AfterTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])">AfterTraverse(IExpression[])</h4>
+  <div class="markdown level1 summary"><p>Invoked after all of the ExpressionVisitors have traversed an expression array</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -135,20 +141,22 @@
       <tr>
         <td><a class="xref" href="ConcreteMC.MolangSharp.Parser.IExpression.html">IExpression</a>[]</td>
         <td><span class="parametername">expressions</span></td>
-        <td></td>
+        <td><p>The visited expression array</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ConcreteMC/MolangSharp/new/main/apiSpec/new?filename=ConcreteMC_MolangSharp_Parser_IExprVisitor_BeforeTraverse_ConcreteMC_MolangSharp_Parser_IExpression___.md&amp;value=---%0Auid%3A%20ConcreteMC.MolangSharp.Parser.IExprVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ConcreteMC/MolangSharp/new/main/apiSpec/new?filename=ConcreteMC_MolangSharp_Parser_IExpressionVisitor_BeforeTraverse_ConcreteMC_MolangSharp_Parser_IExpression___.md&amp;value=---%0Auid%3A%20ConcreteMC.MolangSharp.Parser.IExpressionVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/IExprVisitor.cs/#L5">View Source</a>
+    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/IExpressionVisitor.cs/#L16">View Source</a>
   </span>
-  <a id="ConcreteMC_MolangSharp_Parser_IExprVisitor_BeforeTraverse_" data-uid="ConcreteMC.MolangSharp.Parser.IExprVisitor.BeforeTraverse*"></a>
-  <h4 id="ConcreteMC_MolangSharp_Parser_IExprVisitor_BeforeTraverse_ConcreteMC_MolangSharp_Parser_IExpression___" data-uid="ConcreteMC.MolangSharp.Parser.IExprVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])">BeforeTraverse(IExpression[])</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="ConcreteMC_MolangSharp_Parser_IExpressionVisitor_BeforeTraverse_" data-uid="ConcreteMC.MolangSharp.Parser.IExpressionVisitor.BeforeTraverse*"></a>
+  <h4 id="ConcreteMC_MolangSharp_Parser_IExpressionVisitor_BeforeTraverse_ConcreteMC_MolangSharp_Parser_IExpression___" data-uid="ConcreteMC.MolangSharp.Parser.IExpressionVisitor.BeforeTraverse(ConcreteMC.MolangSharp.Parser.IExpression[])">BeforeTraverse(IExpression[])</h4>
+  <div class="markdown level1 summary"><p>Invoked before any ExpressionVisitor has traversed expression array</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -167,20 +175,22 @@
       <tr>
         <td><a class="xref" href="ConcreteMC.MolangSharp.Parser.IExpression.html">IExpression</a>[]</td>
         <td><span class="parametername">expressions</span></td>
-        <td></td>
+        <td><p>The expressions to be traversed</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ConcreteMC/MolangSharp/new/main/apiSpec/new?filename=ConcreteMC_MolangSharp_Parser_IExprVisitor_OnLeave_ConcreteMC_MolangSharp_Parser_IExpression_.md&amp;value=---%0Auid%3A%20ConcreteMC.MolangSharp.Parser.IExprVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ConcreteMC/MolangSharp/new/main/apiSpec/new?filename=ConcreteMC_MolangSharp_Parser_IExpressionVisitor_OnLeave_ConcreteMC_MolangSharp_Parser_IExpression_.md&amp;value=---%0Auid%3A%20ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/IExprVisitor.cs/#L9">View Source</a>
+    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/IExpressionVisitor.cs/#L30">View Source</a>
   </span>
-  <a id="ConcreteMC_MolangSharp_Parser_IExprVisitor_OnLeave_" data-uid="ConcreteMC.MolangSharp.Parser.IExprVisitor.OnLeave*"></a>
-  <h4 id="ConcreteMC_MolangSharp_Parser_IExprVisitor_OnLeave_ConcreteMC_MolangSharp_Parser_IExpression_" data-uid="ConcreteMC.MolangSharp.Parser.IExprVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)">OnLeave(IExpression)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="ConcreteMC_MolangSharp_Parser_IExpressionVisitor_OnLeave_" data-uid="ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnLeave*"></a>
+  <h4 id="ConcreteMC_MolangSharp_Parser_IExpressionVisitor_OnLeave_ConcreteMC_MolangSharp_Parser_IExpression_" data-uid="ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnLeave(ConcreteMC.MolangSharp.Parser.IExpression)">OnLeave(IExpression)</h4>
+  <div class="markdown level1 summary"><p>Invoked when all ExpressionVisitors have visited an expression</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -199,24 +209,26 @@
       <tr>
         <td><a class="xref" href="ConcreteMC.MolangSharp.Parser.IExpression.html">IExpression</a></td>
         <td><span class="parametername">expression</span></td>
-        <td></td>
+        <td><p>The expressions that has been visited</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/ConcreteMC/MolangSharp/new/main/apiSpec/new?filename=ConcreteMC_MolangSharp_Parser_IExprVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExprTraverser_ConcreteMC_MolangSharp_Parser_IExpression_.md&amp;value=---%0Auid%3A%20ConcreteMC.MolangSharp.Parser.IExprVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser%2CConcreteMC.MolangSharp.Parser.IExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/ConcreteMC/MolangSharp/new/main/apiSpec/new?filename=ConcreteMC_MolangSharp_Parser_IExpressionVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExpressionTraverser_ConcreteMC_MolangSharp_Parser_IExpression_.md&amp;value=---%0Auid%3A%20ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser%2CConcreteMC.MolangSharp.Parser.IExpression)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/IExprVisitor.cs/#L7">View Source</a>
+    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/IExpressionVisitor.cs/#L24">View Source</a>
   </span>
-  <a id="ConcreteMC_MolangSharp_Parser_IExprVisitor_OnVisit_" data-uid="ConcreteMC.MolangSharp.Parser.IExprVisitor.OnVisit*"></a>
-  <h4 id="ConcreteMC_MolangSharp_Parser_IExprVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExprTraverser_ConcreteMC_MolangSharp_Parser_IExpression_" data-uid="ConcreteMC.MolangSharp.Parser.IExprVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExprTraverser,ConcreteMC.MolangSharp.Parser.IExpression)">OnVisit(ExprTraverser, IExpression)</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="ConcreteMC_MolangSharp_Parser_IExpressionVisitor_OnVisit_" data-uid="ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnVisit*"></a>
+  <h4 id="ConcreteMC_MolangSharp_Parser_IExpressionVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExpressionTraverser_ConcreteMC_MolangSharp_Parser_IExpression_" data-uid="ConcreteMC.MolangSharp.Parser.IExpressionVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser,ConcreteMC.MolangSharp.Parser.IExpression)">OnVisit(ExpressionTraverser, IExpression)</h4>
+  <div class="markdown level1 summary"><p>Invoked once for every <a class="xref" href="ConcreteMC.MolangSharp.Parser.IExpression.html">IExpression</a></p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IExpression OnVisit(ExprTraverser traverser, IExpression expression)</code></pre>
+    <pre><code class="lang-csharp hljs">IExpression OnVisit(ExpressionTraverser traverser, IExpression expression)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -229,14 +241,16 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="ConcreteMC.MolangSharp.Parser.ExprTraverser.html">ExprTraverser</a></td>
+        <td><a class="xref" href="ConcreteMC.MolangSharp.Parser.ExpressionTraverser.html">ExpressionTraverser</a></td>
         <td><span class="parametername">traverser</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="ConcreteMC.MolangSharp.Parser.ExpressionTraverser.html">ExpressionTraverser</a> that invoked the visitor</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="ConcreteMC.MolangSharp.Parser.IExpression.html">IExpression</a></td>
         <td><span class="parametername">expression</span></td>
-        <td></td>
+        <td><p>The expressions to visit</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -251,7 +265,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="ConcreteMC.MolangSharp.Parser.IExpression.html">IExpression</a></td>
-        <td></td>
+        <td><p>The visited expression</p>
+</td>
       </tr>
     </tbody>
   </table>
