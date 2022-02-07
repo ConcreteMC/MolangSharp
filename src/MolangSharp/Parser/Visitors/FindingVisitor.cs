@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ConcreteMC.MolangSharp.Parser.Visitors
 {
-	public class FindingVisitor : ExprVisitor
+	public class FindingVisitor : ExpressionVisitor
 	{
 		private Predicate<IExpression> _predicate;
 		public List<IExpression> FoundExpressions = new List<IExpression>();
@@ -14,7 +14,7 @@ namespace ConcreteMC.MolangSharp.Parser.Visitors
 		}
 
 		/// <inheritdoc />
-		public override IExpression OnVisit(ExprTraverser traverser, IExpression expression)
+		public override IExpression OnVisit(ExpressionTraverser traverser, IExpression expression)
 		{
 			if (_predicate(expression))
 			{

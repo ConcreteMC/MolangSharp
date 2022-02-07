@@ -1,2 +1,8 @@
-- name: Getting Started
+- name: Home
   href: index.md
+  
+- name: Getting Started
+  href: getting-started.md
+
+- name: Interoperability
+  href: interop.md

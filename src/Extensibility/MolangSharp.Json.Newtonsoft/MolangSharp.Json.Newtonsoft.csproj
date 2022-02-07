@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.1; netcoreapp6.0</TargetFrameworks>
+        <ImplicitUsings>disable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>ConcreteMC.MolangSharp.Json.Newtonsoft</Title>
+        <Product>ConcreteMC.MolangSharp.Json.Newtonsoft</Product>
+        <PackageId>ConcreteMC.MolangSharp.Json.Newtonsoft</PackageId>
+        <Description>Implements a JsonConverter for Molang expressions</Description>
+        <Authors>Kenny van Vulpen</Authors>
+        <Company>Kenny van Vulpen</Company>
+        <Copyright>Copyright Kenny van Vulpen 2019-2022</Copyright>
+        <PackageTags>Minecraft Molang MCPE MoLang bedrock mojang alex json newtonsoft newtonsoft.json</PackageTags>
+        <PackageIconUrl><![CDATA[https://avatars.githubusercontent.com/u/97732568?s=96&v=4]]></PackageIconUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>https://github.com/ConcreteMC/MolangSharp.git</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/ConcreteMC/MolangSharp</PackageProjectUrl>
+
+        <PackageVersion>1.0.0</PackageVersion>
+        <PackageReleaseNotes>
+            - Initial release
+        </PackageReleaseNotes>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\MolangSharp\MolangSharp.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    </ItemGroup>
+
+</Project>

@@ -13,9 +13,4 @@ namespace ConcreteMC.MolangSharp.Parser
 
 		public abstract IExpression Parse(MoLangParser parser, Token token, IExpression leftExpr);
 	}
-
-	public abstract class PrefixParselet
-	{
-		public abstract IExpression Parse(MoLangParser parser, Token token);
-	}
 }

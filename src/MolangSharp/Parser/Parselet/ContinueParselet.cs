@@ -3,6 +3,9 @@ using ConcreteMC.MolangSharp.Parser.Tokenizer;
 
 namespace ConcreteMC.MolangSharp.Parser.Parselet
 {
+	/// <summary>
+	///		Implements the "continue" instruction parser
+	/// </summary>
 	public class ContinueParselet : PrefixParselet
 	{
 		/// <inheritdoc />

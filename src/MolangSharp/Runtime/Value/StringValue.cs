@@ -1,6 +1,9 @@
 namespace ConcreteMC.MolangSharp.Runtime.Value
 {
-	public class StringValue : IMoValue<string>
+	/// <summary>
+	///		Represents a string value
+	/// </summary>
+	public class StringValue : IMoValue
 	{
 		/// <inheritdoc />
 		object IMoValue.Value => Value;

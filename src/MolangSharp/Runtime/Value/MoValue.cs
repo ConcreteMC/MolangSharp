@@ -1,22 +1,18 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using ConcreteMC.MolangSharp.Runtime.Struct;
 
 namespace ConcreteMC.MolangSharp.Runtime.Value
-
 {
-	public interface IMoValue<T> : IMoValue
-	{
-		new T Value { get; }
-	}
-
-	public interface IMoValue
+	/// <summary>
+	///		Resembles a MoLang compatible value. 
+	/// </summary>
+	public interface IMoValue : IEquatable<IMoValue>
 	{
 		object Value { get; }
 
-		bool Equals(IMoValue b);
-
-		string AsString() => Value.ToString();
+		virtual string AsString() => Value.ToString();
 
 		virtual double AsDouble() => Value is double db ? db : 0d;
 

@@ -1,6 +1,6 @@
 namespace ConcreteMC.MolangSharp.Parser.Visitors
 {
-	public class ExprConnectingVisitor : ExprVisitor
+	public class ExpressionConnectingVisitor : ExpressionVisitor
 	{
 		//private LinkedList<IExpression> Stack { get; set; } = new LinkedList<IExpression>();
 
@@ -17,7 +17,7 @@ namespace ConcreteMC.MolangSharp.Parser.Visitors
 		}
 
 		/// <inheritdoc />
-		public override IExpression OnVisit(ExprTraverser traverser, IExpression expression)
+		public override IExpression OnVisit(ExpressionTraverser traverser, IExpression expression)
 		{
 			var previous = _last;
 			expression.Meta.Previous = previous;

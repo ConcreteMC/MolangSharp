@@ -4,6 +4,13 @@ using ConcreteMC.MolangSharp.Utils;
 
 namespace ConcreteMC.MolangSharp.Parser.Parselet
 {
+	/// <summary>
+	///		Implements the "name" parser
+	/// </summary>
+	/// <remarks>
+	///		Used to parse function calls or property accessors.
+	///		For example: "query.frame_time" or "math.min(10, 20)"
+	/// </remarks>
 	public class NameParselet : PrefixParselet
 	{
 		/// <inheritdoc />

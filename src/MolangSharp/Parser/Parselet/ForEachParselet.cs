@@ -4,6 +4,9 @@ using ConcreteMC.MolangSharp.Parser.Tokenizer;
 
 namespace ConcreteMC.MolangSharp.Parser.Parselet
 {
+	/// <summary>
+	///		Implements the "foreach" instruction parser
+	/// </summary>
 	public class ForEachParselet : PrefixParselet
 	{
 		/// <inheritdoc />

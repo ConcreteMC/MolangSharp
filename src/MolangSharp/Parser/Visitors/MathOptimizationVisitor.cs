@@ -1,27 +1,56 @@
-﻿using ConcreteMC.MolangSharp.Parser.Expressions;
+﻿using System;
+using System.Linq;
+using ConcreteMC.MolangSharp.Parser.Expressions;
 using ConcreteMC.MolangSharp.Runtime;
 
 namespace ConcreteMC.MolangSharp.Parser.Visitors
 {
     /// <summary>
-    ///     Optimizes expressions by pre-calculating static maths
+    ///     Optimizes expressions by pre-calculating constant maths
     /// </summary>
-    public class MathOptimizationVisitor : ExprVisitor
+    public class MathOptimizationVisitor : ExpressionVisitor
     {
-        private MoScope _scope = new MoScope(new MoLangRuntime());
-        private MoLangEnvironment _environment = new MoLangEnvironment();
+        private static MoScope _scope = new MoScope(new MoLangRuntime());
+        private static MoLangEnvironment _environment = new MoLangEnvironment();
 
-        public override IExpression OnVisit(ExprTraverser traverser, IExpression expression)
+        public override IExpression OnVisit(ExpressionTraverser traverser, IExpression expression)
         {
+            return Visit(expression);
+        }
+
+        private static IExpression Visit(IExpression expression)
+        {
+            if (expression is FuncCallExpression nameExpression &&
+                nameExpression.Name.Value.Equals("math", StringComparison.InvariantCultureIgnoreCase))
+            {
+                return TryOptimizeMathFunction(nameExpression);
+            }
+            
             if (expression is BinaryOpExpression binaryOp)
             {
-               return TryOptimize(binaryOp);
+                return TryOptimize(binaryOp);
             }
 
             return expression;
         }
         
-        private IExpression TryOptimize(BinaryOpExpression expression)
+        private static IExpression TryOptimizeMathFunction(FuncCallExpression expression)
+        {
+            for (int i = 0; i < expression.Parameters.Length; i++)
+            {
+                expression.Parameters[i] = Visit(expression.Parameters[i]);
+            }
+            
+            if (expression.Parameters.All(x => x is NumberExpression))
+            {
+                var eval = expression.Evaluate(_scope, _environment);
+                return new NumberExpression(eval);
+            }
+            
+            return expression;
+        }
+
+        private static IExpression TryOptimize(BinaryOpExpression expression)
         {
             if (expression.Left is BinaryOpExpression l)
                 expression.Left = TryOptimize(l);

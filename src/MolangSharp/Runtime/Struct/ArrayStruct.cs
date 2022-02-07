@@ -14,42 +14,46 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 	{
 		private IMoValue[] _array;
 
+		/// <summary>
+		///		Initializes a new instance of the ArrayStruct class with no values.
+		/// </summary>
 		public ArrayStruct()
 		{
 			_array = new IMoValue[0];
 		}
 
+		/// <summary>
+		///		Initializes a new instance of the ArrayStruct class.
+		/// </summary>
+		/// <param name="values">The values this ArrayStruct contains</param>
 		public ArrayStruct(IEnumerable<IMoValue> values)
 		{
 			_array = values.ToArray();
-			//_array.AddRange(values);
 		}
 
-		private void Resize(int size)
-		{
-			if (size >= _array.Length)
-				Array.Resize(ref _array, size + 1);
-		}
-		
+		/// <summary>
+		///		Indexes the ArrayStruct
+		/// </summary>
+		/// <param name="index">The index to get/set the value of</param>
 		public IMoValue this[int index]
 		{
 			get
 			{
 				if (index >= _array.Length)
 					return DoubleValue.Zero;
-				//Resize(index);
+				
 				return _array[index % _array.Length];
 			}
 			set
 			{
 				if (_array.Length == 0)
 					return;
-				//Resize(index);
 				
 				_array[index % _array.Length] = value;
 			}
 		}
 
+		/// <inheritdoc />
 		public void Set(MoPath key, IMoValue value)
 		{
 			if (int.TryParse(key.Value, out int index))
@@ -58,6 +62,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 			}
 		}
 
+		/// <inheritdoc />
 		public IMoValue Get(MoPath key, MoParams parameters)
 		{
 			if (int.TryParse(key.Value, out int index))
@@ -65,19 +70,22 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 				return this[index];
 			}
 
-			throw new MoLangRuntimeException($"Invalid path for array access: {key.Path.ToString()}", null);
+			throw new MoLangRuntimeException($"Invalid path for array access: {key.Path.ToString()}");
 		}
 
+		/// <inheritdoc />
 		public void Clear()
 		{
-			throw new NotImplementedException();
+			throw new NotSupportedException("Cannot clear an ArrayStruct");
 		}
 
+		/// <inheritdoc />
 		public object Value => _array;
 	}
 
 	public class VariableArrayStruct : VariableStruct
 	{
+		/// <inheritdoc />
 		protected override IMoStruct CreateNew()
 		{
 			return new ArrayStruct();

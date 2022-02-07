@@ -2,11 +2,19 @@ using System;
 
 namespace ConcreteMC.MolangSharp.Runtime.Value
 {
-	public class DoubleValue : IMoValue<double>
+	/// <summary>
+	///		Represents a double-precision floating-point number
+	/// </summary>
+	public class DoubleValue : IMoValue
 	{
-		/// <inheritdoc />
-		object IMoValue.Value => Value;
+		private readonly double _value;
 
+		/// <inheritdoc />
+		object IMoValue.Value => _value;
+
+		/// <inheritdoc />
+		public double Value => _value;
+		
 		/// <inheritdoc />
 		public bool Equals(IMoValue b)
 		{
@@ -15,11 +23,6 @@ namespace ConcreteMC.MolangSharp.Runtime.Value
 
 			return false;
 		}
-
-		private readonly double _value;
-
-		/// <inheritdoc />
-		public double Value => _value;
 
 		public DoubleValue(object value)
 		{
@@ -65,11 +68,11 @@ namespace ConcreteMC.MolangSharp.Runtime.Value
 			// ...the rest of the equality implementation
 		}
 
-		protected bool Equals(DoubleValue other)
+		public bool Equals(DoubleValue other)
 		{
 			return _value.Equals(other._value);
 		}
-
+		
 		/// <inheritdoc />
 		public override int GetHashCode()
 		{
@@ -79,43 +82,16 @@ namespace ConcreteMC.MolangSharp.Runtime.Value
 		/// <inheritdoc />
 		public double AsDouble()
 		{
-			return Value;
+			return _value;
 		}
 
 		/// <inheritdoc />
 		public float AsFloat()
 		{
-			return (float)Value;
+			return (float)_value;
 		}
 
 		public static DoubleValue Zero { get; } = new DoubleValue(0d);
 		public static DoubleValue One { get; } = new DoubleValue(1d);
 	}
-
-	/*public class FloatValue : IMoValue<float>
-	{
-		/// <inheritdoc />
-		object IMoValue.Value => Value;
-
-		/// <inheritdoc />
-		public float Value { get; }
-
-		public FloatValue(object value) {
-			if (value is bool) {
-				Value = (bool) value ? 1.0f : 0.0f;
-			} else if (value is float) {
-				Value = (float) value;
-			} else {
-				Value = 1.0f;
-			}
-		}
-		
-		public FloatValue(float value)
-		{
-			Value = value;
-		}
-
-		public static FloatValue Zero => new FloatValue(0);
-		public static FloatValue One => new FloatValue(1);
-	}*/
 }

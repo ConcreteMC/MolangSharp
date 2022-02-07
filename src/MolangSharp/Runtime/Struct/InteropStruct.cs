@@ -129,7 +129,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 		/// <inheritdoc />
 		public void Clear()
 		{
-			throw new NotImplementedException();
+			throw new NotSupportedException("Cannot clear an InteropStruct.");
 		}
 	}
 }

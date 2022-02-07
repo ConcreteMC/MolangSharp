@@ -20,7 +20,7 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp
 			}
 			catch (Exception ex)
 			{
-				throw new MoLangRuntimeException("An unexpected error occured.", ex);
+				throw new MoLangRuntimeException(this, "An unexpected error occured.", ex);
 			}
 		}
 

@@ -3,6 +3,9 @@ using ConcreteMC.MolangSharp.Parser.Tokenizer;
 
 namespace ConcreteMC.MolangSharp.Parser.Parselet
 {
+	/// <summary>
+	///		Implements the "!=" parselet
+	/// </summary>
 	public class BooleanNotParselet : PrefixParselet
 	{
 		/// <inheritdoc />

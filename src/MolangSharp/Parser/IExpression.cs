@@ -1,91 +1,38 @@
-using System;
-using System.Text;
-using ConcreteMC.MolangSharp.Parser.Tokenizer;
 using ConcreteMC.MolangSharp.Runtime;
 using ConcreteMC.MolangSharp.Runtime.Value;
 
 namespace ConcreteMC.MolangSharp.Parser
 {
+	/// <summary>
+	///		The interface for all expressions to implement
+	/// </summary>
 	public interface IExpression
 	{
+		/// <summary>
+		///		Contains metadata about this expression
+		/// </summary>
 		ExpressionMeta Meta { get; }
 
+		/// <summary>
+		///		Evaluate the expression
+		/// </summary>
+		/// <param name="scope">The current scope</param>
+		/// <param name="environment">The environment provided by the <see cref="MoLangRuntime"/></param>
+		/// <returns>The value returned by the expression</returns>
 		IMoValue Evaluate(MoScope scope, MoLangEnvironment environment);
 
+		/// <summary>
+		///		Invoked when trying to assign a value to a property/field
+		/// </summary>
+		/// <param name="scope">The current scope</param>
+		/// <param name="environment">The environment provided by the <see cref="MoLangRuntime"/></param>
+		/// <param name="value">The value to assign</param>
 		void Assign(MoScope scope, MoLangEnvironment environment, IMoValue value);
 
+		/// <summary>
+		///		The parameters used by this expression
+		/// </summary>
 		IExpression[] Parameters { get; set; }
-	}
-
-	public class ExpressionMeta
-	{
-		public Token Token { get; set; }
-		public IExpression Parent { get; set; }
-		public IExpression Previous { get; set; }
-		public IExpression Next { get; set; }
-
-		public override string ToString()
-		{
-			StringBuilder sb = new StringBuilder(255);
-			bool includeFileInfoIfAvailable;
-
-			if (Token != null)
-			{
-				sb.Append(Token.Text);
-				includeFileInfoIfAvailable = true;
-			}
-			else
-			{
-				includeFileInfoIfAvailable = false;
-			}
-
-			if (includeFileInfoIfAvailable)
-			{
-				//	sb.Append(" at offset ");
-
-				//	if (_nativeOffset == OFFSET_UNKNOWN)
-				//		sb.Append("<offset unknown>");
-				//	else
-				//		sb.Append(_nativeOffset);
-
-				sb.Append(" in file:line:column ");
-				sb.Append("<filename unknown>");
-				sb.Append(':');
-				sb.Append(Token.Position.LineNumber);
-				sb.Append(':');
-				sb.Append(Token.Position.Index);
-			}
-			else
-			{
-				sb.Append("<null>");
-			}
-
-			sb.AppendLine();
-
-			return sb.ToString();
-		}
-	}
-
-	public abstract class Expression : IExpression
-	{
-		public IExpression[] Parameters { get; set; }
-
-		/// <inheritdoc />
-		public ExpressionMeta Meta { get; } = new ExpressionMeta();
-
-		public Expression(params IExpression[] parameters)
-		{
-			Parameters = parameters;
-		}
-		
-		/// <inheritdoc />
-		public abstract IMoValue Evaluate(MoScope scope, MoLangEnvironment environment);
-
-		/// <inheritdoc />
-		public virtual void Assign(MoScope scope, MoLangEnvironment environment, IMoValue value)
-		{
-			throw new Exception("Cannot assign a value to " + this.GetType());
-		}
 	}
 
 	public abstract class Expression<T> : Expression

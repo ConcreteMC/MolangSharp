@@ -73,14 +73,14 @@ namespace ConcreteMC.MolangSharp.Parser
 		/// <summary>
 		///		The expression traverser executed after the parsing of the expressions
 		/// </summary>
-		public ExprTraverser ExprTraverser { get; }
+		public ExpressionTraverser ExpressionTraverser { get; }
 		
 		private readonly ITokenIterator _tokenIterator;
 		private readonly List<Token> _readTokens = new List<Token>();
 		public MoLangParser(ITokenIterator iterator)
 		{
 			_tokenIterator = iterator;
-			ExprTraverser = new ExprTraverser();
+			ExpressionTraverser = new ExpressionTraverser();
 		}
 
 		/// <summary>
@@ -110,7 +110,7 @@ namespace ConcreteMC.MolangSharp.Parser
 					}
 				} while (MatchToken(TokenType.Semicolon));
 
-				var result = ExprTraverser.Traverse(exprs.ToArray());
+				var result = ExpressionTraverser.Traverse(exprs.ToArray());
 				if (result.Length > 1)
 				{
 					return new ScriptExpression(result);
@@ -346,7 +346,7 @@ namespace ConcreteMC.MolangSharp.Parser
 		private static MoLangParser DefaultFactory(ITokenIterator iterator)
 		{
 			var parser = new MoLangParser(iterator);
-			parser.ExprTraverser.Visitors.Add(new MathOptimizationVisitor());
+			parser.ExpressionTraverser.Visitors.Add(new MathOptimizationVisitor());
 			
 			return parser;
 		}

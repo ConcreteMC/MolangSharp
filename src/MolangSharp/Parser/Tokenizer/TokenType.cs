@@ -48,7 +48,14 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 
 		private static int _typeCounter = 0;
 
+		/// <summary>
+		///		A string "identifying" this tokentype
+		/// </summary>
 		public string Symbol { get; }
+		
+		/// <summary>
+		///		A human readable identifier for this tokentype
+		/// </summary>
 		public string TypeName { get; }
 
 		private readonly int _typeId;
@@ -69,6 +76,11 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 			This, True, False, String, Number, Name, Eof
 		};
 
+		/// <summary>
+		///		Finds the TokenType by symbol
+		/// </summary>
+		/// <param name="symbol">The symbol to lookup</param>
+		/// <returns>The resulting TokenType or null if no match has been found</returns>
 		public static TokenType BySymbol(string symbol)
 		{
 			foreach (TokenType tokenType in TokenType.Values)
@@ -81,12 +93,22 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 
 			return null;
 		}
-
+		
+		/// <summary>
+		///		Finds the TokenType by symbol
+		/// </summary>
+		/// <param name="symbol">The symbol to lookup</param>
+		/// <returns>The resulting TokenType or null if no match has been found</returns>
 		public static TokenType BySymbol(char symbol)
 		{
 			return BySymbol(symbol.ToString());
 		}
 
+		/// <summary>
+		///		Checks if this tokentype is equal to <param name="other"/>
+		/// </summary>
+		/// <param name="other"></param>
+		/// <returns></returns>
 		public bool Equals(TokenType other)
 		{
 			return _typeId == other._typeId;

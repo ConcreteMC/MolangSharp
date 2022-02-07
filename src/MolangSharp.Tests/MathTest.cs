@@ -90,7 +90,7 @@ public class MathTest
 	[TestMethod]
 	public void OrderOfOperations()
 	{
-		var runtime =  Setup(10, 20);
+		var runtime = Setup(10, 20);
 
 		var expr = MoLangParser.Parse("v.b + (7 + 2 * (6 + 3) / 3 - 7) + v.a");
 		var result = runtime.Execute(expr);

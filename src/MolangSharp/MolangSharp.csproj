@@ -4,9 +4,9 @@
         <Configurations>Debug;Release</Configurations>
         <Platforms>AnyCPU;x64</Platforms>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>1.0.0</Version>
+        <Version>1.0.2</Version>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <TargetFramework>netstandard2.1</TargetFramework>
+        <TargetFrameworks>netstandard2.1; netcoreapp6.0</TargetFrameworks>
         <PackageProjectUrl>https://github.com/ConcreteMC/MolangSharp</PackageProjectUrl>
         <RepositoryUrl>https://github.com/ConcreteMC/MolangSharp.git</RepositoryUrl>
         <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
@@ -15,13 +15,14 @@
         <Company>Kenny van Vulpen</Company>
         <Copyright>Copyright Kenny van Vulpen 2019-2022</Copyright>
         <PackageTags>Minecraft Molang MCPE MoLang bedrock mojang alex</PackageTags>
-        <PackageReleaseNotes>- Added a maths optimization step
-- Added documentation for a bunch of classes
+        <PackageReleaseNotes>
+            - Further optimizations to Math functions
+            - Updated documentation
         </PackageReleaseNotes>
         <PackageIconUrl><![CDATA[https://avatars.githubusercontent.com/u/97732568?s=96&v=4]]></PackageIconUrl>
         <AssemblyName>ConcreteMC.MolangSharp</AssemblyName>
         <RootNamespace>ConcreteMC.MolangSharp</RootNamespace>
-        <PackageVersion>1.0.1</PackageVersion>
+        <PackageVersion>1.0.2</PackageVersion>
         <Title>ConcreteMC.MolangSharp</Title>
         <RepositoryType>git</RepositoryType>
         <Product>ConcreteMC.MolangSharp</Product>

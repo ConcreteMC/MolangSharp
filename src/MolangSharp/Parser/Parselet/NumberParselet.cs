@@ -5,6 +5,9 @@ using ConcreteMC.MolangSharp.Parser.Tokenizer;
 
 namespace ConcreteMC.MolangSharp.Parser.Parselet
 {
+	/// <summary>
+	///		Implements number parsing
+	/// </summary>
 	public class NumberParselet : PrefixParselet
 	{
 		private const NumberStyles NumberStyle = System.Globalization.NumberStyles.AllowDecimalPoint;
@@ -13,7 +16,7 @@ namespace ConcreteMC.MolangSharp.Parser.Parselet
 		/// <inheritdoc />
 		public override IExpression Parse(MoLangParser parser, Token token)
 		{
-			if (double.TryParse(token.Text, out var result))
+			if (double.TryParse(token.Text, NumberStyle, Culture, out var result))
 			{
 				return new NumberExpression(result);
 			}

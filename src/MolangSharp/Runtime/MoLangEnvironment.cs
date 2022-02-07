@@ -7,6 +7,12 @@ using ConcreteMC.MolangSharp.Utils;
 
 namespace ConcreteMC.MolangSharp.Runtime
 {
+	/// <summary>
+	///		Provides an execution environment for the <see cref="MoLangRuntime"/>
+	/// </summary>
+	/// <remarks>
+	///		An example of a MoLangEnvironment would be a minecraft entity.
+	/// </remarks>
 	public class MoLangEnvironment : IMoValue
 	{
 		/// <inheritdoc />
@@ -19,6 +25,9 @@ namespace ConcreteMC.MolangSharp.Runtime
 		/// </summary>
 		public IMoValue ThisVariable { get; set; } = DoubleValue.Zero;
 
+		/// <summary>
+		///		Creates a new instance of the MoLangEnvironment class
+		/// </summary>
 		public MoLangEnvironment()
 		{
 			Structs.TryAdd("math", MoLangMath.Library);

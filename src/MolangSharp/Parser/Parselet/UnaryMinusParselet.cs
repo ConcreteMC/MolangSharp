@@ -3,6 +3,9 @@ using ConcreteMC.MolangSharp.Parser.Tokenizer;
 
 namespace ConcreteMC.MolangSharp.Parser.Parselet
 {
+	/// <summary>
+	///		Implements the unary minus parser
+	/// </summary>
 	public class UnaryMinusParselet : PrefixParselet
 	{
 		/// <inheritdoc />

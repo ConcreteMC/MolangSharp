@@ -3,6 +3,9 @@ using ConcreteMC.MolangSharp.Parser.Tokenizer;
 
 namespace ConcreteMC.MolangSharp.Parser.Parselet
 {
+	/// <summary>
+	///		Implements the Ternary expression parser
+	/// </summary>
 	public class TernaryParselet : InfixParselet
 	{
 		/// <inheritdoc />

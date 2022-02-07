@@ -7,12 +7,23 @@ using ConcreteMC.MolangSharp.Runtime.Exceptions;
 
 namespace ConcreteMC.MolangSharp.Parser
 {
-	public class ExprTraverser
+	/// <summary>
+	///		Traverses arrays of <see cref="IExpression"/> with <see cref="IExpressionVisitor"/>'s
+	/// </summary>
+	public class ExpressionTraverser
 	{
-		public readonly List<IExprVisitor> Visitors = new List<IExprVisitor>();
+		/// <summary>
+		///		The list of <see cref="IExpressionVisitor"/> that will visit the traversed expressions
+		/// </summary>
+		public readonly List<IExpressionVisitor> Visitors = new List<IExpressionVisitor>();
 
 		private bool _stop = false;
 
+		/// <summary>
+		///		Traverse an array of expressions.
+		/// </summary>
+		/// <param name="expressions">The array of expressions to visit</param>
+		/// <returns>The traversed array of expressions</returns>
 		public IExpression[] Traverse(IExpression[] expressions)
 		{
 			TraverseArray(expressions);
@@ -22,7 +33,7 @@ namespace ConcreteMC.MolangSharp.Parser
 
 		private void TraverseArray(IExpression[] expressions)
 		{
-			foreach (IExprVisitor visitor in Visitors)
+			foreach (IExpressionVisitor visitor in Visitors)
 			{
 				visitor.BeforeTraverse(expressions);
 			}
@@ -42,7 +53,7 @@ namespace ConcreteMC.MolangSharp.Parser
 				}
 			}
 
-			foreach (IExprVisitor visitor in Visitors)
+			foreach (IExpressionVisitor visitor in Visitors)
 			{
 				visitor.AfterTraverse(expressions);
 			}
@@ -71,7 +82,7 @@ namespace ConcreteMC.MolangSharp.Parser
 			return expression;
 		}
 
-		internal IExpression Visit(IExpression expression)
+		private IExpression Visit(IExpression expression)
 		{
 			foreach (var visitor in Visitors)
 			{

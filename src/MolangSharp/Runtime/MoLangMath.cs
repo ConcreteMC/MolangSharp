@@ -1,6 +1,8 @@
 using System;
 using System.Collections.Generic;
+using ConcreteMC.MolangSharp.Attributes;
 using ConcreteMC.MolangSharp.Runtime.Struct;
+using ConcreteMC.MolangSharp.Runtime.Value;
 
 namespace ConcreteMC.MolangSharp.Runtime
 {
@@ -110,5 +112,151 @@ namespace ConcreteMC.MolangSharp.Runtime
 		{
 			return (((num + 180) % 360) + 180) % 360;
 		}
+	}
+	
+	/// <summary>
+	///		The default Math implementations for the MoLang runtime
+	/// </summary>
+	public sealed class MoLangMathImpl
+	{
+		private static IMoStruct _instance;
+		public static IMoStruct Library => _instance ??= new InteropStruct(new MoLangMathImpl());
+		
+		private MoLangMathImpl()
+		{
+			
+		}
+		
+		[MoFunction("abs")] 
+		public double Abs(double value) => Math.Abs(value);
+		
+		[MoFunction("sin")] 
+		public double Sin(double value) => Math.Sin(value * (Math.PI / 180d));
+		
+		[MoFunction("asin")] 
+		public double Asin(double value) => Math.Asin(value);
+		
+		[MoFunction("cos")] 
+		public double Cos(double value) => Math.Cos(value * (Math.PI / 180d));
+		
+		[MoFunction("acos")] 
+		public double Acos(double value) => Math.Acos(value);
+		
+		[MoFunction("atan")] 
+		public double Atan(double value) => Math.Atan(value);
+		
+		[MoFunction("atan2")] 
+		public double Atan2(double y, double x) => Math.Atan2(y, x);
+		
+		[MoFunction("ceil")]
+		public double Ceiling(double value) => Math.Ceiling(value);
+
+		[MoFunction("clamp")]
+		public double Clamp(double value, double min, double max) => Math.Clamp(value, min, max);
+		
+		[MoFunction("die_roll")]
+		public double DieRoll(double num, double low, double high)
+		{
+			int i = 0;
+			double total = 0;
+			while (i++ < num) total += Random(low, high);
+
+			return total;
+		}
+		
+		[MoFunction("die_roll_integer")]
+		public int DieRollInt(int num, int low, int high)
+		{
+			int i = 0;
+			int total = 0;
+			while (i++ < num) total += RandomInt(low, high);
+
+			return total;
+		}
+
+		[MoFunction("exp")]
+		public double Exp(double value) => Math.Exp(value);
+		
+		[MoFunction("mod")]
+		public double Modulus(double x, double y) => x % y;
+
+		[MoFunction("floor")]
+		public double Floor(double value) => Math.Floor(value);
+
+		[MoFunction("hermite_blend")]
+		public int HermiteBlend(int value) => (3 * value) ^ (2 - 2 * value) ^ 3;
+
+		[MoFunction("lerp")]
+		public double Lerp(double start, double end, double amount)
+		{
+			amount = Math.Max(0, Math.Min(1, amount));
+
+			return start + (end - start) * amount;
+		}
+		
+		[MoFunction("lerp_rotate")]
+		public double LerpRotate(double start, double end, double amount)
+		{
+			start = Radify(start);
+			end = Radify(end);
+
+			if (start > end)
+			{
+				(start, end) = (end, start);
+			}
+
+			if (end - start > 180)
+			{
+				return Radify(end + amount * (360 - (end - start)));
+			}
+
+			return start + amount * (end - start);
+		}
+
+		[MoFunction("ln")]
+		public double Log(double value) => Math.Log(value);
+
+		[MoFunction("max")]
+		public double Max(double value1, double value2) => Math.Max(value1, value2);
+		
+		[MoFunction("min")]
+		public double Min(double value1, double value2) => Math.Min(value1, value2);
+
+		[MoFunction("pi")]
+		public double PiFunc() => Math.PI;
+		
+		[MoProperty("pi")]
+		public double PI => Math.PI;
+
+		[MoFunction("pow")]
+		public double Pow(double x, double y) => Math.Pow(x, y);
+		
+		[MoFunction("random")]
+		public double Random(double low, double high)
+		{
+			return low + _random.NextDouble() * (high - low);
+		}
+		
+		[MoFunction("random_integer")]
+		public int RandomInt(int low, int high)
+		{
+			return _random.Next(low, high);
+		}
+
+		[MoFunction("round")]
+		public double Round(double value) => Math.Round(value);
+		
+		[MoFunction("sqrt")]
+		public double Sqrt(double value) => Math.Sqrt(value);
+		
+		[MoFunction("trunc")]
+		public double Truncate(double value) => Math.Floor(value);
+		
+		public double Radify(double num)
+		{
+			return (((num + 180) % 360) + 180) % 360;
+		}
+
+		private Random _random = new Random();
 	}
 }

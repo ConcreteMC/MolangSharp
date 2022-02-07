@@ -2,7 +2,7 @@ using System;
 
 namespace ConcreteMC.MolangSharp.Parser.Visitors
 {
-	public class FirstFindingVisitor : ExprVisitor
+	public class FirstFindingVisitor : ExpressionVisitor
 	{
 		private Predicate<IExpression> _predicate;
 		public IExpression Found = null;
@@ -13,7 +13,7 @@ namespace ConcreteMC.MolangSharp.Parser.Visitors
 		}
 
 		/// <inheritdoc />
-		public override IExpression OnVisit(ExprTraverser traverser, IExpression expression)
+		public override IExpression OnVisit(ExpressionTraverser traverser, IExpression expression)
 		{
 			if (_predicate(expression))
 			{

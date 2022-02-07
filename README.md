@@ -6,7 +6,7 @@ A Molang Parser & Runtime for C#
 
 Getting Started
 ------------
-Coming soon.
+See the [documentation here](https://concretemc.github.io/MolangSharp/articles/getting-started.html).
 
 Awesome Repositories
 ------------------------

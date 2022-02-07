@@ -3,6 +3,12 @@ using ConcreteMC.MolangSharp.Parser.Tokenizer;
 
 namespace ConcreteMC.MolangSharp.Parser.Parselet
 {
+	/// <summary>
+	///		Implements the indexer/array accessor parser
+	/// </summary>
+	/// <remarks>
+	///		Parses expressions such as "array[0]"
+	/// </remarks>
 	public class ArrayAccessParselet : InfixParselet
 	{
 		/// <inheritdoc />

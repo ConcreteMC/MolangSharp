@@ -3,6 +3,9 @@ using ConcreteMC.MolangSharp.Parser.Tokenizer;
 
 namespace ConcreteMC.MolangSharp.Parser.Parselet
 {
+	/// <summary>
+	///		Generic binary operator parselet
+	/// </summary>
 	public class GenericBinaryOpParselet : InfixParselet
 	{
 		/// <inheritdoc />

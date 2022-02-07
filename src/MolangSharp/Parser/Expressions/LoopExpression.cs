@@ -15,7 +15,7 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 		/// <inheritdoc />
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{
-			int loop = (int)(double)Count.Evaluate(scope, environment).Value;
+			int loop = (int)Count.Evaluate(scope, environment).AsDouble();
 			MoScope subScope = new MoScope(scope.Runtime)
 			{
 				Runtime = scope.Runtime

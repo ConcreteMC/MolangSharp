@@ -4,6 +4,9 @@ using ConcreteMC.MolangSharp.Parser.Tokenizer;
 
 namespace ConcreteMC.MolangSharp.Parser.Parselet
 {
+	/// <summary>
+	///		Implements the scope parselet
+	/// </summary>
 	public class BracketScopeParselet : PrefixParselet
 	{
 		/// <inheritdoc />
