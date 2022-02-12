@@ -56,7 +56,8 @@ namespace ConcreteMC.MolangSharp.Runtime
 			if (expression == null)
 				return DoubleValue.Zero;
 
-			if (Environment.Structs.TryGetValue("context", out IMoStruct cont) && cont is ContextStruct contextStruct)
+			if (Environment.Structs.TryGetValue("context", out IMoStruct cont) && cont is ContextStruct contextStruct
+			                                                                   && context != null)
 			{
 				contextStruct.Container = context;
 			}
