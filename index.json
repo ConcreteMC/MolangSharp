@@ -577,12 +577,12 @@
   "api/ConcreteMC.MolangSharp.Utils.html": {
     "href": "api/ConcreteMC.MolangSharp.Utils.html",
     "title": "Namespace ConcreteMC.MolangSharp.Utils",
-    "keywords": "Namespace ConcreteMC.MolangSharp.Utils Classes MoPath"
+    "keywords": "Namespace ConcreteMC.MolangSharp.Utils Classes MoPath Describes the path of a variable/function"
   },
   "api/ConcreteMC.MolangSharp.Utils.MoPath.html": {
     "href": "api/ConcreteMC.MolangSharp.Utils.MoPath.html",
     "title": "Class MoPath",
-    "keywords": "Class MoPath Inheritance System.Object MoPath Namespace : ConcreteMC.MolangSharp.Utils Assembly : ConcreteMC.MolangSharp.dll Syntax public class MoPath : object Constructors | Improve this Doc View Source MoPath(String) Declaration public MoPath(string path) Parameters Type Name Description System.String path Properties | Improve this Doc View Source HasChildren Declaration public bool HasChildren { get; } Property Value Type Description System.Boolean | Improve this Doc View Source Next Declaration public MoPath Next { get; } Property Value Type Description MoPath | Improve this Doc View Source Path Declaration public string Path { get; } Property Value Type Description System.String | Improve this Doc View Source Root Declaration public MoPath Root { get; } Property Value Type Description MoPath | Improve this Doc View Source Value Declaration public string Value { get; } Property Value Type Description System.String Methods | Improve this Doc View Source ToString() Declaration public override string ToString() Returns Type Description System.String"
+    "keywords": "Class MoPath Describes the path of a variable/function Inheritance System.Object MoPath Namespace : ConcreteMC.MolangSharp.Utils Assembly : ConcreteMC.MolangSharp.dll Syntax public class MoPath : object Constructors | Improve this Doc View Source MoPath(String) Declaration public MoPath(string path) Parameters Type Name Description System.String path Properties | Improve this Doc View Source HasChildren Whether this path has any child elements Declaration public bool HasChildren { get; } Property Value Type Description System.Boolean | Improve this Doc View Source Next The next element Declaration public MoPath Next { get; } Property Value Type Description MoPath | Improve this Doc View Source Path The full path Declaration public string Path { get; } Property Value Type Description System.String | Improve this Doc View Source Root The root of this path Declaration public MoPath Root { get; } Property Value Type Description MoPath | Improve this Doc View Source Value The value of this path Declaration public string Value { get; } Property Value Type Description System.String Remarks Think of this is the filename in a path Methods | Improve this Doc View Source ToString() Declaration public override string ToString() Returns Type Description System.String"
   },
   "api/index.html": {
     "href": "api/index.html",
