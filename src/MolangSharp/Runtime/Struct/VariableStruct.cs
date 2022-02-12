@@ -27,6 +27,10 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 			{
 				Map = new Dictionary<string, IMoValue>(values, StringComparer.OrdinalIgnoreCase);
 			}
+			else
+			{
+				Map = new Dictionary<string, IMoValue>(StringComparer.OrdinalIgnoreCase);
+			}
 		}
 
 		protected virtual IMoStruct CreateNew()
@@ -37,8 +41,6 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 		/// <inheritdoc />
 		public virtual void Set(MoPath key, IMoValue value)
 		{
-			//var index = key.IndexOf('.');
-
 			if (!key.HasChildren)
 			{
 				Map[key.Value] = value;
@@ -50,13 +52,10 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 
 			if (!string.IsNullOrWhiteSpace(main))
 			{
-				//object vstruct = Get(main, MoParams.Empty);
-
 				if (!Map.TryGetValue(main, out var container))
 				{
 					if (!key.HasChildren)
 					{
-						//Map.TryAdd(main, container = new VariableStruct());
 						throw new MoLangRuntimeException($"Variable was not a struct: {key}", null);
 					}
 
@@ -71,29 +70,22 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 				{
 					throw new MoLangRuntimeException($"Variable was not a struct: {key}", null);
 				}
-
-				//((IMoStruct) vstruct).Set(string.Join(".", segments), value);
-
-				//Map[main] = (IMoStruct)vstruct;//.Add(main, (IMoStruct) vstruct);
 			}
 		}
 
 		/// <inheritdoc />
 		public virtual IMoValue Get(MoPath key, MoParams parameters)
 		{
-			//var index = key.IndexOf('.');
-
 			if (key.HasChildren)
 			{
 				string main = key.Value;
 
 				if (!string.IsNullOrWhiteSpace(main))
 				{
-					IMoValue value = null; //Map[main];
+					IMoValue value = null;
 
 					if (!Map.TryGetValue(main, out value))
 					{
-						//		Log.Info($"Unknown variable map: {key}");
 						return DoubleValue.Zero;
 					}
 
@@ -108,9 +100,6 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 
 			if (Map.TryGetValue(key.Value, out var v))
 				return v;
-
-			//
-			//	Log.Info($"Unknown variable: {key}");
 
 			return DoubleValue.Zero;
 		}

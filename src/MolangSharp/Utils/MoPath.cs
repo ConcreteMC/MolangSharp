@@ -1,13 +1,36 @@
 namespace ConcreteMC.MolangSharp.Utils
 {
+	/// <summary>
+	///		Describes the path of a variable/function
+	/// </summary>
 	public class MoPath
 	{
+		/// <summary>
+		///		The root of this path
+		/// </summary>
 		public MoPath Root { get; }
+		
+		/// <summary>
+		///		The next element
+		/// </summary>
 		public MoPath Next { get; private set; }
 
+		/// <summary>
+		///		The full path
+		/// </summary>
 		public string Path { get; }
+		
+		/// <summary>
+		///		The value of this path
+		/// </summary>
+		/// <remarks>
+		/// Think of this is the filename in a path
+		/// </remarks>
 		public string Value { get; private set; }
 
+		/// <summary>
+		///		Whether this path has any child elements
+		/// </summary>
 		public bool HasChildren => Next != null;
 
 		public MoPath(string path)
@@ -55,7 +78,7 @@ namespace ConcreteMC.MolangSharp.Utils
 		/// <inheritdoc />
 		public override string ToString()
 		{
-			return Value;
+			return Path;
 		}
 	}
 }

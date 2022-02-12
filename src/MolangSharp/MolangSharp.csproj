@@ -4,7 +4,7 @@
         <Configurations>Debug;Release</Configurations>
         <Platforms>AnyCPU;x64</Platforms>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>1.0.2</Version>
+        <Version>1.0.3</Version>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <TargetFrameworks>netstandard2.1; netcoreapp6.0</TargetFrameworks>
         <PackageProjectUrl>https://github.com/ConcreteMC/MolangSharp</PackageProjectUrl>
@@ -16,13 +16,12 @@
         <Copyright>Copyright Kenny van Vulpen 2019-2022</Copyright>
         <PackageTags>Minecraft Molang MCPE MoLang bedrock mojang alex</PackageTags>
         <PackageReleaseNotes>
-            - Further optimizations to Math functions
-            - Updated documentation
+            - Fixed an issue with struct accessor
         </PackageReleaseNotes>
         <PackageIconUrl><![CDATA[https://avatars.githubusercontent.com/u/97732568?s=96&v=4]]></PackageIconUrl>
         <AssemblyName>ConcreteMC.MolangSharp</AssemblyName>
         <RootNamespace>ConcreteMC.MolangSharp</RootNamespace>
-        <PackageVersion>1.0.2</PackageVersion>
+        <PackageVersion>1.0.3</PackageVersion>
         <Title>ConcreteMC.MolangSharp</Title>
         <RepositoryType>git</RepositoryType>
         <Product>ConcreteMC.MolangSharp</Product>

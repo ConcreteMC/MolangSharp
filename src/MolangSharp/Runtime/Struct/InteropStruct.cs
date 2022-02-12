@@ -44,7 +44,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 		{
 			if (!key.HasChildren)
 			{
-				if (_propertyCache.Properties.TryGetValue(key.ToString(), out var accessor))
+				if (_propertyCache.Properties.TryGetValue(key.Value, out var accessor))
 				{
 					if (!accessor.CanWrite)
 						throw new MoLangRuntimeException("Cannot write to ReadOnly property!", null);
@@ -120,7 +120,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 				}
 			}
 
-			if (!ExecuteGet(key, key.ToString(), parameters, out var returnValue))
+			if (!ExecuteGet(key, key.Value, parameters, out var returnValue))
 				Debug.WriteLine($"({_instance.ToString()}) Unknown query: {key}");
 
 			return returnValue;

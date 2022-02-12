@@ -32,7 +32,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 		/// <inheritdoc />
 		public IMoValue Get(MoPath key, MoParams parameters)
 		{
-			if (Functions.TryGetValue(key.ToString(), out var func))
+			if (Functions.TryGetValue(key.Value, out var func))
 			{
 				return MoValue.FromObject(func(parameters));
 			}
