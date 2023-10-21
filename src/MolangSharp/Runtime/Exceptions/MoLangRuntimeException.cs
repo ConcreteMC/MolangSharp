@@ -9,6 +9,9 @@ namespace ConcreteMC.MolangSharp.Runtime.Exceptions
 	/// </summary>
 	public class MoLangRuntimeException : Exception
 	{
+		/// <summary>
+		///		Contains a trace to where the exception occured in a MoLang expression.
+		/// </summary>
 		public string MolangTrace { get; }
 
 		/// <summary>
@@ -39,26 +42,29 @@ namespace ConcreteMC.MolangSharp.Runtime.Exceptions
 		public MoLangRuntimeException(IExpression expression, string message, Exception baseException) : base(
 			message, baseException)
 		{
-			StringBuilder sb = new StringBuilder();
-
-			do
+			if (MoLangRuntimeConfiguration.UseMoLangStackTrace)
 			{
-				if (expression.Meta?.Token?.Position != null)
+				StringBuilder sb = new StringBuilder();
+
+				do
 				{
-					var token = expression.Meta.Token;
-					var tokenPosition = token.Position;
+					if (expression.Meta?.Token?.Position != null)
+					{
+						var token = expression.Meta.Token;
+						var tokenPosition = token.Position;
 
-					sb.Append(
-						$"at <{tokenPosition.LineNumber}:{tokenPosition.Index}> near {token.Type.TypeName} \"{token.Text}\"");
-					//var frame = new StackFrame(null, tokenPosition.LineNumber, tokenPosition.Index);
+						sb.Append(
+							$"at <{tokenPosition.LineNumber}:{tokenPosition.Index}> near {token.Type.TypeName} \"{token.Text}\"");
+						//var frame = new StackFrame(null, tokenPosition.LineNumber, tokenPosition.Index);
 
-					//	frames.Add(frame);
-				}
+						//	frames.Add(frame);
+					}
 
-				expression = expression.Meta.Parent;
-			} while (expression?.Meta?.Parent != null);
+					expression = expression.Meta.Parent;
+				} while (expression?.Meta?.Parent != null);
 
-			MolangTrace = sb.ToString();
+				MolangTrace = sb.ToString();
+			}
 			//st.GetFrames()
 		}
 

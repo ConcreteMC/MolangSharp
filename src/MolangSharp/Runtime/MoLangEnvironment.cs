@@ -51,6 +51,10 @@ namespace ConcreteMC.MolangSharp.Runtime
 			}
 			catch (Exception ex)
 			{
+				// Experimental
+				if (MoLangRuntimeConfiguration.UseDummyValuesInsteadOfExceptions)
+					return DoubleValue.Zero;
+				
 				throw new MoLangRuntimeException($"Cannot retrieve struct: {name}", ex);
 			}
 		}
