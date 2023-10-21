@@ -3,70 +3,70 @@ using ConcreteMC.MolangSharp.Parser.Tokenizer;
 
 namespace ConcreteMC.MolangSharp.Parser
 {
-    /// <summary>
-    ///		Contains metadata about an expression
-    /// </summary>
-    public class ExpressionMeta
-    {
-        /// <summary>
-        ///     The token
-        /// </summary>
-        public Token Token { get; set; }
-        
-        /// <summary>
-        ///     The parent expression
-        /// </summary>
-        public IExpression Parent { get; set; }
-        
-        /// <summary>
-        ///     The previous expression
-        /// </summary>
-        public IExpression Previous { get; set; }
-        
-        /// <summary>
-        ///     The next expression
-        /// </summary>
-        public IExpression Next { get; set; }
+	/// <summary>
+	///		Contains metadata about an expression
+	/// </summary>
+	public class ExpressionMeta
+	{
+		/// <summary>
+		///     The token
+		/// </summary>
+		public Token Token { get; set; }
 
-        public override string ToString()
-        {
-            StringBuilder sb = new StringBuilder(255);
-            bool includeFileInfoIfAvailable;
+		/// <summary>
+		///     The parent expression
+		/// </summary>
+		public IExpression Parent { get; set; }
 
-            if (Token != null)
-            {
-                sb.Append(Token.Text);
-                includeFileInfoIfAvailable = true;
-            }
-            else
-            {
-                includeFileInfoIfAvailable = false;
-            }
+		/// <summary>
+		///     The previous expression
+		/// </summary>
+		public IExpression Previous { get; set; }
 
-            if (includeFileInfoIfAvailable)
-            {
-                //	sb.Append(" at offset ");
+		/// <summary>
+		///     The next expression
+		/// </summary>
+		public IExpression Next { get; set; }
 
-                //	if (_nativeOffset == OFFSET_UNKNOWN)
-                //		sb.Append("<offset unknown>");
-                //	else
-                //		sb.Append(_nativeOffset);
+		public override string ToString()
+		{
+			StringBuilder sb = new StringBuilder(255);
+			bool includeFileInfoIfAvailable;
 
-                sb.Append(" in file:line:column ");
-                sb.Append("<filename unknown>");
-                sb.Append(':');
-                sb.Append(Token.Position.LineNumber);
-                sb.Append(':');
-                sb.Append(Token.Position.Index);
-            }
-            else
-            {
-                sb.Append("<null>");
-            }
+			if (Token != null)
+			{
+				sb.Append(Token.Text);
+				includeFileInfoIfAvailable = true;
+			}
+			else
+			{
+				includeFileInfoIfAvailable = false;
+			}
 
-            sb.AppendLine();
+			if (includeFileInfoIfAvailable)
+			{
+				//	sb.Append(" at offset ");
 
-            return sb.ToString();
-        }
-    }
+				//	if (_nativeOffset == OFFSET_UNKNOWN)
+				//		sb.Append("<offset unknown>");
+				//	else
+				//		sb.Append(_nativeOffset);
+
+				sb.Append(" in file:line:column ");
+				sb.Append("<filename unknown>");
+				sb.Append(':');
+				sb.Append(Token.Position.LineNumber);
+				sb.Append(':');
+				sb.Append(Token.Position.Index);
+			}
+			else
+			{
+				sb.Append("<null>");
+			}
+
+			sb.AppendLine();
+
+			return sb.ToString();
+		}
+	}
 }

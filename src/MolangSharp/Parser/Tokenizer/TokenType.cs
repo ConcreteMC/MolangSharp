@@ -52,7 +52,7 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 		///		A string "identifying" this tokentype
 		/// </summary>
 		public string Symbol { get; }
-		
+
 		/// <summary>
 		///		A human readable identifier for this tokentype
 		/// </summary>
@@ -93,7 +93,7 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 
 			return null;
 		}
-		
+
 		/// <summary>
 		///		Finds the TokenType by symbol
 		/// </summary>

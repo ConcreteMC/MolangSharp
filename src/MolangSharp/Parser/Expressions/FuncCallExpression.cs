@@ -7,6 +7,7 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 	public class FuncCallExpression : Expression
 	{
 		public MoPath Name { get; set; }
+
 		public FuncCallExpression(MoPath name, IExpression[] args) : base(args)
 		{
 			Name = name;
@@ -16,7 +17,7 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{
 			//List<IExpression> p = Args.ToList();
-			MoPath name = Name;/* Name is NameExpression expression ? expression.Name :
+			MoPath name = Name; /* Name is NameExpression expression ? expression.Name :
 				new MoPath(Name.Evaluate(scope, environment).ToString());*/
 
 			IMoValue[] arguments = new IMoValue[Parameters.Length];

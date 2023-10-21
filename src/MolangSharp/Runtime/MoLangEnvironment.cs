@@ -18,8 +18,9 @@ namespace ConcreteMC.MolangSharp.Runtime
 		/// <inheritdoc />
 		public object Value => Structs;
 
-		public Dictionary<string, IMoStruct> Structs { get; } = new Dictionary<string, IMoStruct>(StringComparer.OrdinalIgnoreCase);
-		
+		public Dictionary<string, IMoStruct> Structs { get; } =
+			new Dictionary<string, IMoStruct>(StringComparer.OrdinalIgnoreCase);
+
 		/// <summary>
 		///		The value that should be returned when an expression tries to access "this"
 		/// </summary>
@@ -54,7 +55,7 @@ namespace ConcreteMC.MolangSharp.Runtime
 				// Experimental
 				if (MoLangRuntimeConfiguration.UseDummyValuesInsteadOfExceptions)
 					return DoubleValue.Zero;
-				
+
 				throw new MoLangRuntimeException($"Cannot retrieve struct: {name}", ex);
 			}
 		}
@@ -65,7 +66,7 @@ namespace ConcreteMC.MolangSharp.Runtime
 			{
 				throw new MoLangRuntimeException($"Invalid path: {name.Path}", null);
 			}
-			
+
 			try
 			{
 				v.Set(name.Next, value);
@@ -79,7 +80,7 @@ namespace ConcreteMC.MolangSharp.Runtime
 		/// <inheritdoc />
 		public bool Equals(IMoValue b)
 		{
-			return Equals((object)b);
+			return Equals((object) b);
 		}
 	}
 }

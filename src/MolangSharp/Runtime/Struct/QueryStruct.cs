@@ -36,7 +36,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 			{
 				return MoValue.FromObject(func(parameters));
 			}
-			
+
 			return DoubleValue.Zero;
 		}
 

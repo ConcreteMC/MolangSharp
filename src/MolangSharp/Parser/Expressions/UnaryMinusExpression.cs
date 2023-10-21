@@ -12,9 +12,6 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 		}
 
 		/// <inheritdoc />
-		public UnaryMinusExpression(IExpression value) : base(value)
-		{
-			
-		}
+		public UnaryMinusExpression(IExpression value) : base(value) { }
 	}
 }

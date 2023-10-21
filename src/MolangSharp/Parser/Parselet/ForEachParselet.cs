@@ -13,8 +13,9 @@ namespace ConcreteMC.MolangSharp.Parser.Parselet
 		public override IExpression Parse(MoLangParser parser, Token token)
 		{
 			if (!parser.TryParseArgs(out var expressions) || expressions.Length != 3)
-				throw new MoLangParserException($"ForEach: Expected 3 argument, {(expressions?.Length ?? 0)} argument given");
-			
+				throw new MoLangParserException(
+					$"ForEach: Expected 3 argument, {(expressions?.Length ?? 0)} argument given");
+
 			return new ForEachExpression(expressions[0], expressions[1], expressions[2]);
 		}
 	}

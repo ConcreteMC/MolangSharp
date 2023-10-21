@@ -8,10 +8,7 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 		public IExpression Variable => Parameters[0];
 		public IExpression Expression => Parameters[1];
 
-		public AssignExpression(IExpression variable, IExpression expr) : base(variable, expr)
-		{
-			
-		}
+		public AssignExpression(IExpression variable, IExpression expr) : base(variable, expr) { }
 
 		/// <inheritdoc />
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)

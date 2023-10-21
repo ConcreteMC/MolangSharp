@@ -13,7 +13,7 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 		///		The linenumber this token was found at
 		/// </summary>
 		public int LineNumber { get; }
-		
+
 		/// <summary>
 		///		The character index of this token
 		/// </summary>

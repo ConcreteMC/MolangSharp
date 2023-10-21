@@ -17,9 +17,7 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 			set { Parameters[1] = value; }
 		}
 
-		protected BinaryOpExpression(IExpression l, IExpression r) : base(l,r)
-		{
-		}
+		protected BinaryOpExpression(IExpression l, IExpression r) : base(l, r) { }
 
 		public abstract string GetSigil();
 	}

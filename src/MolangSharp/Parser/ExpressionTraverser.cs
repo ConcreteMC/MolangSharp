@@ -65,10 +65,11 @@ namespace ConcreteMC.MolangSharp.Parser
 			expression.Meta.Parent = parent;
 
 			var parameters = expression.Parameters;
+
 			for (var index = 0; index < parameters.Length; index++)
 			{
 				parameters[index] = TraverseExpr(parameters[index], expression);
-				
+
 				if (_stop)
 				{
 					break;

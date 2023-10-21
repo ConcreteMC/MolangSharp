@@ -18,7 +18,7 @@ namespace ConcreteMC.MolangSharp.Runtime
 		{
 			_parameters = param;
 		}
-		
+
 		/// <summary>
 		///		Gets the parameter at <paramref name="index"/> and returns its value as an <see cref="IMoValue"/>
 		/// </summary>
@@ -50,7 +50,7 @@ namespace ConcreteMC.MolangSharp.Runtime
 
 			if (obj?.GetType() == typeof(T))
 			{
-				return (T)obj;
+				return (T) obj;
 			}
 			else
 			{
@@ -81,9 +81,9 @@ namespace ConcreteMC.MolangSharp.Runtime
 		/// </returns>
 		public int GetInt(int index)
 		{
-			return (int)GetDouble(index);
+			return (int) GetDouble(index);
 		}
-		
+
 		/// <summary>
 		///		Gets the parameter at <paramref name="index"/> and returns its value as a <see cref="double"/>
 		/// </summary>
@@ -95,7 +95,7 @@ namespace ConcreteMC.MolangSharp.Runtime
 		{
 			return Get<DoubleValue>(index).Value;
 		}
-		
+
 		/// <summary>
 		///		Gets the parameter at <paramref name="index"/> and returns its value as a <see cref="IMoStruct"/>
 		/// </summary>
@@ -107,7 +107,7 @@ namespace ConcreteMC.MolangSharp.Runtime
 		{
 			return Get<IMoStruct>(index);
 		}
-		
+
 		/// <summary>
 		///		Gets the parameter at <paramref name="index"/> and returns its value as a <see cref="string"/>
 		/// </summary>
@@ -119,7 +119,7 @@ namespace ConcreteMC.MolangSharp.Runtime
 		{
 			return Get<StringValue>(index).Value;
 		}
-		
+
 		/// <summary>
 		///		Gets the parameter at <paramref name="index"/> and returns its value as a <see cref="MoLangEnvironment"/>
 		/// </summary>

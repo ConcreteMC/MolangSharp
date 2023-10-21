@@ -15,8 +15,6 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 		}
 
 		/// <inheritdoc />
-		public ReturnExpression(IExpression value) : base(value)
-		{
-		}
+		public ReturnExpression(IExpression value) : base(value) { }
 	}
 }

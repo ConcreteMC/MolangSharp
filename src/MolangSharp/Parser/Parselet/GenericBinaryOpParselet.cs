@@ -27,7 +27,7 @@ namespace ConcreteMC.MolangSharp.Parser.Parselet
 
 			if (token.Type.Equals(TokenType.Coalesce))
 				return new CoalesceExpression(leftExpr, rightExpr);
-			
+
 			if (token.Type.Equals(TokenType.Slash))
 				return new DivideExpression(leftExpr, rightExpr);
 

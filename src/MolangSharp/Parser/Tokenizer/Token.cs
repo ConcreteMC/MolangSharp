@@ -9,12 +9,12 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 		///		The type of this token
 		/// </summary>
 		public TokenType Type { get; }
-		
+
 		/// <summary>
 		///		The piece of code defining this token
 		/// </summary>
 		public string Text { get; }
-		
+
 		/// <summary>
 		///		The position in the source expression that this token was found at
 		/// </summary>

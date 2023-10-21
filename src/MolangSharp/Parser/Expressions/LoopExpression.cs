@@ -8,18 +8,13 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 		public IExpression Count => Parameters[0];
 		public IExpression Body => Parameters[1];
 
-		public LoopExpression(IExpression count, IExpression body) : base(count, body)
-		{
-		}
+		public LoopExpression(IExpression count, IExpression body) : base(count, body) { }
 
 		/// <inheritdoc />
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{
-			int loop = (int)Count.Evaluate(scope, environment).AsDouble();
-			MoScope subScope = new MoScope(scope.Runtime)
-			{
-				Runtime = scope.Runtime
-			};
+			int loop = (int) Count.Evaluate(scope, environment).AsDouble();
+			MoScope subScope = new MoScope(scope.Runtime) {Runtime = scope.Runtime};
 
 			while (loop > 0)
 			{

@@ -87,16 +87,19 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 					throw new MoLangRuntimeException($"Cannot read from property '{property.ToString()}'", null);
 
 				returnValue = accessor.Get(_instance);
+
 				return true;
 			}
 
 			if (_propertyCache.Functions.TryGetValue(main, out var f))
 			{
 				returnValue = f.Invoke(_instance, parameters);
+
 				return true;
 			}
 
 			returnValue = DoubleValue.Zero;
+
 			return false;
 		}
 

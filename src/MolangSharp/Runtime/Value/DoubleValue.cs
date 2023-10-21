@@ -14,7 +14,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Value
 
 		/// <inheritdoc />
 		public double Value => _value;
-		
+
 		/// <inheritdoc />
 		public bool Equals(IMoValue b)
 		{
@@ -72,7 +72,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Value
 		{
 			return _value.Equals(other._value);
 		}
-		
+
 		/// <inheritdoc />
 		public override int GetHashCode()
 		{
@@ -88,7 +88,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Value
 		/// <inheritdoc />
 		public float AsFloat()
 		{
-			return (float)_value;
+			return (float) _value;
 		}
 
 		public static DoubleValue Zero { get; } = new DoubleValue(0d);

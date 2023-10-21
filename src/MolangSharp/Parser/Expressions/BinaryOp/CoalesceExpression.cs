@@ -13,7 +13,7 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{
 			IMoValue evalLeft = Left.Evaluate(scope, environment);
-			
+
 			//IMoValue value = environment.GetValue(new MoPath(evalLeft.AsString()));
 
 			if (evalLeft == null || !evalLeft.AsBool())

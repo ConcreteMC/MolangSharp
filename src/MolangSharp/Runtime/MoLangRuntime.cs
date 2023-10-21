@@ -14,7 +14,7 @@ namespace ConcreteMC.MolangSharp.Runtime
 		///		The environment associated with this runtime instance
 		/// </summary>
 		public MoLangEnvironment Environment { get; }
-		
+
 		/// <summary>
 		///		Create a new instance of MoLangRuntime with a new <see cref="MoLangEnvironment"/>
 		/// </summary>
@@ -30,7 +30,7 @@ namespace ConcreteMC.MolangSharp.Runtime
 		{
 			Environment = environment;
 		}
-		
+
 		/// <summary>
 		///		Evaluates the expressions provided and returns the resulting value (if any) or <see cref="DoubleValue.Zero"/>
 		/// </summary>

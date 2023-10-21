@@ -12,7 +12,7 @@ namespace ConcreteMC.MolangSharp.Parser.Parselet
 	{
 		private const NumberStyles NumberStyle = System.Globalization.NumberStyles.AllowDecimalPoint;
 		private static readonly CultureInfo Culture = System.Globalization.CultureInfo.InvariantCulture;
-		
+
 		/// <inheritdoc />
 		public override IExpression Parse(MoLangParser parser, Token token)
 		{

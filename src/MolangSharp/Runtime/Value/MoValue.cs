@@ -16,7 +16,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Value
 
 		virtual double AsDouble() => Value is double db ? db : 0d;
 
-		virtual float AsFloat() => Value is float flt ? flt : (float)AsDouble();
+		virtual float AsFloat() => Value is float flt ? flt : (float) AsDouble();
 
 		virtual bool AsBool() => Value is bool b ? b : AsDouble() > 0;
 	}

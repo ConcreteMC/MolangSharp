@@ -10,15 +10,14 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 		public IExpression Array => Parameters[0];
 		public IExpression Index => Parameters[1];
 
-		public ArrayAccessExpression(IExpression array, IExpression index) : base(array, index)
-		{
-		}
+		public ArrayAccessExpression(IExpression array, IExpression index) : base(array, index) { }
 
 		/// <inheritdoc />
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{
 			var index = (int) Index.Evaluate(scope, environment).AsDouble();
 			MoPath path;
+
 			if (Array is NameExpression nameExpression)
 			{
 				var p = nameExpression.Name;
@@ -31,9 +30,10 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 			}
 
 			var array = environment.GetValue(path);
+
 			if (array is ArrayStruct asArray)
 				return asArray[index];
-			
+
 			return environment.GetValue(path);
 		}
 
@@ -41,8 +41,9 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 		public override void Assign(MoScope scope, MoLangEnvironment environment, IMoValue value)
 		{
 			var index = (int) Index.Evaluate(scope, environment).AsDouble();
-			
+
 			MoPath path;
+
 			if (Array is NameExpression nameExpression)
 			{
 				var p = nameExpression.Name;
@@ -53,8 +54,9 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 				var eval = Array.Evaluate(scope, environment);
 				path = new MoPath($"{eval.AsString()}");
 			}
-			
+
 			var array = environment.GetValue(path);
+
 			if (array is ArrayStruct asArray)
 			{
 				asArray[index] = value;

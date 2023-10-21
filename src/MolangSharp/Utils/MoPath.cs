@@ -9,7 +9,7 @@ namespace ConcreteMC.MolangSharp.Utils
 		///		The root of this path
 		/// </summary>
 		public MoPath Root { get; }
-		
+
 		/// <summary>
 		///		The next element
 		/// </summary>
@@ -19,7 +19,7 @@ namespace ConcreteMC.MolangSharp.Utils
 		///		The full path
 		/// </summary>
 		public string Path { get; }
-		
+
 		/// <summary>
 		///		The value of this path
 		/// </summary>
@@ -43,6 +43,7 @@ namespace ConcreteMC.MolangSharp.Utils
 			Value = segments[0];
 
 			MoPath current = this;
+
 			if (segments.Length > 1)
 			{
 				string currentPath = $"{Value}";
@@ -63,7 +64,7 @@ namespace ConcreteMC.MolangSharp.Utils
 			}
 		}
 
-		internal MoPath(MoPath root,string path, string value)
+		internal MoPath(MoPath root, string path, string value)
 		{
 			Root = root;
 			Path = path;
@@ -74,7 +75,7 @@ namespace ConcreteMC.MolangSharp.Utils
 		{
 			Value = value;
 		}
-		
+
 		/// <inheritdoc />
 		public override string ToString()
 		{

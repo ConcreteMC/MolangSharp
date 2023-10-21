@@ -18,7 +18,7 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 		{
 			_value = new DoubleValue(value);
 		}
-		
+
 		public NumberExpression(IMoValue value) : base()
 		{
 			_value = value;

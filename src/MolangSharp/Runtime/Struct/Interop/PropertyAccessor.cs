@@ -14,7 +14,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct.Interop
 
 		public override bool CanRead => _propertyInfo.CanRead;
 		public override bool CanWrite => _propertyInfo.CanWrite;
-		
+
 		/// <inheritdoc />
 		public override IMoValue Get(object instance)
 		{
@@ -31,24 +31,28 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct.Interop
 			if (propType == typeof(double))
 			{
 				_propertyInfo.SetValue(instance, value.AsDouble());
+
 				return;
 			}
 			else if (propType == typeof(float))
 			{
 				_propertyInfo.SetValue(instance, value.AsFloat());
+
 				return;
 			}
 			else if (propType == typeof(bool))
 			{
 				_propertyInfo.SetValue(instance, value.AsBool());
+
 				return;
 			}
 			else if (propType == typeof(string))
 			{
 				_propertyInfo.SetValue(instance, value.AsString());
+
 				return;
 			}
-			
+
 			_propertyInfo.SetValue(instance, value);
 			InvokeChanged();
 		}

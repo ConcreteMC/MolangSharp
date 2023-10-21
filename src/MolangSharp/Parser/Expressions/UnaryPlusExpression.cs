@@ -10,7 +10,7 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 		{
 			//_value = value;
 		}
-		
+
 		/// <inheritdoc />
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{

@@ -41,14 +41,14 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 			{
 				if (index >= _array.Length)
 					return DoubleValue.Zero;
-				
+
 				return _array[index % _array.Length];
 			}
 			set
 			{
 				if (_array.Length == 0)
 					return;
-				
+
 				_array[index % _array.Length] = value;
 			}
 		}

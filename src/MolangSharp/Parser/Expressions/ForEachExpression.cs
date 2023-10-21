@@ -11,10 +11,8 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 		public IExpression Array => Parameters[1];
 		public IExpression Body => Parameters[2];
 
-		public ForEachExpression(IExpression variable, IExpression array, IExpression body) : base(variable, array, body)
-		{
-			
-		}
+		public ForEachExpression(IExpression variable, IExpression array, IExpression body) : base(
+			variable, array, body) { }
 
 		/// <inheritdoc />
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)

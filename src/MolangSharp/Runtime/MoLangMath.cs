@@ -17,35 +17,33 @@ namespace ConcreteMC.MolangSharp.Runtime
 		public static readonly QueryStruct Library = new QueryStruct(
 			new Dictionary<string, Func<MoParams, object>>(StringComparer.OrdinalIgnoreCase)
 			{
-				{ "abs", param => Math.Abs(param.GetDouble(0)) },
-				{ "acos", param => Math.Acos(param.GetDouble(0)) },
-				{ "sin", param => Math.Sin(param.GetDouble(0) * (Math.PI / 180d)) },
-				{ "asin", param => Math.Asin(param.GetDouble(0)) },
-				{ "atan", param => Math.Atan(param.GetDouble(0)) },
-				{ "atan2", param => Math.Atan2(param.GetDouble(0), param.GetDouble(1)) },
-				{ "ceil", param => Math.Ceiling(param.GetDouble(0)) },
-				{
-					"clamp", param => Math.Min(param.GetDouble(1), Math.Max(param.GetDouble(0), param.GetDouble(2)))
-				},
-				{ "cos", param => Math.Cos(param.GetDouble(0) * (Math.PI / 180d)) },
-				{ "die_roll", param => DieRoll(param.GetDouble(0), param.GetDouble(1), param.GetDouble(2)) },
-				{ "die_roll_integer", param => DieRollInt(param.GetInt(0), param.GetInt(1), param.GetInt(2)) },
-				{ "exp", param => Math.Exp(param.GetDouble(0)) },
-				{ "mod", param => param.GetDouble(0) % param.GetDouble(1) },
-				{ "floor", param => Math.Floor(param.GetDouble(0)) },
-				{ "hermite_blend", param => HermiteBlend(param.GetInt(0)) },
-				{ "lerp", param => Lerp(param.GetDouble(0), param.GetDouble(1), param.GetDouble(2)) },
-				{ "lerp_rotate", param => LerpRotate(param.GetDouble(0), param.GetDouble(1), param.GetDouble(2)) },
-				{ "ln", param => Math.Log(param.GetDouble(0)) },
-				{ "max", param => Math.Max(param.GetDouble(0), param.GetDouble(1)) },
-				{ "min", param => Math.Min(param.GetDouble(0), param.GetDouble(1)) },
-				{ "pi", param => Math.PI },
-				{ "pow", param => Math.Pow(param.GetDouble(0), param.GetDouble(1)) },
-				{ "random", param => Random(param.GetDouble(0), param.GetDouble(1)) },
-				{ "random_integer", param => RandomInt(param.GetInt(0), param.GetInt(1)) },
-				{ "round", param => Math.Round(param.GetDouble(0)) },
-				{ "sqrt", param => Math.Sqrt(param.GetDouble(0)) },
-				{ "trunc", param => Math.Floor(param.GetDouble(0)) },
+				{"abs", param => Math.Abs(param.GetDouble(0))},
+				{"acos", param => Math.Acos(param.GetDouble(0))},
+				{"sin", param => Math.Sin(param.GetDouble(0) * (Math.PI / 180d))},
+				{"asin", param => Math.Asin(param.GetDouble(0))},
+				{"atan", param => Math.Atan(param.GetDouble(0))},
+				{"atan2", param => Math.Atan2(param.GetDouble(0), param.GetDouble(1))},
+				{"ceil", param => Math.Ceiling(param.GetDouble(0))},
+				{"clamp", param => Math.Min(param.GetDouble(1), Math.Max(param.GetDouble(0), param.GetDouble(2)))},
+				{"cos", param => Math.Cos(param.GetDouble(0) * (Math.PI / 180d))},
+				{"die_roll", param => DieRoll(param.GetDouble(0), param.GetDouble(1), param.GetDouble(2))},
+				{"die_roll_integer", param => DieRollInt(param.GetInt(0), param.GetInt(1), param.GetInt(2))},
+				{"exp", param => Math.Exp(param.GetDouble(0))},
+				{"mod", param => param.GetDouble(0) % param.GetDouble(1)},
+				{"floor", param => Math.Floor(param.GetDouble(0))},
+				{"hermite_blend", param => HermiteBlend(param.GetInt(0))},
+				{"lerp", param => Lerp(param.GetDouble(0), param.GetDouble(1), param.GetDouble(2))},
+				{"lerp_rotate", param => LerpRotate(param.GetDouble(0), param.GetDouble(1), param.GetDouble(2))},
+				{"ln", param => Math.Log(param.GetDouble(0))},
+				{"max", param => Math.Max(param.GetDouble(0), param.GetDouble(1))},
+				{"min", param => Math.Min(param.GetDouble(0), param.GetDouble(1))},
+				{"pi", param => Math.PI},
+				{"pow", param => Math.Pow(param.GetDouble(0), param.GetDouble(1))},
+				{"random", param => Random(param.GetDouble(0), param.GetDouble(1))},
+				{"random_integer", param => RandomInt(param.GetInt(0), param.GetInt(1))},
+				{"round", param => Math.Round(param.GetDouble(0))},
+				{"sqrt", param => Math.Sqrt(param.GetDouble(0))},
+				{"trunc", param => Math.Floor(param.GetDouble(0))},
 			});
 
 		public static double Random(double low, double high)
@@ -113,7 +111,7 @@ namespace ConcreteMC.MolangSharp.Runtime
 			return (((num + 180) % 360) + 180) % 360;
 		}
 	}
-	
+
 	/// <summary>
 	///		The default Math implementations for the MoLang runtime
 	/// </summary>
@@ -121,39 +119,36 @@ namespace ConcreteMC.MolangSharp.Runtime
 	{
 		private static IMoStruct _instance;
 		public static IMoStruct Library => _instance ??= new InteropStruct(new MoLangMathImpl());
-		
-		private MoLangMathImpl()
-		{
-			
-		}
-		
-		[MoFunction("abs")] 
+
+		private MoLangMathImpl() { }
+
+		[MoFunction("abs")]
 		public double Abs(double value) => Math.Abs(value);
-		
-		[MoFunction("sin")] 
+
+		[MoFunction("sin")]
 		public double Sin(double value) => Math.Sin(value * (Math.PI / 180d));
-		
-		[MoFunction("asin")] 
+
+		[MoFunction("asin")]
 		public double Asin(double value) => Math.Asin(value);
-		
-		[MoFunction("cos")] 
+
+		[MoFunction("cos")]
 		public double Cos(double value) => Math.Cos(value * (Math.PI / 180d));
-		
-		[MoFunction("acos")] 
+
+		[MoFunction("acos")]
 		public double Acos(double value) => Math.Acos(value);
-		
-		[MoFunction("atan")] 
+
+		[MoFunction("atan")]
 		public double Atan(double value) => Math.Atan(value);
-		
-		[MoFunction("atan2")] 
+
+		[MoFunction("atan2")]
 		public double Atan2(double y, double x) => Math.Atan2(y, x);
-		
+
 		[MoFunction("ceil")]
 		public double Ceiling(double value) => Math.Ceiling(value);
 
 		[MoFunction("clamp")]
 		public double Clamp(double value, double min, double max) => Math.Clamp(value, min, max);
-		
+
 		[MoFunction("die_roll")]
 		public double DieRoll(double num, double low, double high)
 		{
@@ -163,7 +158,7 @@ namespace ConcreteMC.MolangSharp.Runtime
 
 			return total;
 		}
-		
+
 		[MoFunction("die_roll_integer")]
 		public int DieRollInt(int num, int low, int high)
 		{
@@ -176,7 +171,7 @@ namespace ConcreteMC.MolangSharp.Runtime
 
 		[MoFunction("exp")]
 		public double Exp(double value) => Math.Exp(value);
-		
+
 		[MoFunction("mod")]
 		public double Modulus(double x, double y) => x % y;
 
@@ -193,7 +188,7 @@ namespace ConcreteMC.MolangSharp.Runtime
 
 			return start + (end - start) * amount;
 		}
-		
+
 		[MoFunction("lerp_rotate")]
 		public double LerpRotate(double start, double end, double amount)
 		{
@@ -218,25 +213,24 @@ namespace ConcreteMC.MolangSharp.Runtime
 
 		[MoFunction("max")]
 		public double Max(double value1, double value2) => Math.Max(value1, value2);
-		
+
 		[MoFunction("min")]
 		public double Min(double value1, double value2) => Math.Min(value1, value2);
 
 		[MoFunction("pi")]
 		public double PiFunc() => Math.PI;
-		
-		[MoProperty("pi")]
-		public double PI => Math.PI;
+
+		[MoProperty("pi")] public double PI => Math.PI;
 
 		[MoFunction("pow")]
 		public double Pow(double x, double y) => Math.Pow(x, y);
-		
+
 		[MoFunction("random")]
 		public double Random(double low, double high)
 		{
 			return low + _random.NextDouble() * (high - low);
 		}
-		
+
 		[MoFunction("random_integer")]
 		public int RandomInt(int low, int high)
 		{
@@ -245,13 +239,13 @@ namespace ConcreteMC.MolangSharp.Runtime
 
 		[MoFunction("round")]
 		public double Round(double value) => Math.Round(value);
-		
+
 		[MoFunction("sqrt")]
 		public double Sqrt(double value) => Math.Sqrt(value);
-		
+
 		[MoFunction("trunc")]
 		public double Truncate(double value) => Math.Floor(value);
-		
+
 		public double Radify(double num)
 		{
 			return (((num + 180) % 360) + 180) % 360;

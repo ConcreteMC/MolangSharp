@@ -14,7 +14,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct.Interop
 
 		public override bool CanRead => true;
 		public override bool CanWrite => !_fieldInfo.IsInitOnly;
-		
+
 		/// <inheritdoc />
 		public override IMoValue Get(object instance)
 		{
@@ -22,7 +22,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct.Interop
 
 			return value is IMoValue moValue ? moValue : MoValue.FromObject(value);
 		}
-		
+
 		/// <inheritdoc />
 		public override void Set(object instance, IMoValue value)
 		{

@@ -18,11 +18,8 @@ namespace ConcreteMC.MolangSharp.Runtime.Exceptions
 		///		Initializes a new instance of the MoLangRuntimeException class with a specified error message.
 		/// </summary>
 		/// <param name="message">The error message</param>
-		public MoLangRuntimeException(string message) : this(message, null)
-		{
-			
-		}
-		
+		public MoLangRuntimeException(string message) : this(message, null) { }
+
 		/// <summary>
 		///		Initializes a new instance of the MoLangRuntimeException class with a specified error message and a reference to the inner exception that is the cause of this exception.
 		/// </summary>
@@ -32,7 +29,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Exceptions
 		{
 			MolangTrace = "Unknown";
 		}
-		
+
 		/// <summary>
 		///		Initializes a new instance of the MoLangRuntimeException class with a reference to the expression that the error occured at, an error message and a reference to the inner exception that is the cause of this exception.
 		/// </summary>

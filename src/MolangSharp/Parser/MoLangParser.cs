@@ -17,7 +17,7 @@ namespace ConcreteMC.MolangSharp.Parser
 	public class MoLangParser
 	{
 		public delegate MoLangParser ParserFactory(ITokenIterator iterator);
-		
+
 		/// <summary>
 		///		The factory method used to provide instances of the <see cref="MoLangParser"/>
 		/// </summary>
@@ -69,14 +69,15 @@ namespace ConcreteMC.MolangSharp.Parser
 			InfixParselets.Add(TokenType.Arrow, new GenericBinaryOpParselet(Precedence.Arrow));
 			InfixParselets.Add(TokenType.Assign, new AssignParselet());
 		}
-		
+
 		/// <summary>
 		///		The expression traverser executed after the parsing of the expressions
 		/// </summary>
 		public ExpressionTraverser ExpressionTraverser { get; }
-		
+
 		private readonly ITokenIterator _tokenIterator;
 		private readonly List<Token> _readTokens = new List<Token>();
+
 		public MoLangParser(ITokenIterator iterator)
 		{
 			_tokenIterator = iterator;
@@ -111,6 +112,7 @@ namespace ConcreteMC.MolangSharp.Parser
 				} while (MatchToken(TokenType.Semicolon));
 
 				var result = ExpressionTraverser.Traverse(exprs.ToArray());
+
 				if (result.Length > 1)
 				{
 					return new ScriptExpression(result);
@@ -156,7 +158,7 @@ namespace ConcreteMC.MolangSharp.Parser
 
 			IExpression expr = parselet.Parse(this, token);
 			InitExpr(expr, token);
-			
+
 			return ParseInfixExpression(expr, precedence);
 		}
 
@@ -215,16 +217,19 @@ namespace ConcreteMC.MolangSharp.Parser
 		internal bool TryParseArgs(out IExpression[] expressions)
 		{
 			expressions = null;
-		
+
 
 			if (!MatchToken(TokenType.BracketLeft)) return false;
+
 			if (MatchToken(TokenType.BracketRight))
 			{
 				expressions = Array.Empty<IExpression>();
+
 				return true;
 			}
-			
+
 			List<IExpression> args = new List<IExpression>();
+
 			do
 			{
 				args.Add(ParseExpression());
@@ -233,6 +238,7 @@ namespace ConcreteMC.MolangSharp.Parser
 			ConsumeToken(TokenType.BracketRight);
 
 			expressions = args.ToArray();
+
 			return true;
 		}
 
@@ -264,6 +270,7 @@ namespace ConcreteMC.MolangSharp.Parser
 			}
 
 			name.SetValue(first);
+
 			return name; // String.Join(".", splits);
 		}
 
@@ -275,6 +282,7 @@ namespace ConcreteMC.MolangSharp.Parser
 		internal Token ConsumeToken(TokenType expectedType)
 		{
 			_tokenIterator.Step();
+
 			if (!TryReadToken(expectedType, out var token))
 			{
 				throw new MoLangParserException(
@@ -300,7 +308,7 @@ namespace ConcreteMC.MolangSharp.Parser
 		{
 			if (!TryReadToken(expectedType, out _))
 				return false;
-			
+
 			if (consume)
 				ConsumeToken();
 
@@ -310,6 +318,7 @@ namespace ConcreteMC.MolangSharp.Parser
 		private bool TryReadToken(TokenType expectedType, out Token result)
 		{
 			result = ReadToken();
+
 			if (result == null || (expectedType != null && !result.Type.Equals(expectedType)))
 			{
 				return false;
@@ -317,7 +326,7 @@ namespace ConcreteMC.MolangSharp.Parser
 
 			return true;
 		}
-		
+
 		private Token ReadToken()
 		{
 			return ReadToken(0);
@@ -342,12 +351,12 @@ namespace ConcreteMC.MolangSharp.Parser
 		{
 			return Factory(new TokenIterator(input)).Parse();
 		}
-		
+
 		private static MoLangParser DefaultFactory(ITokenIterator iterator)
 		{
 			var parser = new MoLangParser(iterator);
 			parser.ExpressionTraverser.Visitors.Add(new MathOptimizationVisitor());
-			
+
 			return parser;
 		}
 	}

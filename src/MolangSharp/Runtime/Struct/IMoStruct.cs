@@ -32,7 +32,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 		/// <inheritdoc />
 		bool IEquatable<IMoValue>.Equals(IMoValue other)
 		{
-			return this.Equals((object)other);
+			return this.Equals((object) other);
 		}
 	}
 }

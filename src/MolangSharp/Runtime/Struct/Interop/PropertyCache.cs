@@ -16,9 +16,8 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct.Interop
 		public PropertyCache(Type arg)
 		{
 			var properties = new Dictionary<string, ValueAccessor>(StringComparer.OrdinalIgnoreCase);
-			var functions = new Dictionary<string, Func<object, MoParams, IMoValue>>(
-				StringComparer.OrdinalIgnoreCase);
-			
+			var functions = new Dictionary<string, Func<object, MoParams, IMoValue>>(StringComparer.OrdinalIgnoreCase);
+
 			ProcessMethods(arg, functions);
 			ProcessProperties(arg, properties);
 
@@ -90,7 +89,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct.Interop
 								}
 								else if (t == typeof(float))
 								{
-									parameters[index] = (float)mo.GetDouble(index);
+									parameters[index] = (float) mo.GetDouble(index);
 								}
 								else if (t == typeof(string))
 								{
@@ -142,6 +141,7 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct.Interop
 						continue;
 
 					var accessor = new PropertyAccessor(prop);
+
 					if (prop.GetCustomAttribute<MoObservableAttribute>() != null)
 						accessor.Observable = true;
 
@@ -157,8 +157,9 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct.Interop
 				{
 					if (valueAccessors.ContainsKey(functionAttribute.Name))
 						continue;
-					
+
 					var accessor = new FieldAccessor(prop);
+
 					if (prop.GetCustomAttribute<MoObservableAttribute>() != null)
 						accessor.Observable = true;
 
