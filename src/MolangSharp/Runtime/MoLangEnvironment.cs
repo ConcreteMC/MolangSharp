@@ -18,6 +18,17 @@ namespace ConcreteMC.MolangSharp.Runtime
 		/// <inheritdoc />
 		public object Value => Structs;
 
+		/// <summary>
+		///		The available root paths
+		/// </summary>
+		/// <remarks>
+		///		Contains the following root structs by default: <br/>
+		///		math.<br/>
+		///		temp.<br/>
+		///		variable. <br/>
+		///		array.<br/>
+		///		context.
+		/// </remarks>
 		public Dictionary<string, IMoStruct> Structs { get; } =
 			new Dictionary<string, IMoStruct>(StringComparer.OrdinalIgnoreCase);
 
@@ -39,41 +50,54 @@ namespace ConcreteMC.MolangSharp.Runtime
 			Structs.TryAdd("context", new ContextStruct());
 		}
 
-		public IMoValue GetValue(MoPath name)
+		/// <summary>
+		///		Get a MoLang variable by it's path
+		/// </summary>
+		/// <param name="path">The path to access</param>
+		/// <returns>The variable at specified path</returns>
+		public IMoValue GetValue(MoPath path)
 		{
-			return GetValue(name, MoParams.Empty);
+			return GetValue(path, MoParams.Empty);
 		}
 
-		public IMoValue GetValue(MoPath name, MoParams param)
+		/// <summary>
+		///		Get a MoLang variable by it's path and specified parameters
+		/// </summary>
+		/// <param name="path">The path to access</param>
+		/// <returns>The variable at specified path</returns>
+		public IMoValue GetValue(MoPath path, MoParams param)
 		{
-			try
+			if (!Structs.TryGetValue(path.Value, out var v))
 			{
-				return Structs[name.Value].Get(name.Next, param);
-			}
-			catch (Exception ex)
-			{
-				// Experimental
 				if (MoLangRuntimeConfiguration.UseDummyValuesInsteadOfExceptions)
 					return DoubleValue.Zero;
-
-				throw new MoLangRuntimeException($"Cannot retrieve struct: {name}", ex);
+				
+				throw new MoLangRuntimeException($"Invalid path: {path.Path}");
 			}
+
+			return v.Get(path.Next, param);
 		}
 
-		public void SetValue(MoPath name, IMoValue value)
+		/// <summary>
+		///		Set a MoLang variable by its path
+		/// </summary>
+		/// <param name="path"></param>
+		/// <param name="value"></param>
+		/// <exception cref="MoLangRuntimeException"></exception>
+		public void SetValue(MoPath path, IMoValue value)
 		{
-			if (!Structs.TryGetValue(name.Value, out var v))
+			if (!Structs.TryGetValue(path.Value, out var v))
 			{
-				throw new MoLangRuntimeException($"Invalid path: {name.Path}", null);
+				throw new MoLangRuntimeException($"Invalid path: {path.Path}", null);
 			}
 
 			try
 			{
-				v.Set(name.Next, value);
+				v.Set(path.Next, value);
 			}
 			catch (Exception ex)
 			{
-				throw new MoLangRuntimeException($"Cannot set value on struct: {name}", ex);
+				throw new MoLangRuntimeException($"Cannot set value on struct: {path}", ex);
 			}
 		}
 
