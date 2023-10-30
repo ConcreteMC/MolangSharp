@@ -56,15 +56,13 @@ namespace ConcreteMC.MolangSharp.Runtime
 			if (expression == null)
 				return DoubleValue.Zero;
 
-			if (Environment.Structs.TryGetValue("context", out IMoStruct cont) && cont is ContextStruct contextStruct
-			                                                                   && context != null)
+			if (context != null && Environment.Structs.TryGetValue("context", out var cont) && cont is ContextStruct contextStruct)
 			{
 				contextStruct.Container = context;
 			}
 
 			IMoValue result = null;
-			MoScope scope = new MoScope(this);
-
+			var scope = new MoScope(this);
 			result = expression.Evaluate(scope, Environment);
 
 			Environment.Structs["temp"].Clear();
