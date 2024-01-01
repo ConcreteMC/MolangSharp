@@ -3680,6 +3680,286 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Visitors.FirstFindingVisitor.OnVisit
   nameWithType: FirstFindingVisitor.OnVisit
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization
+  name: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.html
+  commentId: N:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization
+  nameWithType: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry
+  name: InteropEntry
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.html
+  commentId: T:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry
+  nameWithType: InteropEntry
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.#ctor(System.String,System.Object)
+  name: InteropEntry(string, object)
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropEntry__ctor_System_String_System_Object_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.#ctor(System.String,System.Object)
+  name.vb: New(String, Object)
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.InteropEntry(string, object)
+  fullName.vb: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.New(String, Object)
+  nameWithType: InteropEntry.InteropEntry(string, object)
+  nameWithType.vb: InteropEntry.New(String, Object)
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.#ctor*
+  name: InteropEntry
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropEntry__ctor_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.InteropEntry
+  fullName.vb: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.New
+  nameWithType: InteropEntry.InteropEntry
+  nameWithType.vb: InteropEntry.New
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Cache
+  name: Cache
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropEntry_Cache
+  commentId: P:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Cache
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Cache
+  nameWithType: InteropEntry.Cache
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Cache*
+  name: Cache
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropEntry_Cache_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Cache
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Cache
+  nameWithType: InteropEntry.Cache
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Instance
+  name: Instance
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropEntry_Instance
+  commentId: P:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Instance
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Instance
+  nameWithType: InteropEntry.Instance
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Instance*
+  name: Instance
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropEntry_Instance_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Instance
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Instance
+  nameWithType: InteropEntry.Instance
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Name
+  name: Name
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropEntry_Name
+  commentId: P:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Name
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Name
+  nameWithType: InteropEntry.Name
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Name*
+  name: Name
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropEntry_Name_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Name
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.Name
+  nameWithType: InteropEntry.Name
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor
+  name: InteropOptimizationVisitor
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.html
+  commentId: T:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor
+  nameWithType: InteropOptimizationVisitor
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.#ctor(ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions)
+  name: InteropOptimizationVisitor(InteropOptimizationVisitorOptions)
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropOptimizationVisitor__ctor_ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropOptimizationVisitorOptions_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.#ctor(ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions)
+  name.vb: New(InteropOptimizationVisitorOptions)
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.InteropOptimizationVisitor(ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions)
+  fullName.vb: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.New(ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions)
+  nameWithType: InteropOptimizationVisitor.InteropOptimizationVisitor(InteropOptimizationVisitorOptions)
+  nameWithType.vb: InteropOptimizationVisitor.New(InteropOptimizationVisitorOptions)
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.#ctor*
+  name: InteropOptimizationVisitor
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropOptimizationVisitor__ctor_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.InteropOptimizationVisitor
+  fullName.vb: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.New
+  nameWithType: InteropOptimizationVisitor.InteropOptimizationVisitor
+  nameWithType.vb: InteropOptimizationVisitor.New
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
+  name: OnVisit(ExpressionTraverser, IExpression)
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropOptimizationVisitor_OnVisit_ConcreteMC_MolangSharp_Parser_ExpressionTraverser_ConcreteMC_MolangSharp_Parser_IExpression_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser,ConcreteMC.MolangSharp.Parser.IExpression)
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.OnVisit(ConcreteMC.MolangSharp.Parser.ExpressionTraverser, ConcreteMC.MolangSharp.Parser.IExpression)
+  nameWithType: InteropOptimizationVisitor.OnVisit(ExpressionTraverser, IExpression)
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.OnVisit*
+  name: OnVisit
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropOptimizationVisitor_OnVisit_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.OnVisit
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.OnVisit
+  nameWithType: InteropOptimizationVisitor.OnVisit
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions
+  name: InteropOptimizationVisitorOptions
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.html
+  commentId: T:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions
+  nameWithType: InteropOptimizationVisitorOptions
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.InteropEntries
+  name: InteropEntries
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropOptimizationVisitorOptions_InteropEntries
+  commentId: P:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.InteropEntries
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.InteropEntries
+  nameWithType: InteropOptimizationVisitorOptions.InteropEntries
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.InteropEntries*
+  name: InteropEntries
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropOptimizationVisitorOptions_InteropEntries_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.InteropEntries
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.InteropEntries
+  nameWithType: InteropOptimizationVisitorOptions.InteropEntries
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeFunctionCalls
+  name: OptimizeFunctionCalls
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropOptimizationVisitorOptions_OptimizeFunctionCalls
+  commentId: P:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeFunctionCalls
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeFunctionCalls
+  nameWithType: InteropOptimizationVisitorOptions.OptimizeFunctionCalls
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeFunctionCalls*
+  name: OptimizeFunctionCalls
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropOptimizationVisitorOptions_OptimizeFunctionCalls_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeFunctionCalls
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeFunctionCalls
+  nameWithType: InteropOptimizationVisitorOptions.OptimizeFunctionCalls
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeVariableAccess
+  name: OptimizeVariableAccess
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropOptimizationVisitorOptions_OptimizeVariableAccess
+  commentId: P:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeVariableAccess
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeVariableAccess
+  nameWithType: InteropOptimizationVisitorOptions.OptimizeVariableAccess
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeVariableAccess*
+  name: OptimizeVariableAccess
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropOptimizationVisitorOptions_OptimizeVariableAccess_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeVariableAccess
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeVariableAccess
+  nameWithType: InteropOptimizationVisitorOptions.OptimizeVariableAccess
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeVariableAssignment
+  name: OptimizeVariableAssignment
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropOptimizationVisitorOptions_OptimizeVariableAssignment
+  commentId: P:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeVariableAssignment
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeVariableAssignment
+  nameWithType: InteropOptimizationVisitorOptions.OptimizeVariableAssignment
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeVariableAssignment*
+  name: OptimizeVariableAssignment
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_InteropOptimizationVisitorOptions_OptimizeVariableAssignment_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeVariableAssignment
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.OptimizeVariableAssignment
+  nameWithType: InteropOptimizationVisitorOptions.OptimizeVariableAssignment
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression
+  name: OptimizedAssignExpression
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.html
+  commentId: T:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression
+  nameWithType: OptimizedAssignExpression
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.#ctor(System.Object,ConcreteMC.MolangSharp.Runtime.Struct.Interop.ValueAccessor,ConcreteMC.MolangSharp.Parser.IExpression)
+  name: OptimizedAssignExpression(object, ValueAccessor, IExpression)
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_OptimizedAssignExpression__ctor_System_Object_ConcreteMC_MolangSharp_Runtime_Struct_Interop_ValueAccessor_ConcreteMC_MolangSharp_Parser_IExpression_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.#ctor(System.Object,ConcreteMC.MolangSharp.Runtime.Struct.Interop.ValueAccessor,ConcreteMC.MolangSharp.Parser.IExpression)
+  name.vb: New(Object, ValueAccessor, IExpression)
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.OptimizedAssignExpression(object, ConcreteMC.MolangSharp.Runtime.Struct.Interop.ValueAccessor, ConcreteMC.MolangSharp.Parser.IExpression)
+  fullName.vb: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.New(Object, ConcreteMC.MolangSharp.Runtime.Struct.Interop.ValueAccessor, ConcreteMC.MolangSharp.Parser.IExpression)
+  nameWithType: OptimizedAssignExpression.OptimizedAssignExpression(object, ValueAccessor, IExpression)
+  nameWithType.vb: OptimizedAssignExpression.New(Object, ValueAccessor, IExpression)
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.#ctor*
+  name: OptimizedAssignExpression
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_OptimizedAssignExpression__ctor_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.OptimizedAssignExpression
+  fullName.vb: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.New
+  nameWithType: OptimizedAssignExpression.OptimizedAssignExpression
+  nameWithType.vb: OptimizedAssignExpression.New
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.Evaluate(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: Evaluate(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_OptimizedAssignExpression_Evaluate_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.Evaluate(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.Evaluate(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: OptimizedAssignExpression.Evaluate(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.Evaluate*
+  name: Evaluate
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_OptimizedAssignExpression_Evaluate_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.Evaluate
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.Evaluate
+  nameWithType: OptimizedAssignExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression
+  name: OptimizedFunctionCallExpression
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.html
+  commentId: T:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression
+  nameWithType: OptimizedFunctionCallExpression
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.#ctor(System.Object,System.Func{System.Object,ConcreteMC.MolangSharp.Runtime.MoParams,ConcreteMC.MolangSharp.Runtime.Value.IMoValue},ConcreteMC.MolangSharp.Parser.IExpression[])
+  name: OptimizedFunctionCallExpression(object, Func<object, MoParams, IMoValue>, IExpression[])
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_OptimizedFunctionCallExpression__ctor_System_Object_System_Func_System_Object_ConcreteMC_MolangSharp_Runtime_MoParams_ConcreteMC_MolangSharp_Runtime_Value_IMoValue__ConcreteMC_MolangSharp_Parser_IExpression___
+  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.#ctor(System.Object,System.Func{System.Object,ConcreteMC.MolangSharp.Runtime.MoParams,ConcreteMC.MolangSharp.Runtime.Value.IMoValue},ConcreteMC.MolangSharp.Parser.IExpression[])
+  name.vb: New(Object, Func(Of Object, MoParams, IMoValue), IExpression())
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.OptimizedFunctionCallExpression(object, System.Func<object, ConcreteMC.MolangSharp.Runtime.MoParams, ConcreteMC.MolangSharp.Runtime.Value.IMoValue>, ConcreteMC.MolangSharp.Parser.IExpression[])
+  fullName.vb: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.New(Object, System.Func(Of Object, ConcreteMC.MolangSharp.Runtime.MoParams, ConcreteMC.MolangSharp.Runtime.Value.IMoValue), ConcreteMC.MolangSharp.Parser.IExpression())
+  nameWithType: OptimizedFunctionCallExpression.OptimizedFunctionCallExpression(object, Func<object, MoParams, IMoValue>, IExpression[])
+  nameWithType.vb: OptimizedFunctionCallExpression.New(Object, Func(Of Object, MoParams, IMoValue), IExpression())
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.#ctor*
+  name: OptimizedFunctionCallExpression
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_OptimizedFunctionCallExpression__ctor_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.OptimizedFunctionCallExpression
+  fullName.vb: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.New
+  nameWithType: OptimizedFunctionCallExpression.OptimizedFunctionCallExpression
+  nameWithType.vb: OptimizedFunctionCallExpression.New
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.Evaluate(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: Evaluate(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_OptimizedFunctionCallExpression_Evaluate_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.Evaluate(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.Evaluate(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: OptimizedFunctionCallExpression.Evaluate(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.Evaluate*
+  name: Evaluate
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_OptimizedFunctionCallExpression_Evaluate_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.Evaluate
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.Evaluate
+  nameWithType: OptimizedFunctionCallExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression
+  name: OptimizedNameExpression
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.html
+  commentId: T:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression
+  nameWithType: OptimizedNameExpression
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.#ctor(System.Object,ConcreteMC.MolangSharp.Runtime.Struct.Interop.ValueAccessor)
+  name: OptimizedNameExpression(object, ValueAccessor)
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_OptimizedNameExpression__ctor_System_Object_ConcreteMC_MolangSharp_Runtime_Struct_Interop_ValueAccessor_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.#ctor(System.Object,ConcreteMC.MolangSharp.Runtime.Struct.Interop.ValueAccessor)
+  name.vb: New(Object, ValueAccessor)
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.OptimizedNameExpression(object, ConcreteMC.MolangSharp.Runtime.Struct.Interop.ValueAccessor)
+  fullName.vb: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.New(Object, ConcreteMC.MolangSharp.Runtime.Struct.Interop.ValueAccessor)
+  nameWithType: OptimizedNameExpression.OptimizedNameExpression(object, ValueAccessor)
+  nameWithType.vb: OptimizedNameExpression.New(Object, ValueAccessor)
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.#ctor*
+  name: OptimizedNameExpression
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_OptimizedNameExpression__ctor_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.OptimizedNameExpression
+  fullName.vb: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.New
+  nameWithType: OptimizedNameExpression.OptimizedNameExpression
+  nameWithType.vb: OptimizedNameExpression.New
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.Evaluate(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: Evaluate(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_OptimizedNameExpression_Evaluate_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.Evaluate(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.Evaluate(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: OptimizedNameExpression.Evaluate(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.Evaluate*
+  name: Evaluate
+  href: api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.html#ConcreteMC_MolangSharp_Parser_Visitors_InteropOptimization_OptimizedNameExpression_Evaluate_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.Evaluate
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.Evaluate
+  nameWithType: OptimizedNameExpression.Evaluate
 - uid: ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor
   name: MathOptimizationVisitor
   href: api/ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor.html

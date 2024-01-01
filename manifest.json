@@ -863,6 +863,76 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropEntry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.InteropOptimizationVisitorOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedAssignExpression.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedFunctionCallExpression.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.OptimizedNameExpression.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.InteropOptimization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ConcreteMC.MolangSharp.Parser.Visitors.MathOptimizationVisitor.yml",
       "output": {
         ".html": {
