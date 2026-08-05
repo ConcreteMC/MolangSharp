@@ -6,7 +6,8 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Version>1.0.3</Version>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        <TargetFrameworks>netstandard2.1; netcoreapp6.0</TargetFrameworks>
+        <TargetFrameworks>netstandard2.1; net10.0</TargetFrameworks>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <PackageProjectUrl>https://github.com/ConcreteMC/MolangSharp</PackageProjectUrl>
         <RepositoryUrl>https://github.com/ConcreteMC/MolangSharp.git</RepositoryUrl>
         <PackageLicenseExpression>MPL-2.0</PackageLicenseExpression>
@@ -26,14 +27,6 @@
         <RepositoryType>git</RepositoryType>
         <Product>ConcreteMC.MolangSharp</Product>
         <PackageId>Alex.MoLang</PackageId>
-    </PropertyGroup>
-
-    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-        <DocumentationFile>bin\x64\Debug\netstandard2.1\Alex.MoLang.xml</DocumentationFile>
-    </PropertyGroup>
-
-    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-        <DocumentationFile>bin\x64\Release\netstandard2.1\Alex.MoLang.xml</DocumentationFile>
     </PropertyGroup>
 
 </Project>
