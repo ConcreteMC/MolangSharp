@@ -99,7 +99,8 @@
 
   <h1 id="ConcreteMC_MolangSharp_Parser_Precedence" data-uid="ConcreteMC.MolangSharp.Parser.Precedence" class="text-break">Enum Precedence
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The binding power of an operator, ordered from loosest to tightest.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="ConcreteMC.html">ConcreteMC</a>.<a class="xref" href="ConcreteMC.MolangSharp.html">MolangSharp</a>.<a class="xref" href="ConcreteMC.MolangSharp.Parser.html">Parser</a></h6>
   <h6><strong>Assembly</strong>: ConcreteMC.MolangSharp.dll</h6>
@@ -107,6 +108,15 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public enum Precedence</code></pre>
   </div>
+  <h5 id="ConcreteMC_MolangSharp_Parser_Precedence_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>A higher value binds tighter, so <code>1 + 2 * 3</code> groups as <code>1 + (2 * 3)</code> because
+<a class="xref" href="ConcreteMC.MolangSharp.Parser.Precedence.html#ConcreteMC_MolangSharp_Parser_Precedence_Product">Product</a> outranks <a class="xref" href="ConcreteMC.MolangSharp.Parser.Precedence.html#ConcreteMC_MolangSharp_Parser_Precedence_Sum">Sum</a>.
+<br>
+The relative order of <a class="xref" href="ConcreteMC.MolangSharp.Parser.Precedence.html#ConcreteMC_MolangSharp_Parser_Precedence_And">And</a>/<a class="xref" href="ConcreteMC.MolangSharp.Parser.Precedence.html#ConcreteMC_MolangSharp_Parser_Precedence_Or">Or</a> and of
+<a class="xref" href="ConcreteMC.MolangSharp.Parser.Precedence.html#ConcreteMC_MolangSharp_Parser_Precedence_Compare">Compare</a>/<a class="xref" href="ConcreteMC.MolangSharp.Parser.Precedence.html#ConcreteMC_MolangSharp_Parser_Precedence_Equality">Equality</a> is mandated by the Molang versioned change for 1.18.20:
+&quot;Fixed Logical AND to evaluate before Logical OR, and for comparison operators to evaluate before
+equality operators.&quot;</p>
+</div>
   <h3 id="fields">Fields
 </h3>
   <table class="table table-bordered table-condensed">
@@ -147,6 +157,10 @@
       </tr>
       <tr>
         <td id="ConcreteMC_MolangSharp_Parser_Precedence_Conditional">Conditional</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td id="ConcreteMC_MolangSharp_Parser_Precedence_Equality">Equality</td>
         <td></td>
       </tr>
       <tr>

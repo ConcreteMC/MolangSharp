@@ -262,7 +262,7 @@
     <a href="https://github.com/ConcreteMC/MolangSharp/new/main/apiSpec/new?filename=ConcreteMC_MolangSharp_Runtime_Struct_VariableStruct_Clear.md&amp;value=---%0Auid%3A%20ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.Clear%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Runtime/Struct/VariableStruct.cs/#L108">View Source</a>
+    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Runtime/Struct/VariableStruct.cs/#L136">View Source</a>
   </span>
   <a id="ConcreteMC_MolangSharp_Runtime_Struct_VariableStruct_Clear_" data-uid="ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.Clear*"></a>
   <h4 id="ConcreteMC_MolangSharp_Runtime_Struct_VariableStruct_Clear" data-uid="ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.Clear">Clear()</h4>
@@ -399,6 +399,73 @@
       </tr>
     </tbody>
   </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ConcreteMC/MolangSharp/new/main/apiSpec/new?filename=ConcreteMC_MolangSharp_Runtime_Struct_VariableStruct_TryGet_ConcreteMC_MolangSharp_Utils_MoPath_ConcreteMC_MolangSharp_Runtime_MoParams_ConcreteMC_MolangSharp_Runtime_Value_IMoValue__.md&amp;value=---%0Auid%3A%20ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.TryGet(ConcreteMC.MolangSharp.Utils.MoPath%2CConcreteMC.MolangSharp.Runtime.MoParams%2CConcreteMC.MolangSharp.Runtime.Value.IMoValue%40)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Runtime/Struct/VariableStruct.cs/#L108">View Source</a>
+  </span>
+  <a id="ConcreteMC_MolangSharp_Runtime_Struct_VariableStruct_TryGet_" data-uid="ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.TryGet*"></a>
+  <h4 id="ConcreteMC_MolangSharp_Runtime_Struct_VariableStruct_TryGet_ConcreteMC_MolangSharp_Utils_MoPath_ConcreteMC_MolangSharp_Runtime_MoParams_ConcreteMC_MolangSharp_Runtime_Value_IMoValue__" data-uid="ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.TryGet(ConcreteMC.MolangSharp.Utils.MoPath,ConcreteMC.MolangSharp.Runtime.MoParams,ConcreteMC.MolangSharp.Runtime.Value.IMoValue@)">TryGet(MoPath, MoParams, out IMoValue)</h4>
+  <div class="markdown level1 summary"><p>Try to get the value of a property, reporting whether it could be resolved at all</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool TryGet(MoPath key, MoParams parameters, out IMoValue value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="ConcreteMC.MolangSharp.Utils.MoPath.html">MoPath</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The path of the property to get</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ConcreteMC.MolangSharp.Runtime.MoParams.html">MoParams</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters used to retrieve the value</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="ConcreteMC.MolangSharp.Runtime.Value.IMoValue.html">IMoValue</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the property, or null when it could not be resolved</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True when the property could be resolved</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="ConcreteMC_MolangSharp_Runtime_Struct_VariableStruct_TryGet_ConcreteMC_MolangSharp_Utils_MoPath_ConcreteMC_MolangSharp_Runtime_MoParams_ConcreteMC_MolangSharp_Runtime_Value_IMoValue___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Used by the null coalescing operator (<code>??</code>), which has to tell a variable that was never
+assigned apart from a variable that holds a falsy value such as 0.0. Structs that cannot report
+absence fall back to <a class="xref" href="ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.html#ConcreteMC_MolangSharp_Runtime_Struct_IMoStruct_Get_ConcreteMC_MolangSharp_Utils_MoPath_ConcreteMC_MolangSharp_Runtime_MoParams_">Get(MoPath, MoParams)</a>.</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <a class="xref" href="ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.html">IMoStruct</a>

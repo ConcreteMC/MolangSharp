@@ -186,6 +186,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expression.Evaluate
   nameWithType: Expression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expression.html#ConcreteMC_MolangSharp_Parser_Expression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: Expression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expression.html#ConcreteMC_MolangSharp_Parser_Expression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expression.EvaluateDouble
+  nameWithType: Expression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expression.Meta
   name: Meta
   href: api/ConcreteMC.MolangSharp.Parser.Expression.html#ConcreteMC_MolangSharp_Parser_Expression_Meta
@@ -506,6 +519,19 @@ references:
   fullName.vb: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.ArrowExpression.New
   nameWithType: ArrowExpression.ArrowExpression
   nameWithType.vb: ArrowExpression.New
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.ArrowExpression.Assign(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment,ConcreteMC.MolangSharp.Runtime.Value.IMoValue)
+  name: Assign(MoScope, MoLangEnvironment, IMoValue)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.ArrowExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_ArrowExpression_Assign_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_ConcreteMC_MolangSharp_Runtime_Value_IMoValue_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.ArrowExpression.Assign(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment,ConcreteMC.MolangSharp.Runtime.Value.IMoValue)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.ArrowExpression.Assign(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment, ConcreteMC.MolangSharp.Runtime.Value.IMoValue)
+  nameWithType: ArrowExpression.Assign(MoScope, MoLangEnvironment, IMoValue)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.ArrowExpression.Assign*
+  name: Assign
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.ArrowExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_ArrowExpression_Assign_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.ArrowExpression.Assign
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.ArrowExpression.Assign
+  nameWithType: ArrowExpression.Assign
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.ArrowExpression.Evaluate(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
   name: Evaluate(MoScope, MoLangEnvironment)
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.ArrowExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_ArrowExpression_Evaluate_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
@@ -570,6 +596,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanAndExpression.Evaluate
   nameWithType: BooleanAndExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanAndExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanAndExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_BooleanAndExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanAndExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanAndExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: BooleanAndExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanAndExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanAndExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_BooleanAndExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanAndExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanAndExpression.EvaluateDouble
+  nameWithType: BooleanAndExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanAndExpression.GetSigil
   name: GetSigil()
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanAndExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_BooleanAndExpression_GetSigil
@@ -621,6 +660,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanOrExpression.Evaluate
   nameWithType: BooleanOrExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanOrExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanOrExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_BooleanOrExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanOrExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanOrExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: BooleanOrExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanOrExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanOrExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_BooleanOrExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanOrExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanOrExpression.EvaluateDouble
+  nameWithType: BooleanOrExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanOrExpression.GetSigil
   name: GetSigil()
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.BooleanOrExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_BooleanOrExpression_GetSigil
@@ -723,6 +775,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.DivideExpression.Evaluate
   nameWithType: DivideExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.DivideExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.DivideExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_DivideExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.DivideExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.DivideExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: DivideExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.DivideExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.DivideExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_DivideExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.DivideExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.DivideExpression.EvaluateDouble
+  nameWithType: DivideExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.DivideExpression.GetSigil
   name: GetSigil()
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.DivideExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_DivideExpression_GetSigil
@@ -774,6 +839,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.EqualExpression.Evaluate
   nameWithType: EqualExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.EqualExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.EqualExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_EqualExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.EqualExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.EqualExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: EqualExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.EqualExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.EqualExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_EqualExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.EqualExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.EqualExpression.EvaluateDouble
+  nameWithType: EqualExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.EqualExpression.GetSigil
   name: GetSigil()
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.EqualExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_EqualExpression_GetSigil
@@ -825,6 +903,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterExpression.Evaluate
   nameWithType: GreaterExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_GreaterExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: GreaterExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_GreaterExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterExpression.EvaluateDouble
+  nameWithType: GreaterExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterExpression.GetSigil
   name: GetSigil()
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_GreaterExpression_GetSigil
@@ -876,6 +967,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterOrEqualExpression.Evaluate
   nameWithType: GreaterOrEqualExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterOrEqualExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterOrEqualExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_GreaterOrEqualExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterOrEqualExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterOrEqualExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: GreaterOrEqualExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterOrEqualExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterOrEqualExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_GreaterOrEqualExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterOrEqualExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterOrEqualExpression.EvaluateDouble
+  nameWithType: GreaterOrEqualExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterOrEqualExpression.GetSigil
   name: GetSigil()
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.GreaterOrEqualExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_GreaterOrEqualExpression_GetSigil
@@ -927,6 +1031,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.MinusExpression.Evaluate
   nameWithType: MinusExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.MinusExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.MinusExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_MinusExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.MinusExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.MinusExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: MinusExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.MinusExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.MinusExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_MinusExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.MinusExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.MinusExpression.EvaluateDouble
+  nameWithType: MinusExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.MinusExpression.GetSigil
   name: GetSigil()
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.MinusExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_MinusExpression_GetSigil
@@ -978,6 +1095,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.NotEqualExpression.Evaluate
   nameWithType: NotEqualExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.NotEqualExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.NotEqualExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_NotEqualExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.NotEqualExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.NotEqualExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: NotEqualExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.NotEqualExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.NotEqualExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_NotEqualExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.NotEqualExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.NotEqualExpression.EvaluateDouble
+  nameWithType: NotEqualExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.NotEqualExpression.GetSigil
   name: GetSigil()
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.NotEqualExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_NotEqualExpression_GetSigil
@@ -1029,6 +1159,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PlusExpression.Evaluate
   nameWithType: PlusExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PlusExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PlusExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_PlusExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PlusExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PlusExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: PlusExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PlusExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PlusExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_PlusExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PlusExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PlusExpression.EvaluateDouble
+  nameWithType: PlusExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PlusExpression.GetSigil
   name: GetSigil()
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PlusExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_PlusExpression_GetSigil
@@ -1080,6 +1223,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PowExpression.Evaluate
   nameWithType: PowExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PowExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PowExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_PowExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PowExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PowExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: PowExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PowExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PowExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_PowExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PowExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PowExpression.EvaluateDouble
+  nameWithType: PowExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PowExpression.GetSigil
   name: GetSigil()
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.PowExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_PowExpression_GetSigil
@@ -1131,6 +1287,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerExpression.Evaluate
   nameWithType: SmallerExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_SmallerExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: SmallerExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_SmallerExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerExpression.EvaluateDouble
+  nameWithType: SmallerExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerExpression.GetSigil
   name: GetSigil()
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_SmallerExpression_GetSigil
@@ -1182,6 +1351,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerOrEqualExpression.Evaluate
   nameWithType: SmallerOrEqualExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerOrEqualExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerOrEqualExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_SmallerOrEqualExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerOrEqualExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerOrEqualExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: SmallerOrEqualExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerOrEqualExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerOrEqualExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_SmallerOrEqualExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerOrEqualExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerOrEqualExpression.EvaluateDouble
+  nameWithType: SmallerOrEqualExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerOrEqualExpression.GetSigil
   name: GetSigil()
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp.SmallerOrEqualExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BinaryOp_SmallerOrEqualExpression_GetSigil
@@ -1297,6 +1479,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.BooleanExpression.Evaluate
   nameWithType: BooleanExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BooleanExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BooleanExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BooleanExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.BooleanExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BooleanExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: BooleanExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BooleanExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BooleanExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BooleanExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.BooleanExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BooleanExpression.EvaluateDouble
+  nameWithType: BooleanExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.BooleanNotExpression
   name: BooleanNotExpression
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.BooleanNotExpression.html
@@ -1335,6 +1530,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.BooleanNotExpression.Evaluate
   nameWithType: BooleanNotExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BooleanNotExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BooleanNotExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BooleanNotExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.BooleanNotExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BooleanNotExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: BooleanNotExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.BooleanNotExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.BooleanNotExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_BooleanNotExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.BooleanNotExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.BooleanNotExpression.EvaluateDouble
+  nameWithType: BooleanNotExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.BreakExpression
   name: BreakExpression
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.BreakExpression.html
@@ -1565,6 +1773,12 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.LoopExpression.Evaluate
   nameWithType: LoopExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.LoopExpression.MaxIterations
+  name: MaxIterations
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.LoopExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_LoopExpression_MaxIterations
+  commentId: F:ConcreteMC.MolangSharp.Parser.Expressions.LoopExpression.MaxIterations
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.LoopExpression.MaxIterations
+  nameWithType: LoopExpression.MaxIterations
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.NameExpression
   name: NameExpression
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.NameExpression.html
@@ -1685,6 +1899,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.NumberExpression.Evaluate
   nameWithType: NumberExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.NumberExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.NumberExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_NumberExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.NumberExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.NumberExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: NumberExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.NumberExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.NumberExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_NumberExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.NumberExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.NumberExpression.EvaluateDouble
+  nameWithType: NumberExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.ReturnExpression
   name: ReturnExpression
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.ReturnExpression.html
@@ -1901,6 +2128,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.TernaryExpression.Evaluate
   nameWithType: TernaryExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.TernaryExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.TernaryExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_TernaryExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.TernaryExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.TernaryExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: TernaryExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.TernaryExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.TernaryExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_TernaryExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.TernaryExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.TernaryExpression.EvaluateDouble
+  nameWithType: TernaryExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.TernaryExpression.ThenExpr
   name: ThenExpr
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.TernaryExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_TernaryExpression_ThenExpr
@@ -1990,6 +2230,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.UnaryMinusExpression.Evaluate
   nameWithType: UnaryMinusExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.UnaryMinusExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.UnaryMinusExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_UnaryMinusExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.UnaryMinusExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.UnaryMinusExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: UnaryMinusExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.UnaryMinusExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.UnaryMinusExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_UnaryMinusExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.UnaryMinusExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.UnaryMinusExpression.EvaluateDouble
+  nameWithType: UnaryMinusExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.Expressions.UnaryPlusExpression
   name: UnaryPlusExpression
   href: api/ConcreteMC.MolangSharp.Parser.Expressions.UnaryPlusExpression.html
@@ -2028,6 +2281,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.Expressions.UnaryPlusExpression.Evaluate
   nameWithType: UnaryPlusExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.UnaryPlusExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.UnaryPlusExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_UnaryPlusExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Expressions.UnaryPlusExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.UnaryPlusExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: UnaryPlusExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.Expressions.UnaryPlusExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.Expressions.UnaryPlusExpression.html#ConcreteMC_MolangSharp_Parser_Expressions_UnaryPlusExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.Expressions.UnaryPlusExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.Expressions.UnaryPlusExpression.EvaluateDouble
+  nameWithType: UnaryPlusExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.ExpressionTraverser
   name: ExpressionTraverser
   href: api/ConcreteMC.MolangSharp.Parser.ExpressionTraverser.html
@@ -2207,6 +2473,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Parser.IExpression.Evaluate
   nameWithType: IExpression.Evaluate
+- uid: ConcreteMC.MolangSharp.Parser.IExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  name: EvaluateDouble(MoScope, MoLangEnvironment)
+  href: api/ConcreteMC.MolangSharp.Parser.IExpression.html#ConcreteMC_MolangSharp_Parser_IExpression_EvaluateDouble_ConcreteMC_MolangSharp_Runtime_MoScope_ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_
+  commentId: M:ConcreteMC.MolangSharp.Parser.IExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope,ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  fullName: ConcreteMC.MolangSharp.Parser.IExpression.EvaluateDouble(ConcreteMC.MolangSharp.Runtime.MoScope, ConcreteMC.MolangSharp.Runtime.MoLangEnvironment)
+  nameWithType: IExpression.EvaluateDouble(MoScope, MoLangEnvironment)
+- uid: ConcreteMC.MolangSharp.Parser.IExpression.EvaluateDouble*
+  name: EvaluateDouble
+  href: api/ConcreteMC.MolangSharp.Parser.IExpression.html#ConcreteMC_MolangSharp_Parser_IExpression_EvaluateDouble_
+  commentId: Overload:ConcreteMC.MolangSharp.Parser.IExpression.EvaluateDouble
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Parser.IExpression.EvaluateDouble
+  nameWithType: IExpression.EvaluateDouble
 - uid: ConcreteMC.MolangSharp.Parser.IExpression.Meta
   name: Meta
   href: api/ConcreteMC.MolangSharp.Parser.IExpression.html#ConcreteMC_MolangSharp_Parser_IExpression_Meta
@@ -2661,6 +2940,15 @@ references:
   commentId: T:ConcreteMC.MolangSharp.Parser.Parselet.GenericBinaryOpParselet
   fullName: ConcreteMC.MolangSharp.Parser.Parselet.GenericBinaryOpParselet
   nameWithType: GenericBinaryOpParselet
+- uid: ConcreteMC.MolangSharp.Parser.Parselet.GenericBinaryOpParselet.#ctor(ConcreteMC.MolangSharp.Parser.Precedence,System.Boolean)
+  name: GenericBinaryOpParselet(Precedence, bool)
+  href: api/ConcreteMC.MolangSharp.Parser.Parselet.GenericBinaryOpParselet.html#ConcreteMC_MolangSharp_Parser_Parselet_GenericBinaryOpParselet__ctor_ConcreteMC_MolangSharp_Parser_Precedence_System_Boolean_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Parselet.GenericBinaryOpParselet.#ctor(ConcreteMC.MolangSharp.Parser.Precedence,System.Boolean)
+  name.vb: New(Precedence, Boolean)
+  fullName: ConcreteMC.MolangSharp.Parser.Parselet.GenericBinaryOpParselet.GenericBinaryOpParselet(ConcreteMC.MolangSharp.Parser.Precedence, bool)
+  fullName.vb: ConcreteMC.MolangSharp.Parser.Parselet.GenericBinaryOpParselet.New(ConcreteMC.MolangSharp.Parser.Precedence, Boolean)
+  nameWithType: GenericBinaryOpParselet.GenericBinaryOpParselet(Precedence, bool)
+  nameWithType.vb: GenericBinaryOpParselet.New(Precedence, Boolean)
 - uid: ConcreteMC.MolangSharp.Parser.Parselet.GenericBinaryOpParselet.#ctor(ConcreteMC.MolangSharp.Parser.Precedence)
   name: GenericBinaryOpParselet(Precedence)
   href: api/ConcreteMC.MolangSharp.Parser.Parselet.GenericBinaryOpParselet.html#ConcreteMC_MolangSharp_Parser_Parselet_GenericBinaryOpParselet__ctor_ConcreteMC_MolangSharp_Parser_Precedence_
@@ -2956,6 +3244,12 @@ references:
   commentId: F:ConcreteMC.MolangSharp.Parser.Precedence.Conditional
   fullName: ConcreteMC.MolangSharp.Parser.Precedence.Conditional
   nameWithType: Precedence.Conditional
+- uid: ConcreteMC.MolangSharp.Parser.Precedence.Equality
+  name: Equality
+  href: api/ConcreteMC.MolangSharp.Parser.Precedence.html#ConcreteMC_MolangSharp_Parser_Precedence_Equality
+  commentId: F:ConcreteMC.MolangSharp.Parser.Precedence.Equality
+  fullName: ConcreteMC.MolangSharp.Parser.Precedence.Equality
+  nameWithType: Precedence.Equality
 - uid: ConcreteMC.MolangSharp.Parser.Precedence.Or
   name: Or
   href: api/ConcreteMC.MolangSharp.Parser.Precedence.html#ConcreteMC_MolangSharp_Parser_Precedence_Or
@@ -3284,6 +3578,15 @@ references:
   commentId: F:ConcreteMC.MolangSharp.Parser.Tokenizer.TokenType.Break
   fullName: ConcreteMC.MolangSharp.Parser.Tokenizer.TokenType.Break
   nameWithType: TokenType.Break
+- uid: ConcreteMC.MolangSharp.Parser.Tokenizer.TokenType.BySymbol(System.Char,System.Char)
+  name: BySymbol(char, char)
+  href: api/ConcreteMC.MolangSharp.Parser.Tokenizer.TokenType.html#ConcreteMC_MolangSharp_Parser_Tokenizer_TokenType_BySymbol_System_Char_System_Char_
+  commentId: M:ConcreteMC.MolangSharp.Parser.Tokenizer.TokenType.BySymbol(System.Char,System.Char)
+  name.vb: BySymbol(Char, Char)
+  fullName: ConcreteMC.MolangSharp.Parser.Tokenizer.TokenType.BySymbol(char, char)
+  fullName.vb: ConcreteMC.MolangSharp.Parser.Tokenizer.TokenType.BySymbol(Char, Char)
+  nameWithType: TokenType.BySymbol(char, char)
+  nameWithType.vb: TokenType.BySymbol(Char, Char)
 - uid: ConcreteMC.MolangSharp.Parser.Tokenizer.TokenType.BySymbol(System.Char)
   name: BySymbol(char)
   href: api/ConcreteMC.MolangSharp.Parser.Tokenizer.TokenType.html#ConcreteMC_MolangSharp_Parser_Tokenizer_TokenType_BySymbol_System_Char_
@@ -4047,6 +4350,508 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.Exceptions.MoLangRuntimeException.MolangTrace
   nameWithType: MoLangRuntimeException.MolangTrace
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings
+  name: MoLangEasings
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html
+  commentId: T:ConcreteMC.MolangSharp.Runtime.MoLangEasings
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings
+  nameWithType: MoLangEasings
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InBack(System.Double)
+  name: InBack(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InBack_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InBack(System.Double)
+  name.vb: InBack(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InBack(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InBack(Double)
+  nameWithType: MoLangEasings.InBack(double)
+  nameWithType.vb: MoLangEasings.InBack(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InBack*
+  name: InBack
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InBack_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InBack
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InBack
+  nameWithType: MoLangEasings.InBack
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InBounce(System.Double)
+  name: InBounce(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InBounce_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InBounce(System.Double)
+  name.vb: InBounce(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InBounce(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InBounce(Double)
+  nameWithType: MoLangEasings.InBounce(double)
+  nameWithType.vb: MoLangEasings.InBounce(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InBounce*
+  name: InBounce
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InBounce_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InBounce
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InBounce
+  nameWithType: MoLangEasings.InBounce
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InCirc(System.Double)
+  name: InCirc(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InCirc_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InCirc(System.Double)
+  name.vb: InCirc(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InCirc(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InCirc(Double)
+  nameWithType: MoLangEasings.InCirc(double)
+  nameWithType.vb: MoLangEasings.InCirc(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InCirc*
+  name: InCirc
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InCirc_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InCirc
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InCirc
+  nameWithType: MoLangEasings.InCirc
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InCubic(System.Double)
+  name: InCubic(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InCubic_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InCubic(System.Double)
+  name.vb: InCubic(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InCubic(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InCubic(Double)
+  nameWithType: MoLangEasings.InCubic(double)
+  nameWithType.vb: MoLangEasings.InCubic(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InCubic*
+  name: InCubic
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InCubic_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InCubic
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InCubic
+  nameWithType: MoLangEasings.InCubic
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InElastic(System.Double)
+  name: InElastic(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InElastic_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InElastic(System.Double)
+  name.vb: InElastic(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InElastic(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InElastic(Double)
+  nameWithType: MoLangEasings.InElastic(double)
+  nameWithType.vb: MoLangEasings.InElastic(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InElastic*
+  name: InElastic
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InElastic_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InElastic
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InElastic
+  nameWithType: MoLangEasings.InElastic
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InExpo(System.Double)
+  name: InExpo(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InExpo_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InExpo(System.Double)
+  name.vb: InExpo(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InExpo(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InExpo(Double)
+  nameWithType: MoLangEasings.InExpo(double)
+  nameWithType.vb: MoLangEasings.InExpo(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InExpo*
+  name: InExpo
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InExpo_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InExpo
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InExpo
+  nameWithType: MoLangEasings.InExpo
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutBack(System.Double)
+  name: InOutBack(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutBack_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutBack(System.Double)
+  name.vb: InOutBack(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutBack(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutBack(Double)
+  nameWithType: MoLangEasings.InOutBack(double)
+  nameWithType.vb: MoLangEasings.InOutBack(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutBack*
+  name: InOutBack
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutBack_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutBack
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutBack
+  nameWithType: MoLangEasings.InOutBack
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutBounce(System.Double)
+  name: InOutBounce(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutBounce_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutBounce(System.Double)
+  name.vb: InOutBounce(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutBounce(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutBounce(Double)
+  nameWithType: MoLangEasings.InOutBounce(double)
+  nameWithType.vb: MoLangEasings.InOutBounce(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutBounce*
+  name: InOutBounce
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutBounce_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutBounce
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutBounce
+  nameWithType: MoLangEasings.InOutBounce
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutCirc(System.Double)
+  name: InOutCirc(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutCirc_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutCirc(System.Double)
+  name.vb: InOutCirc(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutCirc(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutCirc(Double)
+  nameWithType: MoLangEasings.InOutCirc(double)
+  nameWithType.vb: MoLangEasings.InOutCirc(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutCirc*
+  name: InOutCirc
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutCirc_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutCirc
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutCirc
+  nameWithType: MoLangEasings.InOutCirc
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutCubic(System.Double)
+  name: InOutCubic(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutCubic_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutCubic(System.Double)
+  name.vb: InOutCubic(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutCubic(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutCubic(Double)
+  nameWithType: MoLangEasings.InOutCubic(double)
+  nameWithType.vb: MoLangEasings.InOutCubic(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutCubic*
+  name: InOutCubic
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutCubic_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutCubic
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutCubic
+  nameWithType: MoLangEasings.InOutCubic
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutElastic(System.Double)
+  name: InOutElastic(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutElastic_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutElastic(System.Double)
+  name.vb: InOutElastic(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutElastic(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutElastic(Double)
+  nameWithType: MoLangEasings.InOutElastic(double)
+  nameWithType.vb: MoLangEasings.InOutElastic(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutElastic*
+  name: InOutElastic
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutElastic_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutElastic
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutElastic
+  nameWithType: MoLangEasings.InOutElastic
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutExpo(System.Double)
+  name: InOutExpo(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutExpo_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutExpo(System.Double)
+  name.vb: InOutExpo(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutExpo(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutExpo(Double)
+  nameWithType: MoLangEasings.InOutExpo(double)
+  nameWithType.vb: MoLangEasings.InOutExpo(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutExpo*
+  name: InOutExpo
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutExpo_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutExpo
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutExpo
+  nameWithType: MoLangEasings.InOutExpo
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuad(System.Double)
+  name: InOutQuad(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutQuad_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuad(System.Double)
+  name.vb: InOutQuad(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuad(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuad(Double)
+  nameWithType: MoLangEasings.InOutQuad(double)
+  nameWithType.vb: MoLangEasings.InOutQuad(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuad*
+  name: InOutQuad
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutQuad_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuad
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuad
+  nameWithType: MoLangEasings.InOutQuad
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuart(System.Double)
+  name: InOutQuart(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutQuart_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuart(System.Double)
+  name.vb: InOutQuart(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuart(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuart(Double)
+  nameWithType: MoLangEasings.InOutQuart(double)
+  nameWithType.vb: MoLangEasings.InOutQuart(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuart*
+  name: InOutQuart
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutQuart_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuart
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuart
+  nameWithType: MoLangEasings.InOutQuart
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuint(System.Double)
+  name: InOutQuint(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutQuint_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuint(System.Double)
+  name.vb: InOutQuint(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuint(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuint(Double)
+  nameWithType: MoLangEasings.InOutQuint(double)
+  nameWithType.vb: MoLangEasings.InOutQuint(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuint*
+  name: InOutQuint
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutQuint_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuint
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutQuint
+  nameWithType: MoLangEasings.InOutQuint
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutSine(System.Double)
+  name: InOutSine(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutSine_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutSine(System.Double)
+  name.vb: InOutSine(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutSine(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutSine(Double)
+  nameWithType: MoLangEasings.InOutSine(double)
+  nameWithType.vb: MoLangEasings.InOutSine(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutSine*
+  name: InOutSine
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InOutSine_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutSine
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InOutSine
+  nameWithType: MoLangEasings.InOutSine
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuad(System.Double)
+  name: InQuad(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InQuad_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuad(System.Double)
+  name.vb: InQuad(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuad(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuad(Double)
+  nameWithType: MoLangEasings.InQuad(double)
+  nameWithType.vb: MoLangEasings.InQuad(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuad*
+  name: InQuad
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InQuad_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuad
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuad
+  nameWithType: MoLangEasings.InQuad
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuart(System.Double)
+  name: InQuart(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InQuart_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuart(System.Double)
+  name.vb: InQuart(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuart(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuart(Double)
+  nameWithType: MoLangEasings.InQuart(double)
+  nameWithType.vb: MoLangEasings.InQuart(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuart*
+  name: InQuart
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InQuart_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuart
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuart
+  nameWithType: MoLangEasings.InQuart
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuint(System.Double)
+  name: InQuint(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InQuint_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuint(System.Double)
+  name.vb: InQuint(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuint(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuint(Double)
+  nameWithType: MoLangEasings.InQuint(double)
+  nameWithType.vb: MoLangEasings.InQuint(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuint*
+  name: InQuint
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InQuint_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuint
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InQuint
+  nameWithType: MoLangEasings.InQuint
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InSine(System.Double)
+  name: InSine(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InSine_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InSine(System.Double)
+  name.vb: InSine(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InSine(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InSine(Double)
+  nameWithType: MoLangEasings.InSine(double)
+  nameWithType.vb: MoLangEasings.InSine(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InSine*
+  name: InSine
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_InSine_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.InSine
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.InSine
+  nameWithType: MoLangEasings.InSine
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.Interpolate(System.Func{System.Double,System.Double},System.Double,System.Double,System.Double)
+  name: Interpolate(Func<double, double>, double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_Interpolate_System_Func_System_Double_System_Double__System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.Interpolate(System.Func{System.Double,System.Double},System.Double,System.Double,System.Double)
+  name.vb: Interpolate(Func(Of Double, Double), Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.Interpolate(System.Func<double, double>, double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.Interpolate(System.Func(Of Double, Double), Double, Double, Double)
+  nameWithType: MoLangEasings.Interpolate(Func<double, double>, double, double, double)
+  nameWithType.vb: MoLangEasings.Interpolate(Func(Of Double, Double), Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.Interpolate*
+  name: Interpolate
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_Interpolate_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.Interpolate
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.Interpolate
+  nameWithType: MoLangEasings.Interpolate
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutBack(System.Double)
+  name: OutBack(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutBack_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutBack(System.Double)
+  name.vb: OutBack(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutBack(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutBack(Double)
+  nameWithType: MoLangEasings.OutBack(double)
+  nameWithType.vb: MoLangEasings.OutBack(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutBack*
+  name: OutBack
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutBack_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutBack
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutBack
+  nameWithType: MoLangEasings.OutBack
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutBounce(System.Double)
+  name: OutBounce(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutBounce_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutBounce(System.Double)
+  name.vb: OutBounce(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutBounce(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutBounce(Double)
+  nameWithType: MoLangEasings.OutBounce(double)
+  nameWithType.vb: MoLangEasings.OutBounce(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutBounce*
+  name: OutBounce
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutBounce_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutBounce
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutBounce
+  nameWithType: MoLangEasings.OutBounce
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutCirc(System.Double)
+  name: OutCirc(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutCirc_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutCirc(System.Double)
+  name.vb: OutCirc(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutCirc(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutCirc(Double)
+  nameWithType: MoLangEasings.OutCirc(double)
+  nameWithType.vb: MoLangEasings.OutCirc(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutCirc*
+  name: OutCirc
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutCirc_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutCirc
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutCirc
+  nameWithType: MoLangEasings.OutCirc
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutCubic(System.Double)
+  name: OutCubic(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutCubic_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutCubic(System.Double)
+  name.vb: OutCubic(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutCubic(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutCubic(Double)
+  nameWithType: MoLangEasings.OutCubic(double)
+  nameWithType.vb: MoLangEasings.OutCubic(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutCubic*
+  name: OutCubic
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutCubic_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutCubic
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutCubic
+  nameWithType: MoLangEasings.OutCubic
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutElastic(System.Double)
+  name: OutElastic(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutElastic_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutElastic(System.Double)
+  name.vb: OutElastic(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutElastic(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutElastic(Double)
+  nameWithType: MoLangEasings.OutElastic(double)
+  nameWithType.vb: MoLangEasings.OutElastic(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutElastic*
+  name: OutElastic
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutElastic_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutElastic
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutElastic
+  nameWithType: MoLangEasings.OutElastic
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutExpo(System.Double)
+  name: OutExpo(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutExpo_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutExpo(System.Double)
+  name.vb: OutExpo(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutExpo(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutExpo(Double)
+  nameWithType: MoLangEasings.OutExpo(double)
+  nameWithType.vb: MoLangEasings.OutExpo(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutExpo*
+  name: OutExpo
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutExpo_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutExpo
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutExpo
+  nameWithType: MoLangEasings.OutExpo
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuad(System.Double)
+  name: OutQuad(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutQuad_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuad(System.Double)
+  name.vb: OutQuad(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuad(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuad(Double)
+  nameWithType: MoLangEasings.OutQuad(double)
+  nameWithType.vb: MoLangEasings.OutQuad(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuad*
+  name: OutQuad
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutQuad_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuad
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuad
+  nameWithType: MoLangEasings.OutQuad
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuart(System.Double)
+  name: OutQuart(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutQuart_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuart(System.Double)
+  name.vb: OutQuart(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuart(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuart(Double)
+  nameWithType: MoLangEasings.OutQuart(double)
+  nameWithType.vb: MoLangEasings.OutQuart(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuart*
+  name: OutQuart
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutQuart_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuart
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuart
+  nameWithType: MoLangEasings.OutQuart
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuint(System.Double)
+  name: OutQuint(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutQuint_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuint(System.Double)
+  name.vb: OutQuint(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuint(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuint(Double)
+  nameWithType: MoLangEasings.OutQuint(double)
+  nameWithType.vb: MoLangEasings.OutQuint(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuint*
+  name: OutQuint
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutQuint_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuint
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutQuint
+  nameWithType: MoLangEasings.OutQuint
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutSine(System.Double)
+  name: OutSine(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutSine_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutSine(System.Double)
+  name.vb: OutSine(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutSine(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutSine(Double)
+  nameWithType: MoLangEasings.OutSine(double)
+  nameWithType.vb: MoLangEasings.OutSine(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutSine*
+  name: OutSine
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEasings.html#ConcreteMC_MolangSharp_Runtime_MoLangEasings_OutSine_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutSine
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEasings.OutSine
+  nameWithType: MoLangEasings.OutSine
 - uid: ConcreteMC.MolangSharp.Runtime.MoLangEnvironment
   name: MoLangEnvironment
   href: api/ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.html
@@ -4072,6 +4877,19 @@ references:
   fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.New
   nameWithType: MoLangEnvironment.MoLangEnvironment
   nameWithType.vb: MoLangEnvironment.New
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.ClearTemporaryVariables
+  name: ClearTemporaryVariables()
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.html#ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_ClearTemporaryVariables
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.ClearTemporaryVariables
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.ClearTemporaryVariables()
+  nameWithType: MoLangEnvironment.ClearTemporaryVariables()
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.ClearTemporaryVariables*
+  name: ClearTemporaryVariables
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.html#ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_ClearTemporaryVariables_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.ClearTemporaryVariables
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.ClearTemporaryVariables
+  nameWithType: MoLangEnvironment.ClearTemporaryVariables
 - uid: ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.Equals(ConcreteMC.MolangSharp.Runtime.Value.IMoValue)
   name: Equals(IMoValue)
   href: api/ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.html#ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_Equals_ConcreteMC_MolangSharp_Runtime_Value_IMoValue_
@@ -4143,6 +4961,22 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.ThisVariable
   nameWithType: MoLangEnvironment.ThisVariable
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.TryGetValue(ConcreteMC.MolangSharp.Utils.MoPath,ConcreteMC.MolangSharp.Runtime.Value.IMoValue@)
+  name: TryGetValue(MoPath, out IMoValue)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.html#ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_TryGetValue_ConcreteMC_MolangSharp_Utils_MoPath_ConcreteMC_MolangSharp_Runtime_Value_IMoValue__
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.TryGetValue(ConcreteMC.MolangSharp.Utils.MoPath,ConcreteMC.MolangSharp.Runtime.Value.IMoValue@)
+  name.vb: TryGetValue(MoPath, IMoValue)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.TryGetValue(ConcreteMC.MolangSharp.Utils.MoPath, out ConcreteMC.MolangSharp.Runtime.Value.IMoValue)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.TryGetValue(ConcreteMC.MolangSharp.Utils.MoPath, ConcreteMC.MolangSharp.Runtime.Value.IMoValue)
+  nameWithType: MoLangEnvironment.TryGetValue(MoPath, out IMoValue)
+  nameWithType.vb: MoLangEnvironment.TryGetValue(MoPath, IMoValue)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.TryGetValue*
+  name: TryGetValue
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.html#ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_TryGetValue_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.TryGetValue
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.TryGetValue
+  nameWithType: MoLangEnvironment.TryGetValue
 - uid: ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.Value
   name: Value
   href: api/ConcreteMC.MolangSharp.Runtime.MoLangEnvironment.html#ConcreteMC_MolangSharp_Runtime_MoLangEnvironment_Value
@@ -4162,6 +4996,118 @@ references:
   commentId: T:ConcreteMC.MolangSharp.Runtime.MoLangMath
   fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath
   nameWithType: MoLangMath
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Acos(System.Double)
+  name: Acos(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Acos_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMath.Acos(System.Double)
+  name.vb: Acos(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Acos(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMath.Acos(Double)
+  nameWithType: MoLangMath.Acos(double)
+  nameWithType.vb: MoLangMath.Acos(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Acos*
+  name: Acos
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Acos_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMath.Acos
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Acos
+  nameWithType: MoLangMath.Acos
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Asin(System.Double)
+  name: Asin(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Asin_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMath.Asin(System.Double)
+  name.vb: Asin(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Asin(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMath.Asin(Double)
+  nameWithType: MoLangMath.Asin(double)
+  nameWithType.vb: MoLangMath.Asin(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Asin*
+  name: Asin
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Asin_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMath.Asin
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Asin
+  nameWithType: MoLangMath.Asin
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Atan(System.Double)
+  name: Atan(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Atan_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMath.Atan(System.Double)
+  name.vb: Atan(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Atan(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMath.Atan(Double)
+  nameWithType: MoLangMath.Atan(double)
+  nameWithType.vb: MoLangMath.Atan(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Atan*
+  name: Atan
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Atan_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMath.Atan
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Atan
+  nameWithType: MoLangMath.Atan
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Atan2(System.Double,System.Double)
+  name: Atan2(double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Atan2_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMath.Atan2(System.Double,System.Double)
+  name.vb: Atan2(Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Atan2(double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMath.Atan2(Double, Double)
+  nameWithType: MoLangMath.Atan2(double, double)
+  nameWithType.vb: MoLangMath.Atan2(Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Atan2*
+  name: Atan2
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Atan2_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMath.Atan2
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Atan2
+  nameWithType: MoLangMath.Atan2
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Clamp(System.Double,System.Double,System.Double)
+  name: Clamp(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Clamp_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMath.Clamp(System.Double,System.Double,System.Double)
+  name.vb: Clamp(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Clamp(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMath.Clamp(Double, Double, Double)
+  nameWithType: MoLangMath.Clamp(double, double, double)
+  nameWithType.vb: MoLangMath.Clamp(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Clamp*
+  name: Clamp
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Clamp_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMath.Clamp
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Clamp
+  nameWithType: MoLangMath.Clamp
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.CopySign(System.Double,System.Double)
+  name: CopySign(double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_CopySign_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMath.CopySign(System.Double,System.Double)
+  name.vb: CopySign(Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.CopySign(double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMath.CopySign(Double, Double)
+  nameWithType: MoLangMath.CopySign(double, double)
+  nameWithType.vb: MoLangMath.CopySign(Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.CopySign*
+  name: CopySign
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_CopySign_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMath.CopySign
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.CopySign
+  nameWithType: MoLangMath.CopySign
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Cos(System.Double)
+  name: Cos(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Cos_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMath.Cos(System.Double)
+  name.vb: Cos(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Cos(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMath.Cos(Double)
+  nameWithType: MoLangMath.Cos(double)
+  nameWithType.vb: MoLangMath.Cos(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Cos*
+  name: Cos
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Cos_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMath.Cos
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Cos
+  nameWithType: MoLangMath.Cos
 - uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.DieRoll(System.Double,System.Double,System.Double)
   name: DieRoll(double, double, double)
   href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_DieRoll_System_Double_System_Double_System_Double_
@@ -4194,15 +5140,21 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.DieRollInt
   nameWithType: MoLangMath.DieRollInt
-- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.HermiteBlend(System.Int32)
-  name: HermiteBlend(int)
-  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_HermiteBlend_System_Int32_
-  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMath.HermiteBlend(System.Int32)
-  name.vb: HermiteBlend(Integer)
-  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.HermiteBlend(int)
-  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMath.HermiteBlend(Integer)
-  nameWithType: MoLangMath.HermiteBlend(int)
-  nameWithType.vb: MoLangMath.HermiteBlend(Integer)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Easings
+  name: Easings
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Easings
+  commentId: F:ConcreteMC.MolangSharp.Runtime.MoLangMath.Easings
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Easings
+  nameWithType: MoLangMath.Easings
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.HermiteBlend(System.Double)
+  name: HermiteBlend(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_HermiteBlend_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMath.HermiteBlend(System.Double)
+  name.vb: HermiteBlend(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.HermiteBlend(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMath.HermiteBlend(Double)
+  nameWithType: MoLangMath.HermiteBlend(double)
+  nameWithType.vb: MoLangMath.HermiteBlend(Double)
 - uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.HermiteBlend*
   name: HermiteBlend
   href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_HermiteBlend_
@@ -4210,6 +5162,22 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.HermiteBlend
   nameWithType: MoLangMath.HermiteBlend
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.InverseLerp(System.Double,System.Double,System.Double)
+  name: InverseLerp(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_InverseLerp_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMath.InverseLerp(System.Double,System.Double,System.Double)
+  name.vb: InverseLerp(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.InverseLerp(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMath.InverseLerp(Double, Double, Double)
+  nameWithType: MoLangMath.InverseLerp(double, double, double)
+  nameWithType.vb: MoLangMath.InverseLerp(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.InverseLerp*
+  name: InverseLerp
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_InverseLerp_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMath.InverseLerp
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.InverseLerp
+  nameWithType: MoLangMath.InverseLerp
 - uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Lerp(System.Double,System.Double,System.Double)
   name: Lerp(double, double, double)
   href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Lerp_System_Double_System_Double_System_Double_
@@ -4248,6 +5216,22 @@ references:
   commentId: F:ConcreteMC.MolangSharp.Runtime.MoLangMath.Library
   fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Library
   nameWithType: MoLangMath.Library
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.MinAngle(System.Double)
+  name: MinAngle(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_MinAngle_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMath.MinAngle(System.Double)
+  name.vb: MinAngle(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.MinAngle(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMath.MinAngle(Double)
+  nameWithType: MoLangMath.MinAngle(double)
+  nameWithType.vb: MoLangMath.MinAngle(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.MinAngle*
+  name: MinAngle
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_MinAngle_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMath.MinAngle
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.MinAngle
+  nameWithType: MoLangMath.MinAngle
 - uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Radify(System.Double)
   name: Radify(double)
   href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Radify_System_Double_
@@ -4296,6 +5280,54 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.RandomInt
   nameWithType: MoLangMath.RandomInt
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Round(System.Double)
+  name: Round(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Round_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMath.Round(System.Double)
+  name.vb: Round(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Round(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMath.Round(Double)
+  nameWithType: MoLangMath.Round(double)
+  nameWithType.vb: MoLangMath.Round(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Round*
+  name: Round
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Round_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMath.Round
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Round
+  nameWithType: MoLangMath.Round
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Sign(System.Double)
+  name: Sign(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Sign_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMath.Sign(System.Double)
+  name.vb: Sign(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Sign(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMath.Sign(Double)
+  nameWithType: MoLangMath.Sign(double)
+  nameWithType.vb: MoLangMath.Sign(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Sign*
+  name: Sign
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Sign_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMath.Sign
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Sign
+  nameWithType: MoLangMath.Sign
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Sin(System.Double)
+  name: Sin(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Sin_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMath.Sin(System.Double)
+  name.vb: Sin(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Sin(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMath.Sin(Double)
+  nameWithType: MoLangMath.Sin(double)
+  nameWithType.vb: MoLangMath.Sin(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMath.Sin*
+  name: Sin
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMath.html#ConcreteMC_MolangSharp_Runtime_MoLangMath_Sin_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMath.Sin
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMath.Sin
+  nameWithType: MoLangMath.Sin
 - uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl
   name: MoLangMathImpl
   href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html
@@ -4414,6 +5446,22 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Clamp
   nameWithType: MoLangMathImpl.Clamp
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.CopySign(System.Double,System.Double)
+  name: CopySign(double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_CopySign_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.CopySign(System.Double,System.Double)
+  name.vb: CopySign(Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.CopySign(double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.CopySign(Double, Double)
+  nameWithType: MoLangMathImpl.CopySign(double, double)
+  nameWithType.vb: MoLangMathImpl.CopySign(Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.CopySign*
+  name: CopySign
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_CopySign_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.CopySign
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.CopySign
+  nameWithType: MoLangMathImpl.CopySign
 - uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Cos(System.Double)
   name: Cos(double)
   href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Cos_System_Double_
@@ -4462,6 +5510,486 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.DieRollInt
   nameWithType: MoLangMathImpl.DieRollInt
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInBack(System.Double,System.Double,System.Double)
+  name: EaseInBack(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInBack_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInBack(System.Double,System.Double,System.Double)
+  name.vb: EaseInBack(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInBack(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInBack(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInBack(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInBack(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInBack*
+  name: EaseInBack
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInBack_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInBack
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInBack
+  nameWithType: MoLangMathImpl.EaseInBack
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInBounce(System.Double,System.Double,System.Double)
+  name: EaseInBounce(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInBounce_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInBounce(System.Double,System.Double,System.Double)
+  name.vb: EaseInBounce(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInBounce(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInBounce(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInBounce(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInBounce(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInBounce*
+  name: EaseInBounce
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInBounce_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInBounce
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInBounce
+  nameWithType: MoLangMathImpl.EaseInBounce
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInCirc(System.Double,System.Double,System.Double)
+  name: EaseInCirc(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInCirc_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInCirc(System.Double,System.Double,System.Double)
+  name.vb: EaseInCirc(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInCirc(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInCirc(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInCirc(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInCirc(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInCirc*
+  name: EaseInCirc
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInCirc_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInCirc
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInCirc
+  nameWithType: MoLangMathImpl.EaseInCirc
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInCubic(System.Double,System.Double,System.Double)
+  name: EaseInCubic(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInCubic_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInCubic(System.Double,System.Double,System.Double)
+  name.vb: EaseInCubic(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInCubic(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInCubic(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInCubic(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInCubic(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInCubic*
+  name: EaseInCubic
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInCubic_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInCubic
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInCubic
+  nameWithType: MoLangMathImpl.EaseInCubic
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInElastic(System.Double,System.Double,System.Double)
+  name: EaseInElastic(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInElastic_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInElastic(System.Double,System.Double,System.Double)
+  name.vb: EaseInElastic(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInElastic(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInElastic(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInElastic(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInElastic(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInElastic*
+  name: EaseInElastic
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInElastic_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInElastic
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInElastic
+  nameWithType: MoLangMathImpl.EaseInElastic
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInExpo(System.Double,System.Double,System.Double)
+  name: EaseInExpo(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInExpo_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInExpo(System.Double,System.Double,System.Double)
+  name.vb: EaseInExpo(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInExpo(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInExpo(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInExpo(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInExpo(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInExpo*
+  name: EaseInExpo
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInExpo_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInExpo
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInExpo
+  nameWithType: MoLangMathImpl.EaseInExpo
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutBack(System.Double,System.Double,System.Double)
+  name: EaseInOutBack(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutBack_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutBack(System.Double,System.Double,System.Double)
+  name.vb: EaseInOutBack(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutBack(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutBack(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInOutBack(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInOutBack(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutBack*
+  name: EaseInOutBack
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutBack_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutBack
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutBack
+  nameWithType: MoLangMathImpl.EaseInOutBack
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutBounce(System.Double,System.Double,System.Double)
+  name: EaseInOutBounce(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutBounce_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutBounce(System.Double,System.Double,System.Double)
+  name.vb: EaseInOutBounce(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutBounce(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutBounce(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInOutBounce(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInOutBounce(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutBounce*
+  name: EaseInOutBounce
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutBounce_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutBounce
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutBounce
+  nameWithType: MoLangMathImpl.EaseInOutBounce
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutCirc(System.Double,System.Double,System.Double)
+  name: EaseInOutCirc(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutCirc_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutCirc(System.Double,System.Double,System.Double)
+  name.vb: EaseInOutCirc(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutCirc(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutCirc(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInOutCirc(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInOutCirc(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutCirc*
+  name: EaseInOutCirc
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutCirc_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutCirc
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutCirc
+  nameWithType: MoLangMathImpl.EaseInOutCirc
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutCubic(System.Double,System.Double,System.Double)
+  name: EaseInOutCubic(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutCubic_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutCubic(System.Double,System.Double,System.Double)
+  name.vb: EaseInOutCubic(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutCubic(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutCubic(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInOutCubic(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInOutCubic(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutCubic*
+  name: EaseInOutCubic
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutCubic_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutCubic
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutCubic
+  nameWithType: MoLangMathImpl.EaseInOutCubic
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutElastic(System.Double,System.Double,System.Double)
+  name: EaseInOutElastic(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutElastic_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutElastic(System.Double,System.Double,System.Double)
+  name.vb: EaseInOutElastic(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutElastic(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutElastic(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInOutElastic(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInOutElastic(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutElastic*
+  name: EaseInOutElastic
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutElastic_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutElastic
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutElastic
+  nameWithType: MoLangMathImpl.EaseInOutElastic
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutExpo(System.Double,System.Double,System.Double)
+  name: EaseInOutExpo(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutExpo_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutExpo(System.Double,System.Double,System.Double)
+  name.vb: EaseInOutExpo(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutExpo(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutExpo(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInOutExpo(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInOutExpo(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutExpo*
+  name: EaseInOutExpo
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutExpo_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutExpo
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutExpo
+  nameWithType: MoLangMathImpl.EaseInOutExpo
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuad(System.Double,System.Double,System.Double)
+  name: EaseInOutQuad(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutQuad_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuad(System.Double,System.Double,System.Double)
+  name.vb: EaseInOutQuad(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuad(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuad(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInOutQuad(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInOutQuad(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuad*
+  name: EaseInOutQuad
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutQuad_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuad
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuad
+  nameWithType: MoLangMathImpl.EaseInOutQuad
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuart(System.Double,System.Double,System.Double)
+  name: EaseInOutQuart(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutQuart_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuart(System.Double,System.Double,System.Double)
+  name.vb: EaseInOutQuart(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuart(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuart(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInOutQuart(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInOutQuart(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuart*
+  name: EaseInOutQuart
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutQuart_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuart
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuart
+  nameWithType: MoLangMathImpl.EaseInOutQuart
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuint(System.Double,System.Double,System.Double)
+  name: EaseInOutQuint(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutQuint_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuint(System.Double,System.Double,System.Double)
+  name.vb: EaseInOutQuint(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuint(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuint(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInOutQuint(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInOutQuint(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuint*
+  name: EaseInOutQuint
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutQuint_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuint
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutQuint
+  nameWithType: MoLangMathImpl.EaseInOutQuint
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutSine(System.Double,System.Double,System.Double)
+  name: EaseInOutSine(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutSine_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutSine(System.Double,System.Double,System.Double)
+  name.vb: EaseInOutSine(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutSine(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutSine(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInOutSine(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInOutSine(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutSine*
+  name: EaseInOutSine
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInOutSine_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutSine
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInOutSine
+  nameWithType: MoLangMathImpl.EaseInOutSine
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuad(System.Double,System.Double,System.Double)
+  name: EaseInQuad(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInQuad_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuad(System.Double,System.Double,System.Double)
+  name.vb: EaseInQuad(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuad(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuad(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInQuad(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInQuad(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuad*
+  name: EaseInQuad
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInQuad_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuad
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuad
+  nameWithType: MoLangMathImpl.EaseInQuad
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuart(System.Double,System.Double,System.Double)
+  name: EaseInQuart(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInQuart_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuart(System.Double,System.Double,System.Double)
+  name.vb: EaseInQuart(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuart(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuart(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInQuart(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInQuart(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuart*
+  name: EaseInQuart
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInQuart_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuart
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuart
+  nameWithType: MoLangMathImpl.EaseInQuart
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuint(System.Double,System.Double,System.Double)
+  name: EaseInQuint(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInQuint_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuint(System.Double,System.Double,System.Double)
+  name.vb: EaseInQuint(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuint(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuint(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInQuint(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInQuint(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuint*
+  name: EaseInQuint
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInQuint_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuint
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInQuint
+  nameWithType: MoLangMathImpl.EaseInQuint
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInSine(System.Double,System.Double,System.Double)
+  name: EaseInSine(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInSine_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInSine(System.Double,System.Double,System.Double)
+  name.vb: EaseInSine(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInSine(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInSine(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseInSine(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseInSine(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInSine*
+  name: EaseInSine
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseInSine_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInSine
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseInSine
+  nameWithType: MoLangMathImpl.EaseInSine
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutBack(System.Double,System.Double,System.Double)
+  name: EaseOutBack(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutBack_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutBack(System.Double,System.Double,System.Double)
+  name.vb: EaseOutBack(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutBack(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutBack(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseOutBack(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseOutBack(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutBack*
+  name: EaseOutBack
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutBack_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutBack
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutBack
+  nameWithType: MoLangMathImpl.EaseOutBack
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutBounce(System.Double,System.Double,System.Double)
+  name: EaseOutBounce(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutBounce_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutBounce(System.Double,System.Double,System.Double)
+  name.vb: EaseOutBounce(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutBounce(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutBounce(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseOutBounce(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseOutBounce(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutBounce*
+  name: EaseOutBounce
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutBounce_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutBounce
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutBounce
+  nameWithType: MoLangMathImpl.EaseOutBounce
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutCirc(System.Double,System.Double,System.Double)
+  name: EaseOutCirc(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutCirc_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutCirc(System.Double,System.Double,System.Double)
+  name.vb: EaseOutCirc(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutCirc(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutCirc(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseOutCirc(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseOutCirc(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutCirc*
+  name: EaseOutCirc
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutCirc_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutCirc
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutCirc
+  nameWithType: MoLangMathImpl.EaseOutCirc
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutCubic(System.Double,System.Double,System.Double)
+  name: EaseOutCubic(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutCubic_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutCubic(System.Double,System.Double,System.Double)
+  name.vb: EaseOutCubic(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutCubic(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutCubic(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseOutCubic(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseOutCubic(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutCubic*
+  name: EaseOutCubic
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutCubic_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutCubic
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutCubic
+  nameWithType: MoLangMathImpl.EaseOutCubic
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutElastic(System.Double,System.Double,System.Double)
+  name: EaseOutElastic(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutElastic_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutElastic(System.Double,System.Double,System.Double)
+  name.vb: EaseOutElastic(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutElastic(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutElastic(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseOutElastic(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseOutElastic(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutElastic*
+  name: EaseOutElastic
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutElastic_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutElastic
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutElastic
+  nameWithType: MoLangMathImpl.EaseOutElastic
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutExpo(System.Double,System.Double,System.Double)
+  name: EaseOutExpo(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutExpo_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutExpo(System.Double,System.Double,System.Double)
+  name.vb: EaseOutExpo(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutExpo(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutExpo(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseOutExpo(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseOutExpo(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutExpo*
+  name: EaseOutExpo
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutExpo_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutExpo
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutExpo
+  nameWithType: MoLangMathImpl.EaseOutExpo
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuad(System.Double,System.Double,System.Double)
+  name: EaseOutQuad(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutQuad_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuad(System.Double,System.Double,System.Double)
+  name.vb: EaseOutQuad(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuad(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuad(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseOutQuad(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseOutQuad(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuad*
+  name: EaseOutQuad
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutQuad_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuad
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuad
+  nameWithType: MoLangMathImpl.EaseOutQuad
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuart(System.Double,System.Double,System.Double)
+  name: EaseOutQuart(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutQuart_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuart(System.Double,System.Double,System.Double)
+  name.vb: EaseOutQuart(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuart(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuart(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseOutQuart(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseOutQuart(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuart*
+  name: EaseOutQuart
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutQuart_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuart
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuart
+  nameWithType: MoLangMathImpl.EaseOutQuart
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuint(System.Double,System.Double,System.Double)
+  name: EaseOutQuint(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutQuint_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuint(System.Double,System.Double,System.Double)
+  name.vb: EaseOutQuint(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuint(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuint(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseOutQuint(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseOutQuint(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuint*
+  name: EaseOutQuint
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutQuint_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuint
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutQuint
+  nameWithType: MoLangMathImpl.EaseOutQuint
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutSine(System.Double,System.Double,System.Double)
+  name: EaseOutSine(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutSine_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutSine(System.Double,System.Double,System.Double)
+  name.vb: EaseOutSine(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutSine(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutSine(Double, Double, Double)
+  nameWithType: MoLangMathImpl.EaseOutSine(double, double, double)
+  nameWithType.vb: MoLangMathImpl.EaseOutSine(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutSine*
+  name: EaseOutSine
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_EaseOutSine_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutSine
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.EaseOutSine
+  nameWithType: MoLangMathImpl.EaseOutSine
 - uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Exp(System.Double)
   name: Exp(double)
   href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Exp_System_Double_
@@ -4494,15 +6022,15 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Floor
   nameWithType: MoLangMathImpl.Floor
-- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.HermiteBlend(System.Int32)
-  name: HermiteBlend(int)
-  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_HermiteBlend_System_Int32_
-  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.HermiteBlend(System.Int32)
-  name.vb: HermiteBlend(Integer)
-  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.HermiteBlend(int)
-  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.HermiteBlend(Integer)
-  nameWithType: MoLangMathImpl.HermiteBlend(int)
-  nameWithType.vb: MoLangMathImpl.HermiteBlend(Integer)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.HermiteBlend(System.Double)
+  name: HermiteBlend(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_HermiteBlend_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.HermiteBlend(System.Double)
+  name.vb: HermiteBlend(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.HermiteBlend(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.HermiteBlend(Double)
+  nameWithType: MoLangMathImpl.HermiteBlend(double)
+  nameWithType.vb: MoLangMathImpl.HermiteBlend(Double)
 - uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.HermiteBlend*
   name: HermiteBlend
   href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_HermiteBlend_
@@ -4510,6 +6038,22 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.HermiteBlend
   nameWithType: MoLangMathImpl.HermiteBlend
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.InverseLerp(System.Double,System.Double,System.Double)
+  name: InverseLerp(double, double, double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_InverseLerp_System_Double_System_Double_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.InverseLerp(System.Double,System.Double,System.Double)
+  name.vb: InverseLerp(Double, Double, Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.InverseLerp(double, double, double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.InverseLerp(Double, Double, Double)
+  nameWithType: MoLangMathImpl.InverseLerp(double, double, double)
+  nameWithType.vb: MoLangMathImpl.InverseLerp(Double, Double, Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.InverseLerp*
+  name: InverseLerp
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_InverseLerp_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.InverseLerp
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.InverseLerp
+  nameWithType: MoLangMathImpl.InverseLerp
 - uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Lerp(System.Double,System.Double,System.Double)
   name: Lerp(double, double, double)
   href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Lerp_System_Double_System_Double_System_Double_
@@ -4603,6 +6147,22 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Min
   nameWithType: MoLangMathImpl.Min
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.MinAngle(System.Double)
+  name: MinAngle(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_MinAngle_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.MinAngle(System.Double)
+  name.vb: MinAngle(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.MinAngle(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.MinAngle(Double)
+  nameWithType: MoLangMathImpl.MinAngle(double)
+  nameWithType.vb: MoLangMathImpl.MinAngle(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.MinAngle*
+  name: MinAngle
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_MinAngle_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.MinAngle
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.MinAngle
+  nameWithType: MoLangMathImpl.MinAngle
 - uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Modulus(System.Double,System.Double)
   name: Modulus(double, double)
   href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Modulus_System_Double_System_Double_
@@ -4661,22 +6221,6 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Pow
   nameWithType: MoLangMathImpl.Pow
-- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Radify(System.Double)
-  name: Radify(double)
-  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Radify_System_Double_
-  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Radify(System.Double)
-  name.vb: Radify(Double)
-  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Radify(double)
-  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Radify(Double)
-  nameWithType: MoLangMathImpl.Radify(double)
-  nameWithType.vb: MoLangMathImpl.Radify(Double)
-- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Radify*
-  name: Radify
-  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Radify_
-  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Radify
-  isSpec: "True"
-  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Radify
-  nameWithType: MoLangMathImpl.Radify
 - uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Random(System.Double,System.Double)
   name: Random(double, double)
   href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Random_System_Double_System_Double_
@@ -4725,6 +6269,22 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Round
   nameWithType: MoLangMathImpl.Round
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sign(System.Double)
+  name: Sign(double)
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Sign_System_Double_
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sign(System.Double)
+  name.vb: Sign(Double)
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sign(double)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sign(Double)
+  nameWithType: MoLangMathImpl.Sign(double)
+  nameWithType.vb: MoLangMathImpl.Sign(Double)
+- uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sign*
+  name: Sign
+  href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Sign_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sign
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sign
+  nameWithType: MoLangMathImpl.Sign
 - uid: ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.Sin(System.Double)
   name: Sin(double)
   href: api/ConcreteMC.MolangSharp.Runtime.MoLangMathImpl.html#ConcreteMC_MolangSharp_Runtime_MoLangMathImpl_Sin_System_Double_
@@ -5103,6 +6663,19 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.MoScope.IsContinue
   nameWithType: MoScope.IsContinue
+- uid: ConcreteMC.MolangSharp.Runtime.MoScope.Reset
+  name: Reset()
+  href: api/ConcreteMC.MolangSharp.Runtime.MoScope.html#ConcreteMC_MolangSharp_Runtime_MoScope_Reset
+  commentId: M:ConcreteMC.MolangSharp.Runtime.MoScope.Reset
+  fullName: ConcreteMC.MolangSharp.Runtime.MoScope.Reset()
+  nameWithType: MoScope.Reset()
+- uid: ConcreteMC.MolangSharp.Runtime.MoScope.Reset*
+  name: Reset
+  href: api/ConcreteMC.MolangSharp.Runtime.MoScope.html#ConcreteMC_MolangSharp_Runtime_MoScope_Reset_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.MoScope.Reset
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.MoScope.Reset
+  nameWithType: MoScope.Reset
 - uid: ConcreteMC.MolangSharp.Runtime.MoScope.ReturnValue
   name: ReturnValue
   href: api/ConcreteMC.MolangSharp.Runtime.MoScope.html#ConcreteMC_MolangSharp_Runtime_MoScope_ReturnValue
@@ -5332,6 +6905,22 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.Set
   nameWithType: IMoStruct.Set
+- uid: ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.TryGet(ConcreteMC.MolangSharp.Utils.MoPath,ConcreteMC.MolangSharp.Runtime.MoParams,ConcreteMC.MolangSharp.Runtime.Value.IMoValue@)
+  name: TryGet(MoPath, MoParams, out IMoValue)
+  href: api/ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.html#ConcreteMC_MolangSharp_Runtime_Struct_IMoStruct_TryGet_ConcreteMC_MolangSharp_Utils_MoPath_ConcreteMC_MolangSharp_Runtime_MoParams_ConcreteMC_MolangSharp_Runtime_Value_IMoValue__
+  commentId: M:ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.TryGet(ConcreteMC.MolangSharp.Utils.MoPath,ConcreteMC.MolangSharp.Runtime.MoParams,ConcreteMC.MolangSharp.Runtime.Value.IMoValue@)
+  name.vb: TryGet(MoPath, MoParams, IMoValue)
+  fullName: ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.TryGet(ConcreteMC.MolangSharp.Utils.MoPath, ConcreteMC.MolangSharp.Runtime.MoParams, out ConcreteMC.MolangSharp.Runtime.Value.IMoValue)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.TryGet(ConcreteMC.MolangSharp.Utils.MoPath, ConcreteMC.MolangSharp.Runtime.MoParams, ConcreteMC.MolangSharp.Runtime.Value.IMoValue)
+  nameWithType: IMoStruct.TryGet(MoPath, MoParams, out IMoValue)
+  nameWithType.vb: IMoStruct.TryGet(MoPath, MoParams, IMoValue)
+- uid: ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.TryGet*
+  name: TryGet
+  href: api/ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.html#ConcreteMC_MolangSharp_Runtime_Struct_IMoStruct_TryGet_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.TryGet
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.Struct.IMoStruct.TryGet
+  nameWithType: IMoStruct.TryGet
 - uid: ConcreteMC.MolangSharp.Runtime.Struct.Interop
   name: ConcreteMC.MolangSharp.Runtime.Struct.Interop
   href: api/ConcreteMC.MolangSharp.Runtime.Struct.Interop.html
@@ -5924,6 +7513,22 @@ references:
   isSpec: "True"
   fullName: ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.Set
   nameWithType: VariableStruct.Set
+- uid: ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.TryGet(ConcreteMC.MolangSharp.Utils.MoPath,ConcreteMC.MolangSharp.Runtime.MoParams,ConcreteMC.MolangSharp.Runtime.Value.IMoValue@)
+  name: TryGet(MoPath, MoParams, out IMoValue)
+  href: api/ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.html#ConcreteMC_MolangSharp_Runtime_Struct_VariableStruct_TryGet_ConcreteMC_MolangSharp_Utils_MoPath_ConcreteMC_MolangSharp_Runtime_MoParams_ConcreteMC_MolangSharp_Runtime_Value_IMoValue__
+  commentId: M:ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.TryGet(ConcreteMC.MolangSharp.Utils.MoPath,ConcreteMC.MolangSharp.Runtime.MoParams,ConcreteMC.MolangSharp.Runtime.Value.IMoValue@)
+  name.vb: TryGet(MoPath, MoParams, IMoValue)
+  fullName: ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.TryGet(ConcreteMC.MolangSharp.Utils.MoPath, ConcreteMC.MolangSharp.Runtime.MoParams, out ConcreteMC.MolangSharp.Runtime.Value.IMoValue)
+  fullName.vb: ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.TryGet(ConcreteMC.MolangSharp.Utils.MoPath, ConcreteMC.MolangSharp.Runtime.MoParams, ConcreteMC.MolangSharp.Runtime.Value.IMoValue)
+  nameWithType: VariableStruct.TryGet(MoPath, MoParams, out IMoValue)
+  nameWithType.vb: VariableStruct.TryGet(MoPath, MoParams, IMoValue)
+- uid: ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.TryGet*
+  name: TryGet
+  href: api/ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.html#ConcreteMC_MolangSharp_Runtime_Struct_VariableStruct_TryGet_
+  commentId: Overload:ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.TryGet
+  isSpec: "True"
+  fullName: ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.TryGet
+  nameWithType: VariableStruct.TryGet
 - uid: ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.Value
   name: Value
   href: api/ConcreteMC.MolangSharp.Runtime.Struct.VariableStruct.html#ConcreteMC_MolangSharp_Runtime_Struct_VariableStruct_Value
