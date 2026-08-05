@@ -8,15 +8,16 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 		/// <inheritdoc />
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{
-			return new StringValue(_value);
+			return _value;
 		}
 
-		private string _value;
+		private readonly StringValue _value;
 
 		/// <inheritdoc />
 		public StringExpression(string value) : base()
 		{
-			_value = value;
+			// A literal never changes, so the wrapper is built once instead of on every evaluation.
+			_value = new StringValue(value);
 		}
 	}
 }

@@ -9,12 +9,24 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp
 		public EqualExpression(IExpression l, IExpression r) : base(l, r) { }
 
 		/// <inheritdoc />
+		/// <remarks>
+		///		Compares the values rather than their numeric form, because <c>==</c> also has to work on strings.
+		///		Returns the shared 1.0/0.0 instances, so a comparison never allocates.
+		/// </remarks>
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{
-			var left = Left.Evaluate(scope, environment);
-			var right = Right.Evaluate(scope, environment);
+			return IsEqual(scope, environment) ? DoubleValue.One : DoubleValue.Zero;
+		}
 
-			return new DoubleValue(left.Equals(right));
+		/// <inheritdoc />
+		public override double EvaluateDouble(MoScope scope, MoLangEnvironment environment)
+		{
+			return IsEqual(scope, environment) ? 1d : 0d;
+		}
+
+		private bool IsEqual(MoScope scope, MoLangEnvironment environment)
+		{
+			return Left.Evaluate(scope, environment).Equals(Right.Evaluate(scope, environment));
 		}
 
 		/// <inheritdoc />

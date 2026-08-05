@@ -14,5 +14,19 @@ namespace ConcreteMC.MolangSharp.Runtime
 		{
 			Runtime = runtime;
 		}
+
+		/// <summary>
+		///		Returns the scope to its initial state so it can be used for another execution
+		/// </summary>
+		/// <remarks>
+		///		Lets <see cref="MoLangRuntime"/> reuse a single scope instance instead of allocating one per
+		///		execution, which matters when thousands of expressions are evaluated per frame.
+		/// </remarks>
+		public void Reset()
+		{
+			IsBreak = false;
+			IsContinue = false;
+			ReturnValue = null;
+		}
 	}
 }

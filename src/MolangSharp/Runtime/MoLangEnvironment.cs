@@ -38,16 +38,40 @@ namespace ConcreteMC.MolangSharp.Runtime
 		public IMoValue ThisVariable { get; set; } = DoubleValue.Zero;
 
 		/// <summary>
+		///		Direct reference to the struct backing the "temp." scope
+		/// </summary>
+		/// <remarks>
+		///		The runtime clears this after every execution, so it is resolved once here rather than looked up in
+		///		<see cref="Structs"/> each time. Replacing <c>Structs["temp"]</c> after construction leaves this
+		///		pointing at the original struct.
+		/// </remarks>
+		private readonly IMoStruct _temp;
+
+		/// <summary>
 		///		Creates a new instance of the MoLangEnvironment class
 		/// </summary>
 		public MoLangEnvironment()
 		{
+			_temp = new VariableStruct();
+
 			Structs.TryAdd("math", MoLangMath.Library);
-			Structs.TryAdd("temp", new VariableStruct());
+			Structs.TryAdd("temp", _temp);
 			Structs.TryAdd("variable", new VariableStruct());
 			Structs.TryAdd("array", new VariableArrayStruct());
 
 			Structs.TryAdd("context", new ContextStruct());
+		}
+
+		/// <summary>
+		///		Discards every variable in the "temp." scope
+		/// </summary>
+		/// <remarks>
+		///		Temporary variables live for the duration of one expression execution, so <see cref="MoLangRuntime"/>
+		///		calls this once an execution completes.
+		/// </remarks>
+		public void ClearTemporaryVariables()
+		{
+			_temp.Clear();
 		}
 
 		/// <summary>

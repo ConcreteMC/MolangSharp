@@ -37,6 +37,11 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct.Interop
 				if (functionAttribute == null)
 					continue;
 
+				// Resolve everything reflective once per type instead of on every call.
+				var methodParameters = method.GetParameters();
+				var plan = BuildParameterPlan(methodParameters);
+				var invoker = AccessorCompiler.CompileInvoker(method, methodParameters);
+
 				foreach (var name in functionAttribute.Name)
 				{
 					if (functions.ContainsKey(name))
@@ -48,71 +53,36 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct.Interop
 
 					IMoValue ExecuteMolangFunction(object instance, MoParams mo)
 					{
-						var methodParams = method.GetParameters();
-						IMoValue value = DoubleValue.Zero;
+						object[] parameters = plan.Length == 0 ? Array.Empty<object>() : new object[plan.Length];
 
-						object[] parameters = new object[methodParams.Length];
-						//List<object> parameters = new List<object>();
+						for (var index = 0; index < plan.Length; index++)
+						{
+							var parameter = plan[index];
 
-						if (methodParams.Length == 1 && methodParams[0].ParameterType == typeof(MoParams))
-						{
-							parameters[0] = mo;
-							//parameters.Add(mo);
-						}
-						else
-						{
-							for (var index = 0; index < methodParams.Length; index++)
+							// A MoParams parameter receives the whole argument list, so it is always satisfiable.
+							if (parameter.Kind == ArgumentKind.Parameters)
 							{
-								var parameter = methodParams[index];
+								parameters[index] = mo;
 
-								if (!mo.Contains(index))
-								{
-									if (!parameter.IsOptional)
-										throw new MissingMethodException($"Missing parameter: {parameter.Name}");
-
-									break;
-								}
-
-								var t = parameter.ParameterType;
-
-								if (t == typeof(MoParams))
-								{
-									parameters[index] = mo; //.Add(mo);
-								}
-								else if (t == typeof(int))
-								{
-									parameters[index] = mo.GetInt(index);
-								}
-								else if (t == typeof(double))
-								{
-									parameters[index] = mo.GetDouble(index);
-								}
-								else if (t == typeof(float))
-								{
-									parameters[index] = (float) mo.GetDouble(index);
-								}
-								else if (t == typeof(string))
-								{
-									parameters[index] = mo.GetString(index);
-								}
-								else if (typeof(IMoStruct).IsAssignableFrom(t))
-								{
-									parameters[index] = mo.GetStruct(index);
-								}
-								else if (typeof(MoLangEnvironment).IsAssignableFrom(t))
-								{
-									parameters[index] = mo.GetEnv(index);
-								}
-								else
-								{
-									throw new Exception("Unknown parameter type.");
-								}
-
-								//TODO: Continue.
+								continue;
 							}
+
+							if (!mo.Contains(index))
+							{
+								if (!parameter.IsOptional)
+									throw new MissingMethodException($"Missing parameter: {parameter.Name}");
+
+								// Fill this and every remaining parameter with its declared default.
+								for (var remaining = index; remaining < plan.Length; remaining++)
+									parameters[remaining] = plan[remaining].MissingValue;
+
+								break;
+							}
+
+							parameters[index] = ReadArgument(parameter.Kind, mo, index);
 						}
 
-						var result = method.Invoke(instance, parameters);
+						var result = invoker != null ? invoker(instance, parameters) : method.Invoke(instance, parameters);
 
 						if (result != null)
 						{
@@ -121,11 +91,120 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct.Interop
 							return MoValue.FromObject(result);
 						}
 
-						return value;
+						return DoubleValue.Zero;
 					}
 
 					functions.Add(name, ExecuteMolangFunction);
 				}
+			}
+		}
+
+		/// <summary>
+		///		How a single method parameter is filled from a <see cref="MoParams"/>
+		/// </summary>
+		private enum ArgumentKind
+		{
+			Parameters,
+			Int,
+			Double,
+			Float,
+			String,
+			Struct,
+			Environment
+		}
+
+		/// <summary>
+		///		Everything needed to fill one parameter, resolved once when the type is cached
+		/// </summary>
+		private readonly struct ParameterPlan
+		{
+			public readonly ArgumentKind Kind;
+			public readonly bool IsOptional;
+			public readonly string Name;
+
+			/// <summary>
+			///		The value to pass when the expression did not supply this optional argument
+			/// </summary>
+			public readonly object MissingValue;
+
+			public ParameterPlan(ArgumentKind kind, ParameterInfo parameter)
+			{
+				Kind = kind;
+				IsOptional = parameter.IsOptional;
+				Name = parameter.Name;
+
+				if (parameter.HasDefaultValue)
+					MissingValue = parameter.DefaultValue;
+				else if (parameter.ParameterType.IsValueType)
+					MissingValue = Activator.CreateInstance(parameter.ParameterType);
+				else
+					MissingValue = null;
+			}
+		}
+
+		private static ParameterPlan[] BuildParameterPlan(ParameterInfo[] parameters)
+		{
+			if (parameters.Length == 0)
+				return Array.Empty<ParameterPlan>();
+
+			var plan = new ParameterPlan[parameters.Length];
+
+			for (var index = 0; index < parameters.Length; index++)
+				plan[index] = new ParameterPlan(GetArgumentKind(parameters[index].ParameterType), parameters[index]);
+
+			return plan;
+		}
+
+		private static ArgumentKind GetArgumentKind(Type type)
+		{
+			if (type == typeof(MoParams))
+				return ArgumentKind.Parameters;
+
+			if (type == typeof(int))
+				return ArgumentKind.Int;
+
+			if (type == typeof(double))
+				return ArgumentKind.Double;
+
+			if (type == typeof(float))
+				return ArgumentKind.Float;
+
+			if (type == typeof(string))
+				return ArgumentKind.String;
+
+			if (typeof(IMoStruct).IsAssignableFrom(type))
+				return ArgumentKind.Struct;
+
+			if (typeof(MoLangEnvironment).IsAssignableFrom(type))
+				return ArgumentKind.Environment;
+
+			throw new Exception("Unknown parameter type.");
+		}
+
+		private static object ReadArgument(ArgumentKind kind, MoParams mo, int index)
+		{
+			switch (kind)
+			{
+				case ArgumentKind.Int:
+					return mo.GetInt(index);
+
+				case ArgumentKind.Double:
+					return mo.GetDouble(index);
+
+				case ArgumentKind.Float:
+					return (float) mo.GetDouble(index);
+
+				case ArgumentKind.String:
+					return mo.GetString(index);
+
+				case ArgumentKind.Struct:
+					return mo.GetStruct(index);
+
+				case ArgumentKind.Environment:
+					return mo.GetEnv(index);
+
+				default:
+					return mo;
 			}
 		}
 

@@ -19,7 +19,7 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 		/// </remarks>
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{
-			if (Condition.Evaluate(scope, environment).AsBool())
+			if (Condition.EvaluateDouble(scope, environment) != 0d)
 			{
 				return ThenExpr == null ? Condition.Evaluate(scope, environment) :
 					ThenExpr.Evaluate(scope, environment);
@@ -30,6 +30,19 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 			}
 
 			return DoubleValue.Zero;
+		}
+
+		/// <inheritdoc />
+		public override double EvaluateDouble(MoScope scope, MoLangEnvironment environment)
+		{
+			if (Condition.EvaluateDouble(scope, environment) != 0d)
+			{
+				return ThenExpr == null
+					? Condition.EvaluateDouble(scope, environment)
+					: ThenExpr.EvaluateDouble(scope, environment);
+			}
+
+			return ElseExpr?.EvaluateDouble(scope, environment) ?? 0d;
 		}
 	}
 }

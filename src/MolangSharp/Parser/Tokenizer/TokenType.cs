@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading;
 
 namespace ConcreteMC.MolangSharp.Parser.Tokenizer
@@ -78,6 +79,76 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 		};
 
 		/// <summary>
+		///		The number of characters covered by <see cref="SingleCharacterSymbols"/>
+		/// </summary>
+		private const int AsciiRange = 128;
+
+		/// <summary>
+		///		Every single character symbol, indexed by that character
+		/// </summary>
+		private static readonly TokenType[] SingleCharacterSymbols = BuildSingleCharacterSymbols();
+
+		/// <summary>
+		///		Every two character symbol. Short enough that scanning it beats hashing a string.
+		/// </summary>
+		private static readonly TokenType[] TwoCharacterSymbols = BuildTwoCharacterSymbols();
+
+		/// <summary>
+		///		Every symbol longer than two characters, which is to say the keywords
+		/// </summary>
+		private static readonly Dictionary<string, TokenType> Keywords = BuildKeywords();
+
+		private static TokenType[] BuildSingleCharacterSymbols()
+		{
+			var lookup = new TokenType[AsciiRange];
+
+			foreach (TokenType tokenType in Values)
+			{
+				if (tokenType.Symbol.Length == 1 && tokenType.Symbol[0] < AsciiRange)
+					lookup[tokenType.Symbol[0]] = tokenType;
+			}
+
+			return lookup;
+		}
+
+		private static TokenType[] BuildTwoCharacterSymbols()
+		{
+			var count = 0;
+
+			foreach (TokenType tokenType in Values)
+			{
+				if (tokenType.Symbol.Length == 2)
+					count++;
+			}
+
+			var lookup = new TokenType[count];
+			var index = 0;
+
+			foreach (TokenType tokenType in Values)
+			{
+				if (tokenType.Symbol.Length == 2)
+					lookup[index++] = tokenType;
+			}
+
+			return lookup;
+		}
+
+		private static Dictionary<string, TokenType> BuildKeywords()
+		{
+			// Keywords are matched case-insensitively: "All things in Molang are case-insensitive, with the
+			// exception of strings".
+			var lookup = new Dictionary<string, TokenType>(StringComparer.OrdinalIgnoreCase);
+
+			foreach (TokenType tokenType in Values)
+			{
+				if (tokenType.Symbol.Length > 2)
+					lookup[tokenType.Symbol] = tokenType;
+			}
+
+			return lookup;
+		}
+
+		/// <summary>
 		///		Finds the TokenType by symbol
 		/// </summary>
 		/// <param name="symbol">The symbol to lookup</param>
@@ -87,15 +158,20 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 		/// </remarks>
 		public static TokenType BySymbol(string symbol)
 		{
-			foreach (TokenType tokenType in TokenType.Values)
-			{
-				if (tokenType.Symbol.Equals(symbol, StringComparison.OrdinalIgnoreCase))
-				{
-					return tokenType;
-				}
-			}
+			if (string.IsNullOrEmpty(symbol))
+				return null;
 
-			return null;
+			switch (symbol.Length)
+			{
+				case 1:
+					return BySymbol(symbol[0]);
+
+				case 2:
+					return BySymbol(symbol[0], symbol[1]);
+
+				default:
+					return Keywords.TryGetValue(symbol, out var keyword) ? keyword : null;
+			}
 		}
 
 		/// <summary>
@@ -105,7 +181,28 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 		/// <returns>The resulting TokenType or null if no match has been found</returns>
 		public static TokenType BySymbol(char symbol)
 		{
-			return BySymbol(symbol.ToString());
+			return symbol < AsciiRange ? SingleCharacterSymbols[symbol] : null;
+		}
+
+		/// <summary>
+		///		Finds a two character TokenType such as "&gt;=" without allocating a string to look it up with
+		/// </summary>
+		/// <param name="first">The first character of the symbol</param>
+		/// <param name="second">The second character of the symbol</param>
+		/// <returns>The resulting TokenType or null if no match has been found</returns>
+		public static TokenType BySymbol(char first, char second)
+		{
+			var candidates = TwoCharacterSymbols;
+
+			for (var i = 0; i < candidates.Length; i++)
+			{
+				var symbol = candidates[i].Symbol;
+
+				if (symbol[0] == first && symbol[1] == second)
+					return candidates[i];
+			}
+
+			return null;
 		}
 
 		/// <summary>

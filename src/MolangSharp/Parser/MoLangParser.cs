@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Threading;
 using ConcreteMC.MolangSharp.Parser.Exceptions;
 using ConcreteMC.MolangSharp.Parser.Expressions;
 using ConcreteMC.MolangSharp.Parser.Parselet;
@@ -23,7 +24,20 @@ namespace ConcreteMC.MolangSharp.Parser
 		/// </summary>
 		public static ParserFactory Factory { get; set; } = DefaultFactory;
 
-		public static TimeSpan TotalTimeSpent { get; private set; } = TimeSpan.Zero;
+		/// <summary>
+		///		The total time spent parsing expressions
+		/// </summary>
+		/// <remarks>
+		///		Accumulated as raw <see cref="Stopwatch"/> timestamps so that measuring a parse costs neither an
+		///		allocation nor a torn write when several threads parse at once.
+		/// </remarks>
+		public static TimeSpan TotalTimeSpent =>
+			TimeSpan.FromTicks((long) (Interlocked.Read(ref _totalTimestampTicks) * TimestampToTimeSpanTicks));
+
+		private static long _totalTimestampTicks;
+
+		private static readonly double TimestampToTimeSpanTicks =
+			(double) TimeSpan.TicksPerSecond / Stopwatch.Frequency;
 
 		private static readonly Dictionary<TokenType, PrefixParselet> PrefixParselets =
 			new Dictionary<TokenType, PrefixParselet>();
@@ -92,7 +106,7 @@ namespace ConcreteMC.MolangSharp.Parser
 		/// <exception cref="MoLangParserException"></exception>
 		public IExpression Parse()
 		{
-			Stopwatch sw = Stopwatch.StartNew();
+			var startTimestamp = Stopwatch.GetTimestamp();
 
 			try
 			{
@@ -131,8 +145,7 @@ namespace ConcreteMC.MolangSharp.Parser
 			}
 			finally
 			{
-				sw.Stop();
-				TotalTimeSpent += sw.Elapsed;
+				Interlocked.Add(ref _totalTimestampTicks, Stopwatch.GetTimestamp() - startTimestamp);
 			}
 		}
 

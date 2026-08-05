@@ -14,7 +14,11 @@ namespace ConcreteMC.MolangSharp.Runtime.Value
 
 		virtual string AsString() => Value.ToString();
 
-		virtual double AsDouble() => Value is double db ? db : 0d;
+		/// <remarks>
+		///		Booleans are folded to 1.0/0.0 here as well, so that a numeric test and
+		///		<see cref="AsBool"/> always agree.
+		/// </remarks>
+		virtual double AsDouble() => Value is double db ? db : Value is bool bl ? (bl ? 1d : 0d) : 0d;
 
 		virtual float AsFloat() => Value is float flt ? flt : (float) AsDouble();
 

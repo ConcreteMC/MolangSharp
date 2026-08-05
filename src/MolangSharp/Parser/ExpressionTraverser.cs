@@ -1,8 +1,6 @@
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using ConcreteMC.MolangSharp.Runtime.Exceptions;
 
 namespace ConcreteMC.MolangSharp.Parser
@@ -109,25 +107,6 @@ namespace ConcreteMC.MolangSharp.Parser
 		public void Stop()
 		{
 			_stop = true;
-		}
-
-		private static ConcurrentDictionary<Type, PropertyInfo[]> _cachedProperties =
-			new ConcurrentDictionary<Type, PropertyInfo[]>();
-
-		private static PropertyInfo[] GetAllProperties(Type type)
-		{
-			return _cachedProperties.GetOrAdd(
-				type, t => t.GetProperties(BindingFlags.Public | BindingFlags.Instance).ToArray());
-		}
-
-		private object GetFieldValue(PropertyInfo field, object obj)
-		{
-			return field.GetValue(obj);
-		}
-
-		private void SetFieldValue(PropertyInfo field, object obj, object value)
-		{
-			field.SetValue(obj, value);
 		}
 
 		[Flags]

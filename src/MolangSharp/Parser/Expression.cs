@@ -32,6 +32,12 @@ namespace ConcreteMC.MolangSharp.Parser
 		public abstract IMoValue Evaluate(MoScope scope, MoLangEnvironment environment);
 
 		/// <inheritdoc />
+		public virtual double EvaluateDouble(MoScope scope, MoLangEnvironment environment)
+		{
+			return Evaluate(scope, environment).AsDouble();
+		}
+
+		/// <inheritdoc />
 		public virtual void Assign(MoScope scope, MoLangEnvironment environment, IMoValue value)
 		{
 			throw new Exception("Cannot assign a value to " + this.GetType());

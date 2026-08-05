@@ -13,8 +13,13 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 		/// <inheritdoc />
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{
-			return Parameters[0].Evaluate(scope, environment).AsBool() ? DoubleValue.Zero :
-				DoubleValue.One; // .Equals(DoubleValue.One) ? DoubleValue.Zero : DoubleValue.One;
+			return Parameters[0].EvaluateDouble(scope, environment) != 0d ? DoubleValue.Zero : DoubleValue.One;
+		}
+
+		/// <inheritdoc />
+		public override double EvaluateDouble(MoScope scope, MoLangEnvironment environment)
+		{
+			return Parameters[0].EvaluateDouble(scope, environment) != 0d ? 0d : 1d;
 		}
 	}
 }

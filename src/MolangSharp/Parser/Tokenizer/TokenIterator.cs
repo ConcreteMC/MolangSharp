@@ -1,6 +1,3 @@
-using System;
-using ConcreteMC.MolangSharp.Parser.Exceptions;
-
 namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 {
 	public class TokenIterator : ITokenIterator
@@ -21,10 +18,12 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 		{
 			while (_index < _code.Length)
 			{
+				var expr = _code[_index];
+
 				if (_code.Length > _index + 1)
 				{
 					// check tokens with double chars
-					TokenType token = TokenType.BySymbol(_code.Substring(_index, 2));
+					TokenType token = TokenType.BySymbol(expr, _code[_index + 1]);
 
 					if (token != null)
 					{
@@ -34,7 +33,6 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 					}
 				}
 
-				var expr = GetCharacterAt(_index);
 				TokenType tokenType = TokenType.BySymbol(expr);
 
 				if (tokenType != null)
@@ -51,7 +49,7 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 						int stringLength = 0;
 
 						while (stringStart + stringLength < _code.Length
-						       && !GetCharacterAt(stringStart + stringLength).Equals('\''))
+						       && _code[stringStart + stringLength] != '\'')
 						{
 							stringLength++;
 						}
@@ -68,11 +66,13 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 						var nameStart = _index;
 						int nameLength = 1;
 
-						while (nameStart + nameLength < _code.Length
-						       && (char.IsLetterOrDigit(GetCharacterAt(nameStart + nameLength))
-						           || GetCharacterAt(nameStart + nameLength).Equals('_')
-						           || GetCharacterAt(nameStart + nameLength).Equals('.')))
+						while (nameStart + nameLength < _code.Length)
 						{
+							var next = _code[nameStart + nameLength];
+
+							if (!char.IsLetterOrDigit(next) && next != '_' && next != '.')
+								break;
+
 							nameLength++;
 						}
 
@@ -99,7 +99,7 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 
 						while (numStart + numLength < _code.Length)
 						{
-							var character = GetCharacterAt(numStart + numLength);
+							var character = _code[numStart + numLength];
 
 							if (!char.IsDigit(character))
 							{
@@ -153,16 +153,6 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 		private TokenPosition GetPosition()
 		{
 			return new TokenPosition(_lastStepLine, _currentLine, _lastStep, _index);
-		}
-
-		private char GetCharacterAt(int index)
-		{
-			if (index > _code.Length - 1)
-				throw new MoLangParserException(
-					$"Value '{index + 1}' is outside of range Min: 0, Max:{_code.Length - 1}",
-					new IndexOutOfRangeException(nameof(index)));
-
-			return _code[index]; //.Substring(index, 1)[0];
 		}
 	}
 }

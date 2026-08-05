@@ -16,6 +16,17 @@ namespace ConcreteMC.MolangSharp.Runtime
 		public MoLangEnvironment Environment { get; }
 
 		/// <summary>
+		///		The scope reused by <see cref="Execute(IExpression)"/>, so that the common case of a non-nested
+		///		execution does not allocate one.
+		/// </summary>
+		private readonly MoScope _rootScope;
+
+		/// <summary>
+		///		True while <see cref="_rootScope"/> is in use, in which case a nested execution has to get its own.
+		/// </summary>
+		private bool _rootScopeInUse;
+
+		/// <summary>
 		///		Create a new instance of MoLangRuntime with a new <see cref="MoLangEnvironment"/>
 		/// </summary>
 		public MoLangRuntime() : this(new MoLangEnvironment()) { }
@@ -29,6 +40,7 @@ namespace ConcreteMC.MolangSharp.Runtime
 		public MoLangRuntime(MoLangEnvironment environment)
 		{
 			Environment = environment;
+			_rootScope = new MoScope(this);
 		}
 
 		/// <summary>
@@ -61,11 +73,35 @@ namespace ConcreteMC.MolangSharp.Runtime
 				contextStruct.Container = context;
 			}
 
-			IMoValue result = null;
-			var scope = new MoScope(this);
-			result = expression.Evaluate(scope, Environment);
+			// Reuse the root scope unless we are already inside an execution, which happens when an interop
+			// function evaluates another expression on the same runtime.
+			var reuseRootScope = !_rootScopeInUse;
+			MoScope scope;
 
-			Environment.Structs["temp"].Clear();
+			if (reuseRootScope)
+			{
+				scope = _rootScope;
+				scope.Reset();
+				_rootScopeInUse = true;
+			}
+			else
+			{
+				scope = new MoScope(this);
+			}
+
+			IMoValue result;
+
+			try
+			{
+				result = expression.Evaluate(scope, Environment);
+			}
+			finally
+			{
+				if (reuseRootScope)
+					_rootScopeInUse = false;
+			}
+
+			Environment.ClearTemporaryVariables();
 
 			return result ?? DoubleValue.Zero;
 		}

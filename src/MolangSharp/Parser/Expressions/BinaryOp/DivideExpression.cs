@@ -13,14 +13,19 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions.BinaryOp
 		/// <inheritdoc />
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{
+			return new DoubleValue(EvaluateDouble(scope, environment));
+		}
+
+		/// <inheritdoc />
+		public override double EvaluateDouble(MoScope scope, MoLangEnvironment environment)
+		{
 			try
 			{
-				return new DoubleValue(
-					Left.Evaluate(scope, environment).AsDouble() / Right.Evaluate(scope, environment).AsDouble());
+				return Left.EvaluateDouble(scope, environment) / Right.EvaluateDouble(scope, environment);
 			}
 			catch (Exception ex)
 			{
-				throw new MoLangRuntimeException("An unexpected error occured.", ex);
+				throw new MoLangRuntimeException(this, "An unexpected error occured.", ex);
 			}
 		}
 

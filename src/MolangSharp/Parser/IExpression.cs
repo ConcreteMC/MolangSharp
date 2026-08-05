@@ -22,6 +22,22 @@ namespace ConcreteMC.MolangSharp.Parser
 		IMoValue Evaluate(MoScope scope, MoLangEnvironment environment);
 
 		/// <summary>
+		///		Evaluate the expression directly as a number
+		/// </summary>
+		/// <param name="scope">The current scope</param>
+		/// <param name="environment">The environment provided by the <see cref="MoLangRuntime"/></param>
+		/// <returns>The number returned by the expression</returns>
+		/// <remarks>
+		///		Since every numerical value in MoLang is a float, a chain of arithmetic only needs to produce an
+		///		<see cref="IMoValue"/> at its root. Expressions that are always numeric override this so that the
+		///		intermediate results of an expression such as <c>v.a * v.b + v.c</c> never have to be wrapped.
+		/// </remarks>
+		double EvaluateDouble(MoScope scope, MoLangEnvironment environment)
+		{
+			return Evaluate(scope, environment).AsDouble();
+		}
+
+		/// <summary>
 		///		Invoked when trying to assign a value to a property/field
 		/// </summary>
 		/// <param name="scope">The current scope</param>
