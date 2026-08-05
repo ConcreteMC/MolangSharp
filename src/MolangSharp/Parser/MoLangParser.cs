@@ -57,15 +57,16 @@ namespace ConcreteMC.MolangSharp.Parser
 			InfixParselets.Add(TokenType.Minus, new GenericBinaryOpParselet(Precedence.Sum));
 			InfixParselets.Add(TokenType.Slash, new GenericBinaryOpParselet(Precedence.Product));
 			InfixParselets.Add(TokenType.Asterisk, new GenericBinaryOpParselet(Precedence.Product));
-			InfixParselets.Add(TokenType.EqualsEquals, new GenericBinaryOpParselet(Precedence.Compare));
-			InfixParselets.Add(TokenType.NotEquals, new GenericBinaryOpParselet(Precedence.Compare));
+			InfixParselets.Add(TokenType.EqualsEquals, new GenericBinaryOpParselet(Precedence.Equality));
+			InfixParselets.Add(TokenType.NotEquals, new GenericBinaryOpParselet(Precedence.Equality));
 			InfixParselets.Add(TokenType.Greater, new GenericBinaryOpParselet(Precedence.Compare));
 			InfixParselets.Add(TokenType.GreaterOrEquals, new GenericBinaryOpParselet(Precedence.Compare));
 			InfixParselets.Add(TokenType.Smaller, new GenericBinaryOpParselet(Precedence.Compare));
 			InfixParselets.Add(TokenType.SmallerOrEquals, new GenericBinaryOpParselet(Precedence.Compare));
 			InfixParselets.Add(TokenType.And, new GenericBinaryOpParselet(Precedence.And));
 			InfixParselets.Add(TokenType.Or, new GenericBinaryOpParselet(Precedence.Or));
-			InfixParselets.Add(TokenType.Coalesce, new GenericBinaryOpParselet(Precedence.Coalesce));
+			// '??' is right-associative so that 'a ?? b ?? c' falls through the whole chain of defaults.
+			InfixParselets.Add(TokenType.Coalesce, new GenericBinaryOpParselet(Precedence.Coalesce, true));
 			InfixParselets.Add(TokenType.Arrow, new GenericBinaryOpParselet(Precedence.Arrow));
 			InfixParselets.Add(TokenType.Assign, new AssignParselet());
 		}
@@ -242,11 +243,17 @@ namespace ConcreteMC.MolangSharp.Parser
 			return true;
 		}
 
+		/// <summary>
+		///		Expands the documented scope aliases (q, v, t, c) to their full names.
+		/// </summary>
+		/// <remarks>
+		///		Aliases are matched case-insensitively, like every other Molang identifier.
+		/// </remarks>
 		internal MoPath FixNameShortcut(MoPath name)
 		{
 			var first = name.Value;
 
-			switch (first)
+			switch (first.ToLowerInvariant())
 			{
 				case "q":
 					first = "query";

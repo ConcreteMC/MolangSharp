@@ -35,22 +35,34 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 		///		Indexes the ArrayStruct
 		/// </summary>
 		/// <param name="index">The index to get/set the value of</param>
+		/// <remarks>
+		///		Out of range indexes follow the Molang rule for array indexes: "clamped at 0 for negative values or
+		///		wrapped by the array size for large values".
+		/// </remarks>
 		public IMoValue this[int index]
 		{
 			get
 			{
-				if (index >= _array.Length)
+				if (_array.Length == 0)
 					return DoubleValue.Zero;
 
-				return _array[index % _array.Length];
+				return _array[Normalize(index)];
 			}
 			set
 			{
 				if (_array.Length == 0)
 					return;
 
-				_array[index % _array.Length] = value;
+				_array[Normalize(index)] = value;
 			}
+		}
+
+		private int Normalize(int index)
+		{
+			if (index < 0)
+				return 0;
+
+			return index % _array.Length;
 		}
 
 		/// <inheritdoc />

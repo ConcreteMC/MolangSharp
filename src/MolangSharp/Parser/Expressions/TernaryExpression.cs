@@ -13,9 +13,13 @@ namespace ConcreteMC.MolangSharp.Parser.Expressions
 			condition, thenExpr, elseExpr) { }
 
 		/// <inheritdoc />
+		/// <remarks>
+		///		Any value other than 0.0 selects the "then" branch: "For boolean tests, a float value equivalent to
+		///		0.0 is false, and anything not equal to 0.0 is true."
+		/// </remarks>
 		public override IMoValue Evaluate(MoScope scope, MoLangEnvironment environment)
 		{
-			if (Condition.Evaluate(scope, environment).Equals(DoubleValue.One))
+			if (Condition.Evaluate(scope, environment).AsBool())
 			{
 				return ThenExpr == null ? Condition.Evaluate(scope, environment) :
 					ThenExpr.Evaluate(scope, environment);

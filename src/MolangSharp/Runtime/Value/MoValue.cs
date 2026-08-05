@@ -18,7 +18,10 @@ namespace ConcreteMC.MolangSharp.Runtime.Value
 
 		virtual float AsFloat() => Value is float flt ? flt : (float) AsDouble();
 
-		virtual bool AsBool() => Value is bool b ? b : AsDouble() > 0;
+		/// <remarks>
+		///		"For boolean tests, a float value equivalent to 0.0 is false, and anything not equal to 0.0 is true."
+		/// </remarks>
+		virtual bool AsBool() => Value is bool b ? b : AsDouble() != 0d;
 	}
 
 	public static class MoValue

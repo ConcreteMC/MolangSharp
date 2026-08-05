@@ -20,7 +20,8 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 
 		public QueryStruct(IEnumerable<KeyValuePair<string, Func<MoParams, object>>> parameters)
 		{
-			Functions = new Dictionary<string, Func<MoParams, object>>(parameters);
+			// Molang identifiers are case-insensitive, so 'math.abs' and 'MATH.ABS' must resolve to the same function.
+			Functions = new Dictionary<string, Func<MoParams, object>>(parameters, StringComparer.OrdinalIgnoreCase);
 		}
 
 		/// <inheritdoc />

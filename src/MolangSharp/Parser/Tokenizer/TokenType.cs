@@ -1,3 +1,4 @@
+using System;
 using System.Threading;
 
 namespace ConcreteMC.MolangSharp.Parser.Tokenizer
@@ -81,11 +82,14 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 		/// </summary>
 		/// <param name="symbol">The symbol to lookup</param>
 		/// <returns>The resulting TokenType or null if no match has been found</returns>
+		/// <remarks>
+		///		The lookup ignores casing: "All things in Molang are case-insensitive, with the exception of strings".
+		/// </remarks>
 		public static TokenType BySymbol(string symbol)
 		{
 			foreach (TokenType tokenType in TokenType.Values)
 			{
-				if (tokenType.Symbol.Equals(symbol))
+				if (tokenType.Symbol.Equals(symbol, StringComparison.OrdinalIgnoreCase))
 				{
 					return tokenType;
 				}

@@ -103,7 +103,7 @@ namespace ConcreteMC.MolangSharp.Parser.Tokenizer
 
 							if (!char.IsDigit(character))
 							{
-								if (character == 'f' && !isFloat)
+								if ((character == 'f' || character == 'F') && !isFloat)
 								{
 									isFloat = true;
 								}

@@ -14,7 +14,8 @@ namespace ConcreteMC.MolangSharp.Parser.Parselet
 		/// <inheritdoc />
 		public override IExpression Parse(MoLangParser parser, Token token, IExpression leftExpr)
 		{
-			IExpression index = parser.ParseExpression(Precedence);
+			// The index is delimited by the closing bracket, so it may contain any expression.
+			IExpression index = parser.ParseExpression();
 			parser.ConsumeToken(TokenType.ArrayRight);
 
 			return new ArrayAccessExpression(leftExpr, index);

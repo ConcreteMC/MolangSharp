@@ -105,6 +105,34 @@ namespace ConcreteMC.MolangSharp.Runtime.Struct
 		}
 
 		/// <inheritdoc />
+		public virtual bool TryGet(MoPath key, MoParams parameters, out IMoValue value)
+		{
+			if (key == null)
+			{
+				value = this;
+
+				return true;
+			}
+
+			if (!Map.TryGetValue(key.Value, out value))
+			{
+				value = null;
+
+				return false;
+			}
+
+			if (!key.HasChildren)
+				return true;
+
+			if (value is IMoStruct moStruct)
+				return moStruct.TryGet(key.Next, parameters, out value);
+
+			value = null;
+
+			return false;
+		}
+
+		/// <inheritdoc />
 		public void Clear()
 		{
 			Map.Clear();

@@ -68,6 +68,11 @@ namespace ConcreteMC.MolangSharp.Parser
 
 			for (var index = 0; index < parameters.Length; index++)
 			{
+				// Some expressions leave a parameter empty on purpose, such as the missing "else" branch of a
+				// binary conditional ("<test> ? <if true>").
+				if (parameters[index] == null)
+					continue;
+
 				parameters[index] = TraverseExpr(parameters[index], expression);
 
 				if (_stop)

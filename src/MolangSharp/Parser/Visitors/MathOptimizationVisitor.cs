@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using ConcreteMC.MolangSharp.Parser.Expressions;
 using ConcreteMC.MolangSharp.Runtime;
@@ -12,6 +13,15 @@ namespace ConcreteMC.MolangSharp.Parser.Visitors
 	{
 		private static MoScope _scope = new MoScope(new MoLangRuntime());
 		private static MoLangEnvironment _environment = new MoLangEnvironment();
+
+		/// <summary>
+		///     The math functions that must be re-evaluated on every run, even with constant arguments
+		/// </summary>
+		private static readonly HashSet<string> NonDeterministicFunctions =
+			new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+			{
+				"random", "random_integer", "die_roll", "die_roll_integer"
+			};
 
 		public override IExpression OnVisit(ExpressionTraverser traverser, IExpression expression)
 		{
@@ -41,6 +51,9 @@ namespace ConcreteMC.MolangSharp.Parser.Visitors
 				expression.Parameters[i] = Visit(expression.Parameters[i]);
 			}
 
+			if (IsNonDeterministic(expression))
+				return expression;
+
 			if (expression.Parameters.All(x => x is NumberExpression))
 			{
 				var eval = expression.Evaluate(_scope, _environment);
@@ -49,6 +62,20 @@ namespace ConcreteMC.MolangSharp.Parser.Visitors
 			}
 
 			return expression;
+		}
+
+		/// <summary>
+		///		Checks whether a math call must keep being evaluated at runtime
+		/// </summary>
+		/// <remarks>
+		///		<c>math.random(0, 1)</c> has constant arguments but must still produce a new value on every run, so it
+		///		cannot be folded into a literal.
+		/// </remarks>
+		private static bool IsNonDeterministic(FuncCallExpression expression)
+		{
+			var name = expression.Name.Next;
+
+			return name != null && !name.HasChildren && NonDeterministicFunctions.Contains(name.Value);
 		}
 
 		private static IExpression TryOptimize(BinaryOpExpression expression)

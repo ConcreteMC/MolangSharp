@@ -79,6 +79,36 @@ namespace ConcreteMC.MolangSharp.Runtime
 		}
 
 		/// <summary>
+		///		Try to get a MoLang variable by its path, reporting whether it could be resolved at all
+		/// </summary>
+		/// <param name="path">The path to access</param>
+		/// <param name="value">The variable at the specified path, or null when it could not be resolved</param>
+		/// <returns>True when the path could be resolved</returns>
+		/// <remarks>
+		///		Unlike <see cref="GetValue(MoPath)"/> this does not substitute 0.0 for a variable that was never
+		///		assigned, which is what the null coalescing operator (<c>??</c>) needs in order to decide whether to
+		///		fall back to its right hand side.
+		/// </remarks>
+		public bool TryGetValue(MoPath path, out IMoValue value)
+		{
+			if (!Structs.TryGetValue(path.Value, out var v))
+			{
+				value = null;
+
+				return false;
+			}
+
+			if (path.Next == null)
+			{
+				value = v;
+
+				return true;
+			}
+
+			return v.TryGet(path.Next, MoParams.Empty, out value);
+		}
+
+		/// <summary>
 		///		Set a MoLang variable by its path
 		/// </summary>
 		/// <param name="path"></param>
