@@ -137,6 +137,11 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class GroupParselet : PrefixParselet</code></pre>
   </div>
+  <h5 id="ConcreteMC_MolangSharp_Parser_Parselet_GroupParselet_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Parentheses are documented as &quot;Parentheses for expression term evaluation control&quot;, but the language also
+accepts a semicolon separated statement list inside them, the way braces do, as in
+<code>q.x == 1 ? (v.a = 1; return true;) : 0</code>. Both forms are handled here.</p>
+</div>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
@@ -144,7 +149,7 @@
     <a href="https://github.com/ConcreteMC/MolangSharp/new/main/apiSpec/new?filename=ConcreteMC_MolangSharp_Parser_Parselet_GroupParselet_Parse_ConcreteMC_MolangSharp_Parser_MoLangParser_ConcreteMC_MolangSharp_Parser_Tokenizer_Token_.md&amp;value=---%0Auid%3A%20ConcreteMC.MolangSharp.Parser.Parselet.GroupParselet.Parse(ConcreteMC.MolangSharp.Parser.MoLangParser%2CConcreteMC.MolangSharp.Parser.Tokenizer.Token)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/Parselet/GroupParselet.cs/#L11">View Source</a>
+    <a href="https://github.com/ConcreteMC/MolangSharp/blob/main/src/MolangSharp/Parser/Parselet/GroupParselet.cs/#L18">View Source</a>
   </span>
   <a id="ConcreteMC_MolangSharp_Parser_Parselet_GroupParselet_Parse_" data-uid="ConcreteMC.MolangSharp.Parser.Parselet.GroupParselet.Parse*"></a>
   <h4 id="ConcreteMC_MolangSharp_Parser_Parselet_GroupParselet_Parse_ConcreteMC_MolangSharp_Parser_MoLangParser_ConcreteMC_MolangSharp_Parser_Tokenizer_Token_" data-uid="ConcreteMC.MolangSharp.Parser.Parselet.GroupParselet.Parse(ConcreteMC.MolangSharp.Parser.MoLangParser,ConcreteMC.MolangSharp.Parser.Tokenizer.Token)">Parse(MoLangParser, Token)</h4>
